@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, Star } from 'lucide-react';
 import ExamSelection from '../components/ExamSelection';
 
@@ -42,8 +41,6 @@ function Home() {
             Start Free Mock Examination
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
-          <Link>
-          </Link>
         </div>
       </div>
 
@@ -121,23 +118,23 @@ function Home() {
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Examination Requirements</h3>
               <ul className="space-y-3 text-gray-700 dark:text-gray-200">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-50 dark:bg-gray-900 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   Filipino citizen
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-50 dark:bg-gray-900 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   At least 18 years old
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-50 dark:bg-gray-900 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   Of good moral character
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-50 dark:bg-gray-900 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   No criminal record
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-50 dark:bg-gray-900 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   Not removed from service for cause
                 </li>
               </ul>
