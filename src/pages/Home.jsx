@@ -66,10 +66,7 @@ function Home() {
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
           <Link 
-            to="/tutorial"
-            className="px-8 py-4 bg-white dark:bg-gray-950 text-gray-800 dark:text-white rounded-xl font-semibold text-lg border-2 border-gray-300 hover:bg-gray-50 hover:dark:bg-gray-500 transition-all text-center"
           >
-            Watch Tutorial
           </Link>
         </div>
       </div>
