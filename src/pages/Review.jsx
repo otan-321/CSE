@@ -1,4 +1,4 @@
-import { BookOpen, Clock, ChevronRight } from 'lucide-react';
+import { BookOpen, Clock, ChevronRight, ArrowLeft } from 'lucide-react';
 
 function Review() {
   const categories = [
@@ -39,7 +39,6 @@ function Review() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Header */}
       <div className="text-center mb-10">
         <div className="inline-flex items-center px-4 py-2 bg-linear-to-r from-blue-100 to-purple-100 rounded-full mb-4">
           <BookOpen className="w-4 h-4 text-blue-500 mr-2" />
@@ -53,19 +52,15 @@ function Review() {
         </p>
       </div>
 
-      {/* Category Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {categories.map((cat) => (
           <div
             key={cat.title}
             className={`rounded-2xl border ${cat.border} ${cat.light} p-6 shadow-md`}
           >
-            {/* Category Header */}
             <div className={`inline-flex items-center px-4 py-2 bg-linear-to-r ${cat.color} text-white rounded-xl font-semibold text-base mb-4`}>
               {cat.title}
             </div>
-
-            {/* Subcategories */}
             <div className="space-y-2">
               {cat.subcategories.map((sub) => (
                 <div
@@ -87,13 +82,13 @@ function Review() {
         ))}
       </div>
 
-      {/* Back Button */}
       <div className="text-center mt-10">
         
           href="/"
           className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 rounded-xl font-medium hover:shadow-md transition-all"
         >
-          ← Back to Home
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Home
         </a>
       </div>
     </div>
