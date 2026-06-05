@@ -1,0 +1,488 @@
+[
+  {
+    "id": "aa_new_001",
+    "text": "Happy people are energetic. Flint is happy. Which conclusion is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flint is energetic."
+      },
+      {
+        "id": "b",
+        "text": "All happy people are Flints."
+      },
+      {
+        "id": "c",
+        "text": "Flint is sad."
+      },
+      {
+        "id": "d",
+        "text": "Flint is always happy."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_002",
+    "text": "If Claire washes the dishes, Clint will sweep the floor. Clint is sweeping the floor. Which conclusion is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Claire is sleeping."
+      },
+      {
+        "id": "b",
+        "text": "Clint will wash the dishes too."
+      },
+      {
+        "id": "c",
+        "text": "Claire is washing the dishes."
+      },
+      {
+        "id": "d",
+        "text": "Clint and Clara are grounded."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Note: This is affirming the consequent — technically invalid, but in context answer is c",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_003",
+    "text": "Some heroes wear capes. All parents are heroes. Which conclusion is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Some heroes are capes."
+      },
+      {
+        "id": "b",
+        "text": "All parents wear capes."
+      },
+      {
+        "id": "c",
+        "text": "Some parents wear capes."
+      },
+      {
+        "id": "d",
+        "text": "All heroes are capes."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_004",
+    "text": "Kuisha loves to travel. Which is the best inference?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She loves to drink coffee."
+      },
+      {
+        "id": "b",
+        "text": "She would love to go on a trip to Japan."
+      },
+      {
+        "id": "c",
+        "text": "Her boyfriend is a foreigner."
+      },
+      {
+        "id": "d",
+        "text": "She will spend the holidays with her family."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_005",
+    "text": "Exercising helps increase feel-good hormones in the body. Which inference is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I should exercise if I want to sleep."
+      },
+      {
+        "id": "b",
+        "text": "I should exercise if I want to feel happy."
+      },
+      {
+        "id": "c",
+        "text": "Eating healthy foods makes me happy."
+      },
+      {
+        "id": "d",
+        "text": "I will feel sad after jogging."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_006",
+    "text": "If Jemima travels to South Korea, she will buy a keychain for Karen. If Karen receives a keychain from Jemima, she will treat her with ice cream. Which is/are valid conclusions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "If Karen treats Jemima with ice cream, that means Jemima went to North Korea."
+      },
+      {
+        "id": "b",
+        "text": "If Jemima is being treated by Karen with ice cream, then she must have given Karen a keychain."
+      },
+      {
+        "id": "c",
+        "text": "both a and b"
+      },
+      {
+        "id": "d",
+        "text": "neither a nor b"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_007",
+    "text": "The drink inside the pitcher is either juice or soda. Which inference is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "If it is juice, then it is soda."
+      },
+      {
+        "id": "b",
+        "text": "The drink is a soda, so it is also juice."
+      },
+      {
+        "id": "c",
+        "text": "If it is juice, then it has alcohol."
+      },
+      {
+        "id": "d",
+        "text": "The drink is a soda, so it is not juice."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_008",
+    "text": "Some Filipinos are students. Some Koreans are students. All students are intelligent. Which conclusion is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Some Filipinos are Koreans."
+      },
+      {
+        "id": "b",
+        "text": "All Koreans are students."
+      },
+      {
+        "id": "c",
+        "text": "All Koreans are intelligent."
+      },
+      {
+        "id": "d",
+        "text": "Some Filipinos are intelligent."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_009",
+    "text": "Upon arrival at the airport, Lena proceeded to buy a ticket. What could be the best reason?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She does not have a ticket."
+      },
+      {
+        "id": "b",
+        "text": "She is flying to Singapore."
+      },
+      {
+        "id": "c",
+        "text": "She just wants to buy a ticket."
+      },
+      {
+        "id": "d",
+        "text": "She wants to go to the pre-departure area."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_010",
+    "text": "If Mia proceeded to Gates 1-10, which inference is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She is traveling to another country."
+      },
+      {
+        "id": "b",
+        "text": "She does not have a ticket."
+      },
+      {
+        "id": "c",
+        "text": "She is traveling to a destination within the country."
+      },
+      {
+        "id": "d",
+        "text": "Gates 11-20 are closed."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_011",
+    "text": "Which is NOT a direct reason why Ann went home?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She does not have more than P1,000 in her account."
+      },
+      {
+        "id": "b",
+        "text": "She does not have money left after buying clothes."
+      },
+      {
+        "id": "c",
+        "text": "She bought some take-away food."
+      },
+      {
+        "id": "d",
+        "text": "She found an ATM."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_012",
+    "text": "What is the reason why Ann bought take-away food?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She bought some clothes."
+      },
+      {
+        "id": "b",
+        "text": "She does not have money left after buying clothes."
+      },
+      {
+        "id": "c",
+        "text": "Ann has a mobile banking application."
+      },
+      {
+        "id": "d",
+        "text": "Ann still has money left after buying clothes."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_013",
+    "text": "Which is NOT a main reason for Ann going to the mall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "to buy some clothes"
+      },
+      {
+        "id": "b",
+        "text": "to buy some take-away food"
+      },
+      {
+        "id": "c",
+        "text": "to download a mobile banking application"
+      },
+      {
+        "id": "d",
+        "text": "both a and b"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_014",
+    "text": "Ever proceeded directly to the first interview after submitting her CV. Why?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She passed the application process."
+      },
+      {
+        "id": "b",
+        "text": "She printed her CV."
+      },
+      {
+        "id": "c",
+        "text": "She is applying for the position of customer service."
+      },
+      {
+        "id": "d",
+        "text": "She will take the written exam."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_015",
+    "text": "Gel went home. Which is a valid assumption?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gel passed the second interview and is done signing the contract."
+      },
+      {
+        "id": "b",
+        "text": "Gel did not pass the second interview."
+      },
+      {
+        "id": "c",
+        "text": "both a and b"
+      },
+      {
+        "id": "d",
+        "text": "neither a nor b"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_016",
+    "text": "Which is a direct reason why Zoren will take a written exam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He is applying for the position of customer service."
+      },
+      {
+        "id": "b",
+        "text": "He does not have a CV."
+      },
+      {
+        "id": "c",
+        "text": "He passed the application process."
+      },
+      {
+        "id": "d",
+        "text": "He is applying for the position of financial analyst."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_017",
+    "text": "Ken is having his lunch. Which is an INCORRECT assumption?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ken has extra money."
+      },
+      {
+        "id": "b",
+        "text": "Ken did not take a bath."
+      },
+      {
+        "id": "c",
+        "text": "Ken will take an afternoon nap afterward."
+      },
+      {
+        "id": "d",
+        "text": "Ken reheated the leftovers from his breakfast."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "aa_new_018",
+    "text": "Which is a correct assumption based on the flowchart?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Since Ken woke up after 8:00 am, he will go for a jog."
+      },
+      {
+        "id": "b",
+        "text": "Ken will go to the deli even if he is out of money."
+      },
+      {
+        "id": "c",
+        "text": "Ken will watch television after waking up from his afternoon nap."
+      },
+      {
+        "id": "d",
+        "text": "Ken will read a book if he did not take a bath."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Analytical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  }
+]

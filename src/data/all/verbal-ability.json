@@ -3,10 +3,22 @@
     "id": "verbal_01",
     "text": "Choose the sentence with correct grammar:",
     "options": [
-      { "id": "a", "text": "Neither the employees nor the manager are present" },
-      { "id": "b", "text": "Neither the employees nor the manager is present" },
-      { "id": "c", "text": "Neither the employees nor the manager be present" },
-      { "id": "d", "text": "Neither the employees nor the manager were present" }
+      {
+        "id": "a",
+        "text": "Neither the employees nor the manager are present"
+      },
+      {
+        "id": "b",
+        "text": "Neither the employees nor the manager is present"
+      },
+      {
+        "id": "c",
+        "text": "Neither the employees nor the manager be present"
+      },
+      {
+        "id": "d",
+        "text": "Neither the employees nor the manager were present"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "When using 'neither/nor', the verb agrees with the subject closest to it. 'Manager' is singular, so 'is' is correct.",
@@ -18,10 +30,22 @@
     "id": "verbal_02",
     "text": "What is the synonym of 'meticulous'?",
     "options": [
-      { "id": "a", "text": "Careless" },
-      { "id": "b", "text": "Thorough" },
-      { "id": "c", "text": "Quick" },
-      { "id": "d", "text": "Simple" }
+      {
+        "id": "a",
+        "text": "Careless"
+      },
+      {
+        "id": "b",
+        "text": "Thorough"
+      },
+      {
+        "id": "c",
+        "text": "Quick"
+      },
+      {
+        "id": "d",
+        "text": "Simple"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Meticulous means showing great attention to detail; very careful and precise. Thorough is the closest synonym.",
@@ -33,10 +57,22 @@
     "id": "verbal_03",
     "text": "Pumili ng tamang pagbaybay:",
     "options": [
-      { "id": "a", "text": "Akomodasyon" },
-      { "id": "b", "text": "Akumodasyon" },
-      { "id": "c", "text": "Akomodasyón" },
-      { "id": "d", "text": "Akumodasyón" }
+      {
+        "id": "a",
+        "text": "Akomodasyon"
+      },
+      {
+        "id": "b",
+        "text": "Akumodasyon"
+      },
+      {
+        "id": "c",
+        "text": "Akomodasyón"
+      },
+      {
+        "id": "d",
+        "text": "Akumodasyón"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "Ang tamang pagbaybay sa Filipino ay 'akomodasyon' na hango sa salitang Espanyol na 'acomodación'.",
@@ -48,10 +84,22 @@
     "id": "verbal_04",
     "text": "Rearrange the following sentences to form a coherent paragraph:\n1. The Civil Service Commission issued new guidelines.\n2. These guidelines will take effect next month.\n3. All government agencies must comply with them.\n4. The guidelines aim to improve public service.",
     "options": [
-      { "id": "a", "text": "1-4-3-2" },
-      { "id": "b", "text": "1-4-2-3" },
-      { "id": "c", "text": "1-3-4-2" },
-      { "id": "d", "text": "4-1-3-2" }
+      {
+        "id": "a",
+        "text": "1-4-3-2"
+      },
+      {
+        "id": "b",
+        "text": "1-4-2-3"
+      },
+      {
+        "id": "c",
+        "text": "1-3-4-2"
+      },
+      {
+        "id": "d",
+        "text": "4-1-3-2"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The logical flow is: issuance (1), purpose (4), requirement (3), implementation date (2).",
@@ -63,10 +111,22 @@
     "id": "verbal_05",
     "text": "What is the antonym of 'obfuscate'?",
     "options": [
-      { "id": "a", "text": "Confuse" },
-      { "id": "b", "text": "Baffle" },
-      { "id": "c", "text": "Clarify" },
-      { "id": "d", "text": "Muddle" }
+      {
+        "id": "a",
+        "text": "Confuse"
+      },
+      {
+        "id": "b",
+        "text": "Baffle"
+      },
+      {
+        "id": "c",
+        "text": "Clarify"
+      },
+      {
+        "id": "d",
+        "text": "Muddle"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "To obfuscate means to make something obscure, unclear, or unintelligible. The direct opposite, or antonym, is to clarify, which means to make something clear and understandable.",
@@ -78,10 +138,22 @@
     "id": "verbal_06",
     "text": "Choose the most appropriate word to complete the sentence: The team's productivity was severely ___________ by the lack of proper training.",
     "options": [
-      { "id": "a", "text": "enhanced" },
-      { "id": "b", "text": "impeded" },
-      { "id": "c", "text": "promoted" },
-      { "id": "d", "text": "instigated" }
+      {
+        "id": "a",
+        "text": "enhanced"
+      },
+      {
+        "id": "b",
+        "text": "impeded"
+      },
+      {
+        "id": "c",
+        "text": "promoted"
+      },
+      {
+        "id": "d",
+        "text": "instigated"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Impeded means 'hindered or obstructed' and is the only word that logically follows from the negative consequence of 'lack of proper training.'",
@@ -93,10 +165,22 @@
     "id": "verbal_07",
     "text": "Piliin ang pangungusap na may tamang gamit ng 'ng' at 'nang':",
     "options": [
-      { "id": "a", "text": "Bumili ng isda si Aling Nena nang palengke" },
-      { "id": "b", "text": "Bumili nang isda si Aling Nena ng palengke" },
-      { "id": "c", "text": "Bumili ng isda si Aling Nena sa palengke" },
-      { "id": "d", "text": "Bumili nang isda si Aling Nena sa palengke" }
+      {
+        "id": "a",
+        "text": "Bumili ng isda si Aling Nena nang palengke"
+      },
+      {
+        "id": "b",
+        "text": "Bumili nang isda si Aling Nena ng palengke"
+      },
+      {
+        "id": "c",
+        "text": "Bumili ng isda si Aling Nena sa palengke"
+      },
+      {
+        "id": "d",
+        "text": "Bumili nang isda si Aling Nena sa palengke"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "Ang 'ng' ay ginagamit para sa pananda ng tuwirang layon ('ng isda'), habang ang 'sa' ay ginagamit para sa lokasyon ('sa palengke').",
@@ -108,10 +192,22 @@
     "id": "verbal_08",
     "text": "Complete the analogy: HAND is to GLOVE as FOOT is to:",
     "options": [
-      { "id": "a", "text": "LEG" },
-      { "id": "b", "text": "SHOE" },
-      { "id": "c", "text": "ANKLE" },
-      { "id": "d", "text": "WALK" }
+      {
+        "id": "a",
+        "text": "LEG"
+      },
+      {
+        "id": "b",
+        "text": "SHOE"
+      },
+      {
+        "id": "c",
+        "text": "ANKLE"
+      },
+      {
+        "id": "d",
+        "text": "WALK"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "A GLOVE is an article of clothing worn on the HAND. Similarly, a SHOE is an article of clothing worn on the FOOT.",
@@ -123,10 +219,22 @@
     "id": "verbal_09",
     "text": "Ang ___________ ng pagbabago sa sistema ay agad na ipinatupad ng bagong pinuno.",
     "options": [
-      { "id": "a", "text": "pagpapatupad" },
-      { "id": "b", "text": "pagpapatuparin" },
-      { "id": "c", "text": "pinatupad" },
-      { "id": "d", "text": "ipatutupad" }
+      {
+        "id": "a",
+        "text": "pagpapatupad"
+      },
+      {
+        "id": "b",
+        "text": "pagpapatuparin"
+      },
+      {
+        "id": "c",
+        "text": "pinatupad"
+      },
+      {
+        "id": "d",
+        "text": "ipatutupad"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "Ang 'pagpapatupad' ay isang pangngalan (noun) na siyang angkop na paksa (subject) para sa pandiwang 'ipinag-utos' (implied action) o 'ipinatupad' sa pangungusap. Ang iba ay mga anyo ng pandiwa (verb forms).",
@@ -138,10 +246,22 @@
     "id": "verbal_10",
     "text": "What is the meaning of the idiom 'to throw in the towel'?",
     "options": [
-      { "id": "a", "text": "To clean up a mess" },
-      { "id": "b", "text": "To admit defeat" },
-      { "id": "c", "text": "To challenge someone" },
-      { "id": "d", "text": "To start a project" }
+      {
+        "id": "a",
+        "text": "To clean up a mess"
+      },
+      {
+        "id": "b",
+        "text": "To admit defeat"
+      },
+      {
+        "id": "c",
+        "text": "To challenge someone"
+      },
+      {
+        "id": "d",
+        "text": "To start a project"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The idiom originated in boxing, where throwing a towel into the ring signaled a fighter's surrender or defeat.",
@@ -153,10 +273,22 @@
     "id": "verbal_11",
     "text": "Piliin ang pangungusap na may tamang gamit ng 'raw' at 'daw':",
     "options": [
-      { "id": "a", "text": "Umuulan daw sa labas." },
-      { "id": "b", "text": "Umuulan raw sa labas." },
-      { "id": "c", "text": "Maganda daw ang tanawin." },
-      { "id": "d", "text": "Masarap raw ang pagkain." }
+      {
+        "id": "a",
+        "text": "Umuulan daw sa labas."
+      },
+      {
+        "id": "b",
+        "text": "Umuulan raw sa labas."
+      },
+      {
+        "id": "c",
+        "text": "Maganda daw ang tanawin."
+      },
+      {
+        "id": "d",
+        "text": "Masarap raw ang pagkain."
+      }
     ],
     "correctAnswer": "a",
     "explanation": "Ang 'daw' ay ginagamit kapag ang salitang sinundan nito ay nagtatapos sa katinig (consonant), tulad ng 'ulan'. Ang 'raw' ay ginagamit kapag nagtatapos sa patinig (vowel) o malapatinig (semivowel) tulad ng W at Y, tulad ng 'Maganda raw'.",
@@ -168,10 +300,22 @@
     "id": "verbal_12",
     "text": "In the sentence, 'The government implemented austerity measures to curb unnecessary expenditure,' what does 'austerity' mean?",
     "options": [
-      { "id": "a", "text": "Luxury and abundance" },
-      { "id": "b", "text": "Strict economy and lack of expenditure" },
-      { "id": "c", "text": "Transparency and clarity" },
-      { "id": "d", "text": "Rapid change and innovation" }
+      {
+        "id": "a",
+        "text": "Luxury and abundance"
+      },
+      {
+        "id": "b",
+        "text": "Strict economy and lack of expenditure"
+      },
+      {
+        "id": "c",
+        "text": "Transparency and clarity"
+      },
+      {
+        "id": "d",
+        "text": "Rapid change and innovation"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Austerity refers to hard economic conditions created by government measures to reduce public expenditure.",
@@ -183,10 +327,22 @@
     "id": "verbal_13",
     "text": "Choose the correct preposition to complete the sentence: The office will be closed ___________ Christmas Day.",
     "options": [
-      { "id": "a", "text": "at" },
-      { "id": "b", "text": "in" },
-      { "id": "c", "text": "on" },
-      { "id": "d", "text": "to" }
+      {
+        "id": "a",
+        "text": "at"
+      },
+      {
+        "id": "b",
+        "text": "in"
+      },
+      {
+        "id": "c",
+        "text": "on"
+      },
+      {
+        "id": "d",
+        "text": "to"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The preposition 'on' is used for specific days or dates (e.g., on Friday, on December 25th, on Christmas Day).",
@@ -198,10 +354,22 @@
     "id": "verbal_14",
     "text": "Aling salita ang may pinakamalapit na kahulugan sa 'mapanuri'?",
     "options": [
-      { "id": "a", "text": "Madaldal" },
-      { "id": "b", "text": "Matiyaga" },
-      { "id": "c", "text": "Mabusisi" },
-      { "id": "d", "text": "Maligaya" }
+      {
+        "id": "a",
+        "text": "Madaldal"
+      },
+      {
+        "id": "b",
+        "text": "Matiyaga"
+      },
+      {
+        "id": "c",
+        "text": "Mabusisi"
+      },
+      {
+        "id": "d",
+        "text": "Maligaya"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "Ang 'mapanuri' ay nangangahulugang nagpapakita ng maingat at masusing pagsusuri. Ang 'mabusisi' (meticulous/fastidious) ang pinakamalapit na kasingkahulugan.",
@@ -213,10 +381,22 @@
     "id": "verbal_15",
     "text": "Sarah ______ an interesting point about the country's yearly budget.",
     "options": [
-      { "id": "a", "text": "brought down" },
-      { "id": "b", "text": "brought in" },
-      { "id": "c", "text": "brought up" },
-      { "id": "d", "text": "brought on" }
+      {
+        "id": "a",
+        "text": "brought down"
+      },
+      {
+        "id": "b",
+        "text": "brought in"
+      },
+      {
+        "id": "c",
+        "text": "brought up"
+      },
+      {
+        "id": "d",
+        "text": "brought on"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The phrasal verb 'brought up' means to introduce a topic or subject into a discussion. Therefore, Sarah introduced an interesting point.",
@@ -228,10 +408,22 @@
     "id": "verbal_16",
     "text": "She has a RUGGED appearance.",
     "options": [
-      { "id": "a", "text": "Smooth" },
-      { "id": "b", "text": "Polished" },
-      { "id": "c", "text": "Rough" },
-      { "id": "d", "text": "Soft" }
+      {
+        "id": "a",
+        "text": "Smooth"
+      },
+      {
+        "id": "b",
+        "text": "Polished"
+      },
+      {
+        "id": "c",
+        "text": "Rough"
+      },
+      {
+        "id": "d",
+        "text": "Soft"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "“Rugged” describes someone or something with a rough or sturdy look, so “rough” is the closest synonym.",
@@ -243,10 +435,22 @@
     "id": "verbal_17",
     "text": "Tragic stories had so much PATHOS that it left me feeling down. Which word is a SYNONYM of 'pathos'?",
     "options": [
-      { "id": "a", "text": "anguish" },
-      { "id": "b", "text": "woe" },
-      { "id": "c", "text": "intrigue" },
-      { "id": "d", "text": "humor" }
+      {
+        "id": "a",
+        "text": "anguish"
+      },
+      {
+        "id": "b",
+        "text": "woe"
+      },
+      {
+        "id": "c",
+        "text": "intrigue"
+      },
+      {
+        "id": "d",
+        "text": "humor"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "'Pathos' is a quality that evokes pity or sadness. 'Anguish' means severe mental or physical pain or suffering, making it a strong synonym in this context. 'Woe' (b) is also a synonym.",
@@ -258,10 +462,22 @@
     "id": "verbal_18",
     "text": "Tragic stories had so much pathos that it left me feeling down. Which word is an ANTONYM of 'pathos'?",
     "options": [
-      { "id": "a", "text": "anguish" },
-      { "id": "b", "text": "woe" },
-      { "id": "c", "text": "intrigue" },
-      { "id": "d", "text": "humor" }
+      {
+        "id": "a",
+        "text": "anguish"
+      },
+      {
+        "id": "b",
+        "text": "woe"
+      },
+      {
+        "id": "c",
+        "text": "intrigue"
+      },
+      {
+        "id": "d",
+        "text": "humor"
+      }
     ],
     "correctAnswer": "d",
     "explanation": "'Pathos' is associated with sadness and sorrow. 'Humor' is the quality of being amusing or comical, which directly contrasts with the feeling evoked by pathos.",
@@ -273,10 +489,22 @@
     "id": "verbal_19",
     "text": "VOCABULARY: Sherlock Holmes is a famous sleuth.",
     "options": [
-      { "id": "a", "text": "adventurer" },
-      { "id": "b", "text": "scientist" },
-      { "id": "c", "text": "detective" },
-      { "id": "d", "text": "criminal" }
+      {
+        "id": "a",
+        "text": "adventurer"
+      },
+      {
+        "id": "b",
+        "text": "scientist"
+      },
+      {
+        "id": "c",
+        "text": "detective"
+      },
+      {
+        "id": "d",
+        "text": "criminal"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "Sleuth means some who investigates and solves mysteries or crimes, therefore Detective.",
@@ -288,10 +516,22 @@
     "id": "verbal_20",
     "text": "Choose the correct sentence structure and subject-verb agreement: A series of unfortunate events ___________ the mayor's plans for reelection.",
     "options": [
-      { "id": "a", "text": "have sabotaged" },
-      { "id": "b", "text": "has sabotaged" },
-      { "id": "c", "text": "were sabotaging" },
-      { "id": "d", "text": "are sabotaging" }
+      {
+        "id": "a",
+        "text": "have sabotaged"
+      },
+      {
+        "id": "b",
+        "text": "has sabotaged"
+      },
+      {
+        "id": "c",
+        "text": "were sabotaging"
+      },
+      {
+        "id": "d",
+        "text": "are sabotaging"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The actual subject is 'series' (singular), not 'events' (plural). Therefore, the verb must be singular ('has sabotaged').",
@@ -303,10 +543,22 @@
     "id": "verbal_21",
     "text": "What is the antonym of 'perfunctory'?",
     "options": [
-      { "id": "a", "text": "Careless" },
-      { "id": "b", "text": "Enthusiastic" },
-      { "id": "c", "text": "Cursory" },
-      { "id": "d", "text": "Hasty" }
+      {
+        "id": "a",
+        "text": "Careless"
+      },
+      {
+        "id": "b",
+        "text": "Enthusiastic"
+      },
+      {
+        "id": "c",
+        "text": "Cursory"
+      },
+      {
+        "id": "d",
+        "text": "Hasty"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "'Perfunctory' means carried out with a minimum of effort or reflection, essentially 'done without enthusiasm or interest'. The opposite is 'enthusiastic' or 'thorough'.",
@@ -318,10 +570,22 @@
     "id": "verbal_22",
     "text": "Identify the word that is misspelled:",
     "options": [
-      { "id": "a", "text": "Consensus" },
-      { "id": "b", "text": "Conscientious" },
-      { "id": "c", "text": "Sacreligious" },
-      { "id": "d", "text": "Separate" }
+      {
+        "id": "a",
+        "text": "Consensus"
+      },
+      {
+        "id": "b",
+        "text": "Conscientious"
+      },
+      {
+        "id": "c",
+        "text": "Sacreligious"
+      },
+      {
+        "id": "d",
+        "text": "Separate"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The correct spelling is 'sacrilegious', not 'sacreligious'.",
@@ -333,10 +597,22 @@
     "id": "verbal_23",
     "text": "Which sentence uses the subjunctive mood correctly?",
     "options": [
-      { "id": "a", "text": "If I was the manager, I would change the policy." },
-      { "id": "b", "text": "If I were the manager, I would change the policy." },
-      { "id": "c", "text": "If I am the manager, I would change the policy." },
-      { "id": "d", "text": "If I had been the manager, I would change the policy." }
+      {
+        "id": "a",
+        "text": "If I was the manager, I would change the policy."
+      },
+      {
+        "id": "b",
+        "text": "If I were the manager, I would change the policy."
+      },
+      {
+        "id": "c",
+        "text": "If I am the manager, I would change the policy."
+      },
+      {
+        "id": "d",
+        "text": "If I had been the manager, I would change the policy."
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The subjunctive mood is used to express hypothetical, contrary-to-fact, or impossible conditions. For present hypothetical conditions, 'were' is used regardless of the subject's number, even with 'I'.",
@@ -348,10 +624,22 @@
     "id": "verbal_24",
     "text": "Choose the most appropriate word to complete the sentence: The department's official statement was often seen as ___________ rather than transparent.",
     "options": [
-      { "id": "a", "text": "edifying" },
-      { "id": "b", "text": "lucid" },
-      { "id": "c", "text": "equivocal" },
-      { "id": "d", "text": "definitive" }
+      {
+        "id": "a",
+        "text": "edifying"
+      },
+      {
+        "id": "b",
+        "text": "lucid"
+      },
+      {
+        "id": "c",
+        "text": "equivocal"
+      },
+      {
+        "id": "d",
+        "text": "definitive"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The sentence sets up an opposition with 'transparent'. 'Equivocal' means open to more than one interpretation; ambiguous, which is the opposite of transparent or clear.",
@@ -363,10 +651,22 @@
     "id": "verbal_25",
     "text": "Complete the analogy: JUROR is to JURY as MINISTER is to:",
     "options": [
-      { "id": "a", "text": "CABINET" },
-      { "id": "b", "text": "CHURCH" },
-      { "id": "c", "text": "PARISH" },
-      { "id": "d", "text": "CONGREGATION" }
+      {
+        "id": "a",
+        "text": "CABINET"
+      },
+      {
+        "id": "b",
+        "text": "CHURCH"
+      },
+      {
+        "id": "c",
+        "text": "PARISH"
+      },
+      {
+        "id": "d",
+        "text": "CONGREGATION"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "A JUROR is a single member of a JURY (a group that makes a collective legal decision). A MINISTER (in a governmental sense) is a single member of the CABINE T (a group that makes a collective governmental decision).",
@@ -378,10 +678,22 @@
     "id": "verbal_26",
     "text": "Which option provides the most precise and formal phrasing for the following: 'The budget cuts made things really bad for everyone.'",
     "options": [
-      { "id": "a", "text": "The budget cuts caused a huge mess." },
-      { "id": "b", "text": "The budget cuts adversely affected numerous stakeholders." },
-      { "id": "c", "text": "The budget cuts were a real downer on the staff." },
-      { "id": "d", "text": "The budget cuts made things difficult for the workers." }
+      {
+        "id": "a",
+        "text": "The budget cuts caused a huge mess."
+      },
+      {
+        "id": "b",
+        "text": "The budget cuts adversely affected numerous stakeholders."
+      },
+      {
+        "id": "c",
+        "text": "The budget cuts were a real downer on the staff."
+      },
+      {
+        "id": "d",
+        "text": "The budget cuts made things difficult for the workers."
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Option (b) uses formal language ('adversely affected,' 'numerous stakeholders') appropriate for official communication, capturing the extent and negative impact accurately.",
@@ -393,10 +705,22 @@
     "id": "verbal_27",
     "text": "The idiom 'to steal someone's thunder' means:",
     "options": [
-      { "id": "a", "text": "To take credit for someone else's idea." },
-      { "id": "b", "text": "To secretly sabotage an opponent's plan." },
-      { "id": "c", "text": "To be caught doing something wrong." },
-      { "id": "d", "text": "To loudly announce a great achievement." }
+      {
+        "id": "a",
+        "text": "To take credit for someone else's idea."
+      },
+      {
+        "id": "b",
+        "text": "To secretly sabotage an opponent's plan."
+      },
+      {
+        "id": "c",
+        "text": "To be caught doing something wrong."
+      },
+      {
+        "id": "d",
+        "text": "To loudly announce a great achievement."
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The idiom means to appropriate the ideas or methods of another or to reduce the effect of someone's dramatic entrance or achievement by doing or saying the same thing first.",
@@ -408,10 +732,22 @@
     "id": "verbal_28",
     "text": "The principle that one should be given a fair hearing before any adverse decision is made is known as 'audi alteram partem'. This principle advocates for:",
     "options": [
-      { "id": "a", "text": "Judicial review" },
-      { "id": "b", "text": "Due process" },
-      { "id": "c", "text": "Habeas corpus" },
-      { "id": "d", "text": "Stare decisis" }
+      {
+        "id": "a",
+        "text": "Judicial review"
+      },
+      {
+        "id": "b",
+        "text": "Due process"
+      },
+      {
+        "id": "c",
+        "text": "Habeas corpus"
+      },
+      {
+        "id": "d",
+        "text": "Stare decisis"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The Latin phrase 'audi alteram partem' (hear the other side) is a fundamental component of the constitutional right to Due Process, ensuring fairness in legal proceedings.",
@@ -423,10 +759,22 @@
     "id": "verbal_29",
     "text": "Find the word with the same meaning as 'deleterious':",
     "options": [
-      { "id": "a", "text": "Beneficial" },
-      { "id": "b", "text": "Harmful" },
-      { "id": "c", "text": "Temporary" },
-      { "id": "d", "text": "Painless" }
+      {
+        "id": "a",
+        "text": "Beneficial"
+      },
+      {
+        "id": "b",
+        "text": "Harmful"
+      },
+      {
+        "id": "c",
+        "text": "Temporary"
+      },
+      {
+        "id": "d",
+        "text": "Painless"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "'Deleterious' means causing harm or damage. 'Harmful' is the direct synonym.",
@@ -438,10 +786,22 @@
     "id": "verbal_30",
     "text": "Which word is the most suitable for the sentence: The witness's account of the event was too ___________ to be credible.",
     "options": [
-      { "id": "a", "text": "coherent" },
-      { "id": "b", "text": "plausible" },
-      { "id": "c", "text": "incredulous" },
-      { "id": "d", "text": "incongruous" }
+      {
+        "id": "a",
+        "text": "coherent"
+      },
+      {
+        "id": "b",
+        "text": "plausible"
+      },
+      {
+        "id": "c",
+        "text": "incredulous"
+      },
+      {
+        "id": "d",
+        "text": "incongruous"
+      }
     ],
     "correctAnswer": "d",
     "explanation": "'Incongruous' means not consistent or compatible with other things or ideas. An account that is too incongruous (out of place/contradictory) is not credible.",
@@ -453,10 +813,22 @@
     "id": "verbal_31",
     "text": "Identify the logical flaw in the following statement: 'Since the new policy was implemented, corruption has decreased. Therefore, the new policy caused the decrease in corruption.'",
     "options": [
-      { "id": "a", "text": "Ad hominem" },
-      { "id": "b", "text": "Appeal to emotion" },
-      { "id": "c", "text": "Post hoc ergo propter hoc" },
-      { "id": "d", "text": "False dichotomy" }
+      {
+        "id": "a",
+        "text": "Ad hominem"
+      },
+      {
+        "id": "b",
+        "text": "Appeal to emotion"
+      },
+      {
+        "id": "c",
+        "text": "Post hoc ergo propter hoc"
+      },
+      {
+        "id": "d",
+        "text": "False dichotomy"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The Latin phrase 'Post hoc ergo propter hoc' means 'after this, therefore because of this.' It's a fallacy where one assumes that because B happened after A, A must have caused B.",
@@ -468,10 +840,22 @@
     "id": "verbal_32",
     "text": "Choose the correctly punctuated sentence:",
     "options": [
-      { "id": "a", "text": "She submitted the report; however, it was incomplete." },
-      { "id": "b", "text": "She submitted the report, however it was incomplete." },
-      { "id": "c", "text": "She submitted the report however, it was incomplete." },
-      { "id": "d", "text": "She submitted the report: however it was incomplete." }
+      {
+        "id": "a",
+        "text": "She submitted the report; however, it was incomplete."
+      },
+      {
+        "id": "b",
+        "text": "She submitted the report, however it was incomplete."
+      },
+      {
+        "id": "c",
+        "text": "She submitted the report however, it was incomplete."
+      },
+      {
+        "id": "d",
+        "text": "She submitted the report: however it was incomplete."
+      }
     ],
     "correctAnswer": "a",
     "explanation": "When using a conjunctive adverb like 'however' to join two independent clauses, a semicolon (;) must precede the conjunctive adverb, and a comma (,) must follow it.",
@@ -483,10 +867,22 @@
     "id": "verbal_33",
     "text": "Which word is the antonym of 'ephemeral'?",
     "options": [
-      { "id": "a", "text": "Transient" },
-      { "id": "b", "text": "Momentary" },
-      { "id": "c", "text": "Lasting" },
-      { "id": "d", "text": "Fleeting" }
+      {
+        "id": "a",
+        "text": "Transient"
+      },
+      {
+        "id": "b",
+        "text": "Momentary"
+      },
+      {
+        "id": "c",
+        "text": "Lasting"
+      },
+      {
+        "id": "d",
+        "text": "Fleeting"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "'Ephemeral' means lasting for a very short time. The opposite is 'lasting' or 'permanent'.",
@@ -498,10 +894,22 @@
     "id": "verbal_34",
     "text": "Rearrange the following sentences to form a coherent paragraph:\n1. The agency is currently drafting a new manual.\n2. This initiative is a response to public demands for greater clarity.\n3. It will serve as the primary guide for all operational procedures.\n4. The expected completion date is the end of the second quarter.",
     "options": [
-      { "id": "a", "text": "1-3-2-4" },
-      { "id": "b", "text": "2-1-3-4" },
-      { "id": "c", "text": "1-2-3-4" },
-      { "id": "d", "text": "3-1-2-4" }
+      {
+        "id": "a",
+        "text": "1-3-2-4"
+      },
+      {
+        "id": "b",
+        "text": "2-1-3-4"
+      },
+      {
+        "id": "c",
+        "text": "1-2-3-4"
+      },
+      {
+        "id": "d",
+        "text": "3-1-2-4"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The order should be: The main action (1), the purpose of the action (3), the reason for the action (2), and the conclusion/timeline (4).",
@@ -513,10 +921,22 @@
     "id": "verbal_35",
     "text": "The word 'disingenuous' is best defined as:",
     "options": [
-      { "id": "a", "text": "Completely honest and sincere" },
-      { "id": "b", "text": "Slightly dishonest or insincere; pretending to be naive" },
-      { "id": "c", "text": "Lacking talent or skill" },
-      { "id": "d", "text": "Quick to forgive and forget" }
+      {
+        "id": "a",
+        "text": "Completely honest and sincere"
+      },
+      {
+        "id": "b",
+        "text": "Slightly dishonest or insincere; pretending to be naive"
+      },
+      {
+        "id": "c",
+        "text": "Lacking talent or skill"
+      },
+      {
+        "id": "d",
+        "text": "Quick to forgive and forget"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Disingenuous means not candid or sincere, typically by pretending that one knows less about something than one really does. It implies a subtle lack of sincerity.",
@@ -528,10 +948,22 @@
     "id": "verbal_36",
     "text": "Which preposition most accurately completes the sentence: The new regulation is aimed ___________ improving citizen engagement.",
     "options": [
-      { "id": "a", "text": "on" },
-      { "id": "b", "text": "at" },
-      { "id": "c", "text": "to" },
-      { "id": "d", "text": "for" }
+      {
+        "id": "a",
+        "text": "on"
+      },
+      {
+        "id": "b",
+        "text": "at"
+      },
+      {
+        "id": "c",
+        "text": "to"
+      },
+      {
+        "id": "d",
+        "text": "for"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The phrasal verb is 'aimed at,' meaning the regulation has that specific goal or purpose.",
@@ -543,10 +975,22 @@
     "id": "verbal_37",
     "text": "Identify the error in the following sentence: 'Everyone, including the supervisors, were surprised by the sudden resignation.'",
     "options": [
-      { "id": "a", "text": "The use of 'Everyone'" },
-      { "id": "b", "text": "The phrase 'including the supervisors'" },
-      { "id": "c", "text": "The verb 'were surprised'" },
-      { "id": "d", "text": "The word 'sudden'" }
+      {
+        "id": "a",
+        "text": "The use of 'Everyone'"
+      },
+      {
+        "id": "b",
+        "text": "The phrase 'including the supervisors'"
+      },
+      {
+        "id": "c",
+        "text": "The verb 'were surprised'"
+      },
+      {
+        "id": "d",
+        "text": "The word 'sudden'"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The main subject is 'Everyone,' which is grammatically singular, regardless of the phrase 'including the supervisors.' Therefore, the verb must be singular: 'was surprised'.",
@@ -558,10 +1002,22 @@
     "id": "verbal_38",
     "text": "Complete the sentence with the correct pair of homophones: The new ___________ must follow the ___________ for filing documents.",
     "options": [
-      { "id": "a", "text": "principle, principal" },
-      { "id": "b", "text": "principal, principle" },
-      { "id": "c", "text": "complement, compliment" },
-      { "id": "d", "text": "compliment, complement" }
+      {
+        "id": "a",
+        "text": "principle, principal"
+      },
+      {
+        "id": "b",
+        "text": "principal, principle"
+      },
+      {
+        "id": "c",
+        "text": "complement, compliment"
+      },
+      {
+        "id": "d",
+        "text": "compliment, complement"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Principal means the head of an organization (the new head/official). Principle means a fundamental truth or rule (the rule for filing documents).",
@@ -573,10 +1029,22 @@
     "id": "verbal_39",
     "text": "The word 'inadvertent' most closely means:",
     "options": [
-      { "id": "a", "text": "Intentional" },
-      { "id": "b", "text": "Accidental or unintentional" },
-      { "id": "c", "text": "Highly publicized" },
-      { "id": "d", "text": "Deeply felt" }
+      {
+        "id": "a",
+        "text": "Intentional"
+      },
+      {
+        "id": "b",
+        "text": "Accidental or unintentional"
+      },
+      {
+        "id": "c",
+        "text": "Highly publicized"
+      },
+      {
+        "id": "d",
+        "text": "Deeply felt"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Inadvertent describes something that is not resulting from or achieved through deliberate planning.",
@@ -588,10 +1056,22 @@
     "id": "verbal_40",
     "text": " Ang batang iyon ay 'masinop' sa pera.",
     "options": [
-      { "id": "a", "text": "Magastos" },
-      { "id": "b", "text": "Maayos" },
-      { "id": "c", "text": "Magulo" },
-      { "id": "d", "text": "Matipid" }
+      {
+        "id": "a",
+        "text": "Magastos"
+      },
+      {
+        "id": "b",
+        "text": "Maayos"
+      },
+      {
+        "id": "c",
+        "text": "Magulo"
+      },
+      {
+        "id": "d",
+        "text": "Matipid"
+      }
     ],
     "correctAnswer": "d",
     "explanation": "Salitang masinop ay maaaring maging kasingkahulugan ng maayos at matipid, pero pangungusap ay tumukoy sa pera kung kaya't ang pinakatamang sagot ay matipid.",
@@ -603,10 +1083,22 @@
     "id": "verbal_41",
     "text": "VOCABULARY: The following are examples of Palindrome, except...",
     "options": [
-      { "id": "a", "text": "Level" },
-      { "id": "b", "text": "Same" },
-      { "id": "c", "text": "Deified" },
-      { "id": "d", "text": "Noon" }
+      {
+        "id": "a",
+        "text": "Level"
+      },
+      {
+        "id": "b",
+        "text": "Same"
+      },
+      {
+        "id": "c",
+        "text": "Deified"
+      },
+      {
+        "id": "d",
+        "text": "Noon"
+      }
     ],
     "correctAnswer": "d",
     "explanation": "Palindrome are words that can be read the same even if spelled backwards: Noon, Deified, Level. Therefore the answer is Same, as it is the only word that Palindrome rules cannot be applied.",
@@ -618,10 +1110,22 @@
     "id": "verbal_42",
     "text": "IDIOMATIC EXPRESSION: 'Hey, man, you are absolutely barking up the wrong tree here because I'm innocent.'",
     "options": [
-      { "id": "a", "text": "Choosing the wrong dog." },
-      { "id": "b", "text": "Giving up a fight." },
-      { "id": "c", "text": "Accusing the wrong person." },
-      { "id": "d", "text": "Setting up an event." }
+      {
+        "id": "a",
+        "text": "Choosing the wrong dog."
+      },
+      {
+        "id": "b",
+        "text": "Giving up a fight."
+      },
+      {
+        "id": "c",
+        "text": "Accusing the wrong person."
+      },
+      {
+        "id": "d",
+        "text": "Setting up an event."
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The idiom 'barking up the wrong tree' means accusing or blaming the wrong person.",
@@ -633,10 +1137,22 @@
     "id": "verbal_43",
     "text": "KAWIKAAN: 'Kumukulo ang dugo ng ina ni Robin sa kaniya sapagkat hindi siya nag-aral nang mabuti.'",
     "options": [
-      { "id": "a", "text": "Tuwang-tuwa" },
-      { "id": "b", "text": "Galit na galit" },
-      { "id": "c", "text": "Lungkot na lungkot" },
-      { "id": "d", "text": "Nakakapaso" }
+      {
+        "id": "a",
+        "text": "Tuwang-tuwa"
+      },
+      {
+        "id": "b",
+        "text": "Galit na galit"
+      },
+      {
+        "id": "c",
+        "text": "Lungkot na lungkot"
+      },
+      {
+        "id": "d",
+        "text": "Nakakapaso"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "Ang 'kumukulo ang dugo' ay nagpapahiwatig ng galit. Kaya ang tamang sagot ay B.",
@@ -648,10 +1164,22 @@
     "id": "verbal_44",
     "text": "VOCABULARY: person who loves peace is called a...",
     "options": [
-      { "id": "a", "text": "Pessimist" },
-      { "id": "b", "text": "Pacifist" },
-      { "id": "c", "text": "Realist" },
-      { "id": "d", "text": "Chemist" }
+      {
+        "id": "a",
+        "text": "Pessimist"
+      },
+      {
+        "id": "b",
+        "text": "Pacifist"
+      },
+      {
+        "id": "c",
+        "text": "Realist"
+      },
+      {
+        "id": "d",
+        "text": "Chemist"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "A pacifist is a person who believes in and promotes peace, and opposes violence or war.",
@@ -663,10 +1191,22 @@
     "id": "verbal_45",
     "text": "Which word is the SYNONYM of the word 'abundant'?",
     "options": [
-      { "id": "a", "text": "scarce" },
-      { "id": "b", "text": "plentiful" },
-      { "id": "c", "text": "limited" },
-      { "id": "d", "text": "few" }
+      {
+        "id": "a",
+        "text": "scarce"
+      },
+      {
+        "id": "b",
+        "text": "plentiful"
+      },
+      {
+        "id": "c",
+        "text": "limited"
+      },
+      {
+        "id": "d",
+        "text": "few"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "‘Plentiful’ has a similar meaning to ‘abundant,’ which refers to something in large quantity.",
@@ -678,10 +1218,22 @@
     "id": "verbal_46",
     "text": "Choose the correctly spelled word.",
     "options": [
-      { "id": "a", "text": "accomodate" },
-      { "id": "b", "text": "accommodate" },
-      { "id": "c", "text": "acommodate" },
-      { "id": "d", "text": "accomadate" }
+      {
+        "id": "a",
+        "text": "accomodate"
+      },
+      {
+        "id": "b",
+        "text": "accommodate"
+      },
+      {
+        "id": "c",
+        "text": "acommodate"
+      },
+      {
+        "id": "d",
+        "text": "accomadate"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "‘Accommodate’ is spelled with two C’s and two M’s.",
@@ -693,10 +1245,22 @@
     "id": "verbal_47",
     "text": "Which of the following is the ANTONYM of 'generous'?",
     "options": [
-      { "id": "a", "text": "kind" },
-      { "id": "b", "text": "selfless" },
-      { "id": "c", "text": "stingy" },
-      { "id": "d", "text": "giving" }
+      {
+        "id": "a",
+        "text": "kind"
+      },
+      {
+        "id": "b",
+        "text": "selfless"
+      },
+      {
+        "id": "c",
+        "text": "stingy"
+      },
+      {
+        "id": "d",
+        "text": "giving"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Stingy’ is the opposite of ‘generous,’ which means not willing to give.",
@@ -708,10 +1272,22 @@
     "id": "verbal_48",
     "text": "Choose the sentence with the correct subject-verb agreement.",
     "options": [
-      { "id": "a", "text": "The list of items are on the table." },
-      { "id": "b", "text": "The books on the shelf belongs to my sister." },
-      { "id": "c", "text": "Each of the students is required to submit the form." },
-      { "id": "d", "text": "The group of dancers were excited for the show." }
+      {
+        "id": "a",
+        "text": "The list of items are on the table."
+      },
+      {
+        "id": "b",
+        "text": "The books on the shelf belongs to my sister."
+      },
+      {
+        "id": "c",
+        "text": "Each of the students is required to submit the form."
+      },
+      {
+        "id": "d",
+        "text": "The group of dancers were excited for the show."
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Each’ is always singular, so the verb should be ‘is.’",
@@ -723,10 +1299,22 @@
     "id": "verbal_49",
     "text": "Complete the analogy: BOOK is to READ as PIANO is to ______.",
     "options": [
-      { "id": "a", "text": "sound" },
-      { "id": "b", "text": "music" },
-      { "id": "c", "text": "play" },
-      { "id": "d", "text": "instrument" }
+      {
+        "id": "a",
+        "text": "sound"
+      },
+      {
+        "id": "b",
+        "text": "music"
+      },
+      {
+        "id": "c",
+        "text": "play"
+      },
+      {
+        "id": "d",
+        "text": "instrument"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "You READ a book, and you PLAY a piano.",
@@ -738,10 +1326,22 @@
     "id": "verbal_50",
     "text": "Which word BEST completes the sentence: ‘Maria is known for her ______ in handling customer complaints.’",
     "options": [
-      { "id": "a", "text": "patience" },
-      { "id": "b", "text": "patient" },
-      { "id": "c", "text": "patients" },
-      { "id": "d", "text": "patently" }
+      {
+        "id": "a",
+        "text": "patience"
+      },
+      {
+        "id": "b",
+        "text": "patient"
+      },
+      {
+        "id": "c",
+        "text": "patients"
+      },
+      {
+        "id": "d",
+        "text": "patently"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The noun ‘patience’ correctly fits the sentence.",
@@ -753,10 +1353,22 @@
     "id": "verbal_51",
     "text": "Choose the correct preposition: ‘They arrived ____ the airport early.’",
     "options": [
-      { "id": "a", "text": "in" },
-      { "id": "b", "text": "to" },
-      { "id": "c", "text": "at" },
-      { "id": "d", "text": "on" }
+      {
+        "id": "a",
+        "text": "in"
+      },
+      {
+        "id": "b",
+        "text": "to"
+      },
+      {
+        "id": "c",
+        "text": "at"
+      },
+      {
+        "id": "d",
+        "text": "on"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The correct phrase is ‘arrived at the airport.’",
@@ -768,10 +1380,22 @@
     "id": "verbal_52",
     "text": "Which sentence is punctuated correctly?",
     "options": [
-      { "id": "a", "text": "Let's eat, Grandpa!" },
-      { "id": "b", "text": "Lets eat Grandpa!" },
-      { "id": "c", "text": "Let’s eat Grandpa" },
-      { "id": "d", "text": "Lets eat, Grandpa" }
+      {
+        "id": "a",
+        "text": "Let's eat, Grandpa!"
+      },
+      {
+        "id": "b",
+        "text": "Lets eat Grandpa!"
+      },
+      {
+        "id": "c",
+        "text": "Let’s eat Grandpa"
+      },
+      {
+        "id": "d",
+        "text": "Lets eat, Grandpa"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The comma changes the meaning and makes the sentence grammatically correct.",
@@ -783,10 +1407,22 @@
     "id": "verbal_53",
     "text": "Which word correctly completes the sentence: ‘The employees were praised for their ______.’",
     "options": [
-      { "id": "a", "text": "dedicate" },
-      { "id": "b", "text": "dedicated" },
-      { "id": "c", "text": "dedication" },
-      { "id": "d", "text": "dedicating" }
+      {
+        "id": "a",
+        "text": "dedicate"
+      },
+      {
+        "id": "b",
+        "text": "dedicated"
+      },
+      {
+        "id": "c",
+        "text": "dedication"
+      },
+      {
+        "id": "d",
+        "text": "dedicating"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The noun ‘dedication’ properly completes the sentence.",
@@ -798,10 +1434,22 @@
     "id": "verbal_54",
     "text": "Choose the pair of words that form a meaningful analogy: ‘Teacher : Classroom’",
     "options": [
-      { "id": "a", "text": "Doctor : Hospital" },
-      { "id": "b", "text": "Driver : Table" },
-      { "id": "c", "text": "Painter : Books" },
-      { "id": "d", "text": "Chef : Laptop" }
+      {
+        "id": "a",
+        "text": "Doctor : Hospital"
+      },
+      {
+        "id": "b",
+        "text": "Driver : Table"
+      },
+      {
+        "id": "c",
+        "text": "Painter : Books"
+      },
+      {
+        "id": "d",
+        "text": "Chef : Laptop"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "A doctor works in a hospital, just as a teacher works in a classroom.",
@@ -813,10 +1461,22 @@
     "id": "verbal_55",
     "text": "Choose the word that is the ANTONYM of 'transient'.",
     "options": [
-      { "id": "a", "text": "temporary" },
-      { "id": "b", "text": "fleeting" },
-      { "id": "c", "text": "permanent" },
-      { "id": "d", "text": "quick" }
+      {
+        "id": "a",
+        "text": "temporary"
+      },
+      {
+        "id": "b",
+        "text": "fleeting"
+      },
+      {
+        "id": "c",
+        "text": "permanent"
+      },
+      {
+        "id": "d",
+        "text": "quick"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Transient’ means lasting for only a short time; therefore, its opposite is ‘permanent,’ meaning lasting indefinitely.",
@@ -828,10 +1488,22 @@
     "id": "verbal_56",
     "text": "Identify the section that contains a grammatical error: The city council (A) / has approve (B) / the new budget (C) / for next year (D).",
     "options": [
-      { "id": "a", "text": "(A) The city council" },
-      { "id": "b", "text": "(B) has approve" },
-      { "id": "c", "text": "(C) the new budget" },
-      { "id": "d", "text": "(D) for next year" }
+      {
+        "id": "a",
+        "text": "(A) The city council"
+      },
+      {
+        "id": "b",
+        "text": "(B) has approve"
+      },
+      {
+        "id": "c",
+        "text": "(C) the new budget"
+      },
+      {
+        "id": "d",
+        "text": "(D) for next year"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The auxiliary verb ‘has’ must be followed by the past participle form of the main verb, which is 'approved,' not 'approve.'",
@@ -843,10 +1515,22 @@
     "id": "verbal_57",
     "text": "Complete the analogy: SCALPEL is to SURGEON as KEYBOARD is to ______.",
     "options": [
-      { "id": "a", "text": "printer" },
-      { "id": "b", "text": "computer" },
-      { "id": "c", "text": "writer" },
-      { "id": "d", "text": "monitor" }
+      {
+        "id": "a",
+        "text": "printer"
+      },
+      {
+        "id": "b",
+        "text": "computer"
+      },
+      {
+        "id": "c",
+        "text": "writer"
+      },
+      {
+        "id": "d",
+        "text": "monitor"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "A scalpel is the primary tool used by a surgeon, and a keyboard is the primary tool used by a writer (or typist) to perform their work.",
@@ -858,10 +1542,22 @@
     "id": "verbal_58",
     "text": "Choose the word that BEST completes the sentence: ‘The documents were classified as ______ because they contained sensitive national security details.’",
     "options": [
-      { "id": "a", "text": "confidential" },
-      { "id": "b", "text": "obvious" },
-      { "id": "c", "text": "transparent" },
-      { "id": "d", "text": "public" }
+      {
+        "id": "a",
+        "text": "confidential"
+      },
+      {
+        "id": "b",
+        "text": "obvious"
+      },
+      {
+        "id": "c",
+        "text": "transparent"
+      },
+      {
+        "id": "d",
+        "text": "public"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "‘Confidential’ is the best fit as it means private or secret, often pertaining to state security.",
@@ -873,10 +1569,22 @@
     "id": "verbal_59",
     "text": "Choose the correctly spelled word.",
     "options": [
-      { "id": "a", "text": "necessarry" },
-      { "id": "b", "text": "neccesary" },
-      { "id": "c", "text": "necessary" },
-      { "id": "d", "text": "necesarry" }
+      {
+        "id": "a",
+        "text": "necessarry"
+      },
+      {
+        "id": "b",
+        "text": "neccesary"
+      },
+      {
+        "id": "c",
+        "text": "necessary"
+      },
+      {
+        "id": "d",
+        "text": "necesarry"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Necessary’ is spelled with one 'c' and two 's's.",
@@ -888,10 +1596,22 @@
     "id": "verbal_60",
     "text": "Which word is the SYNONYM of the word 'perfunctory'?",
     "options": [
-      { "id": "a", "text": "thorough" },
-      { "id": "b", "text": "careful" },
-      { "id": "c", "text": "cursory" },
-      { "id": "d", "text": "conscientious" }
+      {
+        "id": "a",
+        "text": "thorough"
+      },
+      {
+        "id": "b",
+        "text": "careful"
+      },
+      {
+        "id": "c",
+        "text": "cursory"
+      },
+      {
+        "id": "d",
+        "text": "conscientious"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Perfunctory’ means carried out with minimum effort or reflection, hence, 'cursory' (hasty and superficial) is the closest synonym.",
@@ -903,10 +1623,22 @@
     "id": "verbal_61",
     "text": "Choose the correctly spelled word.",
     "options": [
-      { "id": "a", "text": "concensus" },
-      { "id": "b", "text": "concensuss" },
-      { "id": "c", "text": "consensus" },
-      { "id": "d", "text": "concenssus" }
+      {
+        "id": "a",
+        "text": "concensus"
+      },
+      {
+        "id": "b",
+        "text": "concensuss"
+      },
+      {
+        "id": "c",
+        "text": "consensus"
+      },
+      {
+        "id": "d",
+        "text": "concenssus"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Consensus’ is spelled with one 's' and then another 's'.",
@@ -918,10 +1650,22 @@
     "id": "verbal_62",
     "text": "Which of the following is the ANTONYM of 'ubiquitous'?",
     "options": [
-      { "id": "a", "text": "omnipresent" },
-      { "id": "b", "text": "rare" },
-      { "id": "c", "text": "pervasive" },
-      { "id": "d", "text": "common" }
+      {
+        "id": "a",
+        "text": "omnipresent"
+      },
+      {
+        "id": "b",
+        "text": "rare"
+      },
+      {
+        "id": "c",
+        "text": "pervasive"
+      },
+      {
+        "id": "d",
+        "text": "common"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "‘Ubiquitous’ means present, appearing, or found everywhere; therefore, its opposite is ‘rare’ (not occurring often).",
@@ -933,10 +1677,22 @@
     "id": "verbal_63",
     "text": "Choose the sentence with the correct subject-verb agreement.",
     "options": [
-      { "id": "a", "text": "Neither the manager nor the employees agrees with the decision." },
-      { "id": "b", "text": "The committee have differing opinions on the proposal." },
-      { "id": "c", "text": "Politics are a complicated subject." },
-      { "id": "d", "text": "Ten miles is a long distance to walk." }
+      {
+        "id": "a",
+        "text": "Neither the manager nor the employees agrees with the decision."
+      },
+      {
+        "id": "b",
+        "text": "The committee have differing opinions on the proposal."
+      },
+      {
+        "id": "c",
+        "text": "Politics are a complicated subject."
+      },
+      {
+        "id": "d",
+        "text": "Ten miles is a long distance to walk."
+      }
     ],
     "correctAnswer": "d",
     "explanation": "When a measurement of distance or time is treated as a single unit, a singular verb is used. In this case, 'Ten miles' is treated as a single unit of distance, thus 'is' is correct.",
@@ -948,10 +1704,22 @@
     "id": "verbal_64",
     "text": "Complete the analogy: SHEEP is to FLOCK as FISH is to ______.",
     "options": [
-      { "id": "a", "text": "herd" },
-      { "id": "b", "text": "school" },
-      { "id": "c", "text": "colony" },
-      { "id": "d", "text": "pack" }
+      {
+        "id": "a",
+        "text": "herd"
+      },
+      {
+        "id": "b",
+        "text": "school"
+      },
+      {
+        "id": "c",
+        "text": "colony"
+      },
+      {
+        "id": "d",
+        "text": "pack"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "A group of sheep is called a 'flock,' and a group of fish is called a 'school.'",
@@ -963,10 +1731,22 @@
     "id": "verbal_65",
     "text": "Which word BEST completes the sentence: ‘The lawyer offered a compelling ______ to the jury, highlighting the lack of evidence.’",
     "options": [
-      { "id": "a", "text": "refute" },
-      { "id": "b", "text": "refutation" },
-      { "id": "c", "text": "refuted" },
-      { "id": "d", "text": "refuting" }
+      {
+        "id": "a",
+        "text": "refute"
+      },
+      {
+        "id": "b",
+        "text": "refutation"
+      },
+      {
+        "id": "c",
+        "text": "refuted"
+      },
+      {
+        "id": "d",
+        "text": "refuting"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The noun ‘refutation’ (the action of proving a statement or theory to be wrong) is required to follow the adjective ‘compelling.’",
@@ -978,10 +1758,22 @@
     "id": "verbal_66",
     "text": "Choose the correct pronoun: ‘Everyone should bring ______ own lunch to the seminar.’",
     "options": [
-      { "id": "a", "text": "their" },
-      { "id": "b", "text": "his" },
-      { "id": "c", "text": "her" },
-      { "id": "d", "text": "it's" }
+      {
+        "id": "a",
+        "text": "their"
+      },
+      {
+        "id": "b",
+        "text": "his"
+      },
+      {
+        "id": "c",
+        "text": "her"
+      },
+      {
+        "id": "d",
+        "text": "it's"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "While 'Everyone' is grammatically singular, in modern standard English, the plural pronoun 'their' is commonly used as a gender-neutral singular pronoun to refer to indefinite pronouns like 'everyone' or 'everybody,' making it the most appropriate and accepted choice.",
@@ -993,10 +1785,22 @@
     "id": "verbal_67",
     "text": "Identify the punctuation error: After the rain stopped, the sun came out but we didn't go outside.",
     "options": [
-      { "id": "a", "text": "Missing comma after 'out'" },
-      { "id": "b", "text": "Missing comma after 'stopped'" },
-      { "id": "c", "text": "Missing semicolon after 'sun'" },
-      { "id": "d", "text": "Missing apostrophe in 'didn't'" }
+      {
+        "id": "a",
+        "text": "Missing comma after 'out'"
+      },
+      {
+        "id": "b",
+        "text": "Missing comma after 'stopped'"
+      },
+      {
+        "id": "c",
+        "text": "Missing semicolon after 'sun'"
+      },
+      {
+        "id": "d",
+        "text": "Missing apostrophe in 'didn't'"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "A comma is needed before the coordinating conjunction 'but' when it joins two independent clauses (the sun came out, and we didn't go outside).",
@@ -1008,10 +1812,22 @@
     "id": "verbal_68",
     "text": "Identify the word that is a SYNONYM of 'clandestine'.",
     "options": [
-      { "id": "a", "text": "open" },
-      { "id": "b", "text": "secret" },
-      { "id": "c", "text": "public" },
-      { "id": "d", "text": "known" }
+      {
+        "id": "a",
+        "text": "open"
+      },
+      {
+        "id": "b",
+        "text": "secret"
+      },
+      {
+        "id": "c",
+        "text": "public"
+      },
+      {
+        "id": "d",
+        "text": "known"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "‘Clandestine’ means kept secret or done secretively, often because of illicit intent.",
@@ -1023,10 +1839,22 @@
     "id": "verbal_69",
     "text": "Choose the pair of words that form a meaningful analogy: 'Ignite : Fire'",
     "options": [
-      { "id": "a", "text": "Write : Pen" },
-      { "id": "b", "text": "Sing : Music" },
-      { "id": "c", "text": "Pull : Magnet" },
-      { "id": "d", "text": "Trigger : War" }
+      {
+        "id": "a",
+        "text": "Write : Pen"
+      },
+      {
+        "id": "b",
+        "text": "Sing : Music"
+      },
+      {
+        "id": "c",
+        "text": "Pull : Magnet"
+      },
+      {
+        "id": "d",
+        "text": "Trigger : War"
+      }
     ],
     "correctAnswer": "d",
     "explanation": "'Ignite' is the verb that starts 'Fire,' and 'Trigger' is the verb that starts 'War.' The relationship is 'Cause-Effect' or 'Start-Result.'",
@@ -1038,10 +1866,22 @@
     "id": "verbal_70",
     "text": "Choose the word that is the ANTONYM of 'exonerate'.",
     "options": [
-      { "id": "a", "text": "acquit" },
-      { "id": "b", "text": "vindicate" },
-      { "id": "c", "text": "indict" },
-      { "id": "d", "text": "absolve" }
+      {
+        "id": "a",
+        "text": "acquit"
+      },
+      {
+        "id": "b",
+        "text": "vindicate"
+      },
+      {
+        "id": "c",
+        "text": "indict"
+      },
+      {
+        "id": "d",
+        "text": "absolve"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Exonerate’ means to clear from blame; ‘indict’ means to formally charge with a serious crime, making it the opposite.",
@@ -1053,10 +1893,22 @@
     "id": "verbal_71",
     "text": "Identify the section that contains a grammatical error: They was informed (A) / about the meeting (B) / immediately after (C) / the announcement (D).",
     "options": [
-      { "id": "a", "text": "(A) They was informed" },
-      { "id": "b", "text": "(B) about the meeting" },
-      { "id": "c", "text": "(C) immediately after" },
-      { "id": "d", "text": "(D) the announcement" }
+      {
+        "id": "a",
+        "text": "(A) They was informed"
+      },
+      {
+        "id": "b",
+        "text": "(B) about the meeting"
+      },
+      {
+        "id": "c",
+        "text": "(C) immediately after"
+      },
+      {
+        "id": "d",
+        "text": "(D) the announcement"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The subject 'They' is plural and requires the plural form of the verb 'to be' in the past tense, which is 'were,' not 'was.' The correct phrase is 'They were informed.'",
@@ -1068,10 +1920,22 @@
     "id": "verbal_72",
     "text": "Complete the analogy: LEAVES is to TREE as PAGES is to ______.",
     "options": [
-      { "id": "a", "text": "ink" },
-      { "id": "b", "text": "library" },
-      { "id": "c", "text": "novel" },
-      { "id": "d", "text": "chapter" }
+      {
+        "id": "a",
+        "text": "ink"
+      },
+      {
+        "id": "b",
+        "text": "library"
+      },
+      {
+        "id": "c",
+        "text": "novel"
+      },
+      {
+        "id": "d",
+        "text": "chapter"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "Leaves are the individual components that collectively make up a tree (a whole), and pages are the individual components that collectively make up a novel (a whole).",
@@ -1083,10 +1947,22 @@
     "id": "verbal_73",
     "text": "Choose the word that BEST completes the sentence: ‘The sudden change in policy created great ______ among the staff.’",
     "options": [
-      { "id": "a", "text": "confuse" },
-      { "id": "b", "text": "confusing" },
-      { "id": "c", "text": "confusion" },
-      { "id": "d", "text": "confused" }
+      {
+        "id": "a",
+        "text": "confuse"
+      },
+      {
+        "id": "b",
+        "text": "confusing"
+      },
+      {
+        "id": "c",
+        "text": "confusion"
+      },
+      {
+        "id": "d",
+        "text": "confused"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The noun ‘confusion’ (a state of bewilderment or disorder) is needed to function as the object of the verb 'created.'",
@@ -1098,10 +1974,22 @@
     "id": "verbal_74",
     "text": "Which is the correctly spelled word for the act of writing down what is said?",
     "options": [
-      { "id": "a", "text": "dictation" },
-      { "id": "b", "text": "dictashun" },
-      { "id": "c", "text": "dictasion" },
-      { "id": "d", "text": "dictatioun" }
+      {
+        "id": "a",
+        "text": "dictation"
+      },
+      {
+        "id": "b",
+        "text": "dictashun"
+      },
+      {
+        "id": "c",
+        "text": "dictasion"
+      },
+      {
+        "id": "d",
+        "text": "dictatioun"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "‘Dictation’ is spelled d-i-c-t-a-t-i-o-n.",
@@ -1113,10 +2001,22 @@
     "id": "verbal_75",
     "text": "The phrase 'cut corners' is an idiom meaning:",
     "options": [
-      { "id": "a", "text": "To take the shortest route" },
-      { "id": "b", "text": "To perform a task quickly and carelessly to save time or money" },
-      { "id": "c", "text": "To work very hard and efficiently" },
-      { "id": "d", "text": "To be extremely precise and detailed" }
+      {
+        "id": "a",
+        "text": "To take the shortest route"
+      },
+      {
+        "id": "b",
+        "text": "To perform a task quickly and carelessly to save time or money"
+      },
+      {
+        "id": "c",
+        "text": "To work very hard and efficiently"
+      },
+      {
+        "id": "d",
+        "text": "To be extremely precise and detailed"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "To 'cut corners' means to do something in the easiest, quickest, or cheapest way, often by sacrificing quality or standards.",
@@ -1128,10 +2028,22 @@
     "id": "verbal_76",
     "text": "Identify the word that is a SYNONYM of 'esoteric'.",
     "options": [
-      { "id": "a", "text": "well-known" },
-      { "id": "b", "text": "obvious" },
-      { "id": "c", "text": "obscure" },
-      { "id": "d", "text": "commonplace" }
+      {
+        "id": "a",
+        "text": "well-known"
+      },
+      {
+        "id": "b",
+        "text": "obvious"
+      },
+      {
+        "id": "c",
+        "text": "obscure"
+      },
+      {
+        "id": "d",
+        "text": "commonplace"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "‘Esoteric’ means intended for or likely to be understood by only a small number of people with a specialized knowledge or interest, making ‘obscure’ (not discovered or known about) the closest synonym.",
@@ -1143,10 +2055,22 @@
     "id": "verbal_77",
     "text": "The phrase 'throw in the towel' is an idiom meaning:",
     "options": [
-      { "id": "a", "text": "To give up or admit defeat" },
-      { "id": "b", "text": "To clean up a mess" },
-      { "id": "c", "text": "To offer an additional item for free" },
-      { "id": "d", "text": "To start a new project" }
+      {
+        "id": "a",
+        "text": "To give up or admit defeat"
+      },
+      {
+        "id": "b",
+        "text": "To clean up a mess"
+      },
+      {
+        "id": "c",
+        "text": "To offer an additional item for free"
+      },
+      {
+        "id": "d",
+        "text": "To start a new project"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "Originating from boxing, where a fighter's corner throws a towel into the ring to signal surrender, the idiom means to give up.",
@@ -1158,10 +2082,22 @@
     "id": "verbal_78",
     "text": "Which phrase BEST replaces the underlined words: The professor pulled a fast one on the students by giving a surprise quiz.",
     "options": [
-      { "id": "a", "text": "was very quick" },
-      { "id": "b", "text": "played a trick or deceived" },
-      { "id": "c", "text": "was overly generous" },
-      { "id": "d", "text": "gave a warning to" }
+      {
+        "id": "a",
+        "text": "was very quick"
+      },
+      {
+        "id": "b",
+        "text": "played a trick or deceived"
+      },
+      {
+        "id": "c",
+        "text": "was overly generous"
+      },
+      {
+        "id": "d",
+        "text": "gave a warning to"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "To 'pull a fast one' is an idiom meaning to achieve something by deception or trickery.",
@@ -1173,10 +2109,22 @@
     "id": "verbal_79",
     "text": "The word 'capricious' is defined as:",
     "options": [
-      { "id": "a", "text": "Being serious and determined" },
-      { "id": "b", "text": "Given to sudden and unaccountable changes of mood or behavior" },
-      { "id": "c", "text": "Extremely cautious and predictable" },
-      { "id": "d", "text": "Highly competent and efficient" }
+      {
+        "id": "a",
+        "text": "Being serious and determined"
+      },
+      {
+        "id": "b",
+        "text": "Given to sudden and unaccountable changes of mood or behavior"
+      },
+      {
+        "id": "c",
+        "text": "Extremely cautious and predictable"
+      },
+      {
+        "id": "d",
+        "text": "Highly competent and efficient"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "‘Capricious’ describes someone or something subject to sudden, unpredictable changes, often referring to mood or action.",
@@ -1188,10 +2136,22 @@
     "id": "verbal_80",
     "text": "The book _______ by the teacher yesterday.",
     "options": [
-      { "id": "a", "text": "is given" },
-      { "id": "b", "text": "was given" },
-      { "id": "c", "text": "has given" },
-      { "id": "d", "text": "had give" }
+      {
+        "id": "a",
+        "text": "is given"
+      },
+      {
+        "id": "b",
+        "text": "was given"
+      },
+      {
+        "id": "c",
+        "text": "has given"
+      },
+      {
+        "id": "d",
+        "text": "had give"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The sentence ends with the word 'yesterday'. This is a specific time marker indicating that the action took place in the past. Therefore, we must use a Past Tense verb.",
@@ -1203,10 +2163,22 @@
     "id": "verbal_81",
     "text": "The decision _______ by the committee tomorrow morning.",
     "options": [
-      { "id": "a", "text": "will announce" },
-      { "id": "b", "text": "will be announced" },
-      { "id": "c", "text": "is announced" },
-      { "id": "d", "text": "announced" }
+      {
+        "id": "a",
+        "text": "will announce"
+      },
+      {
+        "id": "b",
+        "text": "will be announced"
+      },
+      {
+        "id": "c",
+        "text": "is announced"
+      },
+      {
+        "id": "d",
+        "text": "announced"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The sentence refers to the future ('tomorrow morning') and uses Passive Voice because the decision receives the action. The correct form is 'will be' + past participle.",
@@ -1218,10 +2190,22 @@
     "id": "verbal_82",
     "text": "My car _______ right now by the mechanic.",
     "options": [
-      { "id": "a", "text": "is repairing" },
-      { "id": "b", "text": "was repaired" },
-      { "id": "c", "text": "is being repaired" },
-      { "id": "d", "text": "has been repaired" }
+      {
+        "id": "a",
+        "text": "is repairing"
+      },
+      {
+        "id": "b",
+        "text": "was repaired"
+      },
+      {
+        "id": "c",
+        "text": "is being repaired"
+      },
+      {
+        "id": "d",
+        "text": "has been repaired"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The phrase 'right now' indicates the Present Continuous tense. In Passive Voice, this is formed with 'is/are being' + past participle.",
@@ -1233,10 +2217,22 @@
     "id": "verbal_83",
     "text": "Thousands of photos _______ on this website every day.",
     "options": [
-      { "id": "a", "text": "are uploaded" },
-      { "id": "b", "text": "are uploading" },
-      { "id": "c", "text": "were uploaded" },
-      { "id": "d", "text": "have uploaded" }
+      {
+        "id": "a",
+        "text": "are uploaded"
+      },
+      {
+        "id": "b",
+        "text": "are uploading"
+      },
+      {
+        "id": "c",
+        "text": "were uploaded"
+      },
+      {
+        "id": "d",
+        "text": "have uploaded"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The phrase 'every day' indicates a regular action (Present Simple). Passive Voice is required because photos cannot upload themselves.",
@@ -1248,10 +2244,22 @@
     "id": "verbal_84",
     "text": "The window _______ before the storm started.",
     "options": [
-      { "id": "a", "text": "has broken" },
-      { "id": "b", "text": "had been broken" },
-      { "id": "c", "text": "was breaking" },
-      { "id": "d", "text": "had broken" }
+      {
+        "id": "a",
+        "text": "has broken"
+      },
+      {
+        "id": "b",
+        "text": "had been broken"
+      },
+      {
+        "id": "c",
+        "text": "was breaking"
+      },
+      {
+        "id": "d",
+        "text": "had broken"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The action happened before another past action ('storm started'), requiring the Past Perfect. Passive Voice ('had been broken') is used as the window received the action.",
@@ -1263,10 +2271,22 @@
     "id": "verbal_85",
     "text": "Penicillin _______ by Alexander Fleming in 1928.",
     "options": [
-      { "id": "a", "text": "discovered" },
-      { "id": "b", "text": "has been discovered" },
-      { "id": "c", "text": "was discovered" },
-      { "id": "d", "text": "is discovered" }
+      {
+        "id": "a",
+        "text": "discovered"
+      },
+      {
+        "id": "b",
+        "text": "has been discovered"
+      },
+      {
+        "id": "c",
+        "text": "was discovered"
+      },
+      {
+        "id": "d",
+        "text": "is discovered"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "For a specific completed action in the past with a known date (1928), we use the Past Simple Passive ('was discovered').",
@@ -1278,10 +2298,22 @@
     "id": "verbal_86",
     "text": "All the tickets _______ before we arrived at the cinema.",
     "options": [
-      { "id": "a", "text": "were sold" },
-      { "id": "b", "text": "have been sold" },
-      { "id": "c", "text": "had been sold" },
-      { "id": "d", "text": "sold" }
+      {
+        "id": "a",
+        "text": "were sold"
+      },
+      {
+        "id": "b",
+        "text": "have been sold"
+      },
+      {
+        "id": "c",
+        "text": "had been sold"
+      },
+      {
+        "id": "d",
+        "text": "sold"
+      }
     ],
     "correctAnswer": "c",
     "explanation": "The selling happened prior to the past arrival ('we arrived'). This sequence requires the Past Perfect Passive ('had been sold').",
@@ -1293,10 +2325,22 @@
     "id": "verbal_87",
     "text": "Wait here while the documents _______.",
     "options": [
-      { "id": "a", "text": "are printing" },
-      { "id": "b", "text": "are being printed" },
-      { "id": "c", "text": "have printed" },
-      { "id": "d", "text": "will print" }
+      {
+        "id": "a",
+        "text": "are printing"
+      },
+      {
+        "id": "b",
+        "text": "are being printed"
+      },
+      {
+        "id": "c",
+        "text": "have printed"
+      },
+      {
+        "id": "d",
+        "text": "will print"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The action is happening currently while the subject waits. We use the Present Continuous Passive ('are being printed').",
@@ -1308,10 +2352,22 @@
     "id": "verbal_88",
     "text": "The thief _______ by the police yet.",
     "options": [
-      { "id": "a", "text": "has not been caught" },
-      { "id": "b", "text": "was not caught" },
-      { "id": "c", "text": "is not caught" },
-      { "id": "d", "text": "had not caught" }
+      {
+        "id": "a",
+        "text": "has not been caught"
+      },
+      {
+        "id": "b",
+        "text": "was not caught"
+      },
+      {
+        "id": "c",
+        "text": "is not caught"
+      },
+      {
+        "id": "d",
+        "text": "had not caught"
+      }
     ],
     "correctAnswer": "a",
     "explanation": "The word 'yet' implies a connection between past and present, requiring the Present Perfect Passive ('has not been caught').",
@@ -1323,10 +2379,22 @@
     "id": "verbal_89",
     "text": "English _______ in many countries.",
     "options": [
-      { "id": "a", "text": "speaking" },
-      { "id": "b", "text": "is spoken" },
-      { "id": "c", "text": "speaks" },
-      { "id": "d", "text": "has spoken" }
+      {
+        "id": "a",
+        "text": "speaking"
+      },
+      {
+        "id": "b",
+        "text": "is spoken"
+      },
+      {
+        "id": "c",
+        "text": "speaks"
+      },
+      {
+        "id": "d",
+        "text": "has spoken"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "This expresses a general truth or fact. We use the Present Simple Passive ('is spoken'). Active forms like 'speaks' are incorrect because languages do not speak.",
@@ -1338,15 +2406,1539 @@
     "id": "verbal_90",
     "text": "The project _______ by next Friday.",
     "options": [
-      { "id": "a", "text": "will complete" },
-      { "id": "b", "text": "will be completed" },
-      { "id": "c", "text": "is completed" },
-      { "id": "d", "text": "has been completed" }
+      {
+        "id": "a",
+        "text": "will complete"
+      },
+      {
+        "id": "b",
+        "text": "will be completed"
+      },
+      {
+        "id": "c",
+        "text": "is completed"
+      },
+      {
+        "id": "d",
+        "text": "has been completed"
+      }
     ],
     "correctAnswer": "b",
     "explanation": "The time marker 'by next Friday' indicates a future deadline. We use the Future Passive ('will be completed').",
     "category": "Verbal Ability",
     "difficulty": "medium",
     "language": "english"
+  },
+  {
+    "id": "va_new_001",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "These days, computers rules the world."
+      },
+      {
+        "id": "b",
+        "text": "This day, computers rules the world."
+      },
+      {
+        "id": "c",
+        "text": "These days, computers rule the world."
+      },
+      {
+        "id": "d",
+        "text": "This days, computers rule the world."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_002",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The guard hoped for help from everyone in finding the criminal."
+      },
+      {
+        "id": "b",
+        "text": "The guard hoped for help in finding the criminal from everyone."
+      },
+      {
+        "id": "c",
+        "text": "The guard hoped for everyone in finding the criminal."
+      },
+      {
+        "id": "d",
+        "text": "The guard hopes for everyone in finding the criminal."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_003",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Claire is the best daughter between the three daughters of the Gomez family."
+      },
+      {
+        "id": "b",
+        "text": "Claire is the best daughter among the three daughters of the Gomez family."
+      },
+      {
+        "id": "c",
+        "text": "Claire is the better daughter between the three daughters of the Gomez family."
+      },
+      {
+        "id": "d",
+        "text": "Claire is the better daughter among the three daughters of the Gomez family."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Use \"among\" for 3 or more; use superlative \"best\" for 3",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_004",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to win, Patricia wore a beautiful gown."
+      },
+      {
+        "id": "b",
+        "text": "In order to won, Patricia wore a beautiful gown."
+      },
+      {
+        "id": "c",
+        "text": "In order to wins, Patricia wears a beautiful gown."
+      },
+      {
+        "id": "d",
+        "text": "In order to wons, Patricia wears a beautiful gown."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_005",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After winning, passed out."
+      },
+      {
+        "id": "b",
+        "text": "After winning, she passed out."
+      },
+      {
+        "id": "c",
+        "text": "After winning, passed at."
+      },
+      {
+        "id": "d",
+        "text": "After winning, she passed at."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_006",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The regrets I have is worse than you."
+      },
+      {
+        "id": "b",
+        "text": "The regrets I have are bad than yours."
+      },
+      {
+        "id": "c",
+        "text": "The regrets I have are worse than yours."
+      },
+      {
+        "id": "d",
+        "text": "My regrets is bad than yours."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_007",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I may have eaten something bad."
+      },
+      {
+        "id": "b",
+        "text": "I may eat something bad."
+      },
+      {
+        "id": "c",
+        "text": "I may ate something bad."
+      },
+      {
+        "id": "d",
+        "text": "I may eats something bad."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_008",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People recognized that voice as my."
+      },
+      {
+        "id": "b",
+        "text": "People recognized that voice as mine."
+      },
+      {
+        "id": "c",
+        "text": "People recognized that voice as me."
+      },
+      {
+        "id": "d",
+        "text": "People recognized that voice as I."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_009",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I read everything I just can't see the assignment."
+      },
+      {
+        "id": "b",
+        "text": "I read everything I just can't find the assignment."
+      },
+      {
+        "id": "c",
+        "text": "I read everything but I can't see the assignment."
+      },
+      {
+        "id": "d",
+        "text": "I read everything but I can't find the assignment."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_010",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Did you do this to clear your conscience?"
+      },
+      {
+        "id": "b",
+        "text": "Do you did this to clear your conscience?"
+      },
+      {
+        "id": "c",
+        "text": "Did you do these to clears you conscience?"
+      },
+      {
+        "id": "d",
+        "text": "Do you does this to clear your conscience?"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_011",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Little kids who play with fire get their fingers burned."
+      },
+      {
+        "id": "b",
+        "text": "Little kid who play with fire gets their fingers burned."
+      },
+      {
+        "id": "c",
+        "text": "Little kids who play with fire gets their finger burned."
+      },
+      {
+        "id": "d",
+        "text": "Little kids who play with fire gets his fingers burned."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_012",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "My grandma always reminds me to be prepared for anything."
+      },
+      {
+        "id": "b",
+        "text": "My grandma always remind me to be prepared for anything."
+      },
+      {
+        "id": "c",
+        "text": "My grandma alway remind me to be prepared for anything."
+      },
+      {
+        "id": "d",
+        "text": "My grandma alway reminds me to be prepared for anything."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_013",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Love makes us act like we are fools."
+      },
+      {
+        "id": "b",
+        "text": "Love make us act like we are fools."
+      },
+      {
+        "id": "c",
+        "text": "Love makes us act like were fools."
+      },
+      {
+        "id": "d",
+        "text": "Loves make us act like we are fools."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_014",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To go ziplining is exciting and all but once your there though, it's scary."
+      },
+      {
+        "id": "b",
+        "text": "To go ziplining is exciting and all but once you're there though, it's scary."
+      },
+      {
+        "id": "c",
+        "text": "To go ziplining is exiting and all but once you're there though, it's scary."
+      },
+      {
+        "id": "d",
+        "text": "To go ziplining is exciting and all but once you're there though, its scary."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_015",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dog with the black collar belongs to Sofia."
+      },
+      {
+        "id": "b",
+        "text": "The dog with the black collar belong to Sofia."
+      },
+      {
+        "id": "c",
+        "text": "Sofia belongs to the dog with the black collar."
+      },
+      {
+        "id": "d",
+        "text": "Sofia belong to the dog with the black collar."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_016",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I caught a robber in the summer in my garden one night."
+      },
+      {
+        "id": "b",
+        "text": "I caught a summer robber in my garden one night."
+      },
+      {
+        "id": "c",
+        "text": "I caught a garden in the summer robbing one night."
+      },
+      {
+        "id": "d",
+        "text": "I caught a robber in my garden one summer night."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_017",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When he lost all his money, all his friends desserted him."
+      },
+      {
+        "id": "b",
+        "text": "When he lost all his money, all his friends deserted him."
+      },
+      {
+        "id": "c",
+        "text": "When he lost all he's money, all his friends desserted him."
+      },
+      {
+        "id": "d",
+        "text": "When he lost all his money, all he's friends deserted him."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_018",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "We first met on an April sunny day."
+      },
+      {
+        "id": "b",
+        "text": "We first met on a sunny April day."
+      },
+      {
+        "id": "c",
+        "text": "We first met on a day in sunny April."
+      },
+      {
+        "id": "d",
+        "text": "We first meet on a sunny April day."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_019",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "During the 2008 recession; my family was effected very hard."
+      },
+      {
+        "id": "b",
+        "text": "During the 2008 recession, my family was effected very hard."
+      },
+      {
+        "id": "c",
+        "text": "During the 2008 recession; my family was effected very hard."
+      },
+      {
+        "id": "d",
+        "text": "During the 2008 recession, my family was affected very hard."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_020",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perhaps the difficult endeavor is the lonely one."
+      },
+      {
+        "id": "b",
+        "text": "Perhaps the more difficult endeavor is the lonely one."
+      },
+      {
+        "id": "c",
+        "text": "Perhaps the most difficult endeavor is the lonely one."
+      },
+      {
+        "id": "d",
+        "text": "Perhaps the difficulter endeavor is the lonely one."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_021",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I always loved sweets: chocolates, candies, marshmallows, and caramel sundaes."
+      },
+      {
+        "id": "b",
+        "text": "I always loved sweets, chocolates, candies, marshmallows and caramel sundaes"
+      },
+      {
+        "id": "c",
+        "text": "I always loved sweets: chocolates, candies, marshmallows and caramel sundaes."
+      },
+      {
+        "id": "d",
+        "text": "I always loved sweets: chocolates, candies, marshmallows, and caramel sundaes"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_022",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annie's dad, George always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      },
+      {
+        "id": "b",
+        "text": "Annie's dad, George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels"
+      },
+      {
+        "id": "c",
+        "text": "Annie's dad George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      },
+      {
+        "id": "d",
+        "text": "Annie's dad, George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_023",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That girl, Lala, is our class valedictorian."
+      },
+      {
+        "id": "b",
+        "text": "That girl, Lala is our class valedictorian."
+      },
+      {
+        "id": "c",
+        "text": "That girl Lala, is our class valedictorian."
+      },
+      {
+        "id": "d",
+        "text": "That girl, Lala, is our class valedictorian"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_024",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lyle had a good time in Hong Kong - she enjoyed it very much"
+      },
+      {
+        "id": "b",
+        "text": "Lyle had a good time in Hong Kong - she enjoyed it very much."
+      },
+      {
+        "id": "c",
+        "text": "Lyle had a good time in Hong Kong she enjoyed it very much"
+      },
+      {
+        "id": "d",
+        "text": "Lyle had a good time in Hong Kong she enjoyed it very much."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_025",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "What are you going to do next Sunday!"
+      },
+      {
+        "id": "b",
+        "text": "What are you going to do next Sunday?"
+      },
+      {
+        "id": "c",
+        "text": "What are you going to do next Sunday."
+      },
+      {
+        "id": "d",
+        "text": "What are you going to do next Sunday"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_026",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "And he said to me, \"Make use of your talents wisely. Do not let them go to waste.\""
+      },
+      {
+        "id": "b",
+        "text": "And he said to me \"Make use of your talents wisely Do not let them go to waste.\""
+      },
+      {
+        "id": "c",
+        "text": "And he said to me 'Make use of your talents wisely. Do not let them go to waste.\""
+      },
+      {
+        "id": "d",
+        "text": "And he said to me, \"Make use of your talents wisely. Do not let them go to waste\""
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_027",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I hope we can tear down this 'wall' that keeps us apart"
+      },
+      {
+        "id": "b",
+        "text": "I hope we can tear down this 'wall\" that keeps us apart."
+      },
+      {
+        "id": "c",
+        "text": "I hope we can tear down this 'wall that keeps us apart."
+      },
+      {
+        "id": "d",
+        "text": "I hope we can tear down this 'wall' that keeps us apart."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_028",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Morganna still grieves for her sister's death"
+      },
+      {
+        "id": "b",
+        "text": "Morganna still grieves for her sister's death?"
+      },
+      {
+        "id": "c",
+        "text": "Morganna still grieves for her sisters death."
+      },
+      {
+        "id": "d",
+        "text": "Morganna still grieves for her sister's death."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_029",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I had a vision that someday I\"ll travel to Russia, China, and France."
+      },
+      {
+        "id": "b",
+        "text": "I had a vision that someday I'll travel to Russia, China, and France."
+      },
+      {
+        "id": "c",
+        "text": "I had a vision that someday I'll travel to Russia, China, and France"
+      },
+      {
+        "id": "d",
+        "text": "I had a vision that someday Ill travel to Russia, China, and France."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_030",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Novah is about to meet Darwin's parents."
+      },
+      {
+        "id": "b",
+        "text": "Novah is about to meet Darwin's parents"
+      },
+      {
+        "id": "c",
+        "text": "Novah is about to meet Darwin's parents?"
+      },
+      {
+        "id": "d",
+        "text": "Novah is about to meet Darwins parents."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_031",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Airplane flights should always be on time."
+      },
+      {
+        "id": "b",
+        "text": "Airplane flight's should always be on time."
+      },
+      {
+        "id": "c",
+        "text": "Airplane flights should always be on time?"
+      },
+      {
+        "id": "d",
+        "text": "Airplane, flights should always be on time."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_032",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "If you really want to succeed in life make sure to always do your best in everything."
+      },
+      {
+        "id": "b",
+        "text": "If you really want to succeed in life, make sure to always do your best in everything"
+      },
+      {
+        "id": "c",
+        "text": "If you really want to succeed in life, make sure to always do your best in everything."
+      },
+      {
+        "id": "d",
+        "text": "If you really want to succeed in life. Make sure to always do your best in everything."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_033",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Well, I think I need somebody to accompany me tonight."
+      },
+      {
+        "id": "b",
+        "text": "Well I think I need somebody to accompany me tonight."
+      },
+      {
+        "id": "c",
+        "text": "Well, I think I need somebody to accompany me tonight"
+      },
+      {
+        "id": "d",
+        "text": "Well I think I need somebody to accompany me tonight"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_034",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Our new book will be released on May 15, 2021"
+      },
+      {
+        "id": "b",
+        "text": "Our new book will be released on May 15 2021."
+      },
+      {
+        "id": "c",
+        "text": "Our new book will be released on May 15 2021!"
+      },
+      {
+        "id": "d",
+        "text": "Our new book will be released on May 15, 2021."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_035",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He brought me fries, pizza, and burger in the office today"
+      },
+      {
+        "id": "b",
+        "text": "He brought me fries, pizza, and burger in the office today."
+      },
+      {
+        "id": "c",
+        "text": "He brought me fries pizza, and burger in the office today."
+      },
+      {
+        "id": "d",
+        "text": "He brought me fries, pizza and burger in the office today."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_036",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "\"Yes sir our meeting will last until 7 o'clock in the evening,\" my boss said."
+      },
+      {
+        "id": "b",
+        "text": "\"Yes sir, our meeting will last until 7 oclock in the evening,\" my boss said."
+      },
+      {
+        "id": "c",
+        "text": "\"Yes sir, our meeting will last until 7 o'clock in the evening,\" my boss said."
+      },
+      {
+        "id": "d",
+        "text": "\"Yes sir, our meeting will last until 7 o'clock in the evening\" my boss said."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_037",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The girl shouted at him, \"Get off me\""
+      },
+      {
+        "id": "b",
+        "text": "The girl shouted at him, \"Get off me!\""
+      },
+      {
+        "id": "c",
+        "text": "The girl shouted at him, \"Get off me!"
+      },
+      {
+        "id": "d",
+        "text": "The girl shouted at him \"Get off me!\""
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_038",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Are you available for an interview tomorrow afternoon?"
+      },
+      {
+        "id": "b",
+        "text": "Are you available for an interview tomorrow afternoon"
+      },
+      {
+        "id": "c",
+        "text": "Are you available for an interview tomorrow afternoon."
+      },
+      {
+        "id": "d",
+        "text": "Are you available for an interview tomorrow afternoon!"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_039",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The discussions in the orientation are very useful and practical."
+      },
+      {
+        "id": "b",
+        "text": "The discussions in the orientation are very useful and practical"
+      },
+      {
+        "id": "c",
+        "text": "The discussions in the orientation are very useful and practical."
+      },
+      {
+        "id": "d",
+        "text": "The discussions in the orientation are very useful and practical?"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_040",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Our office is pushing for a more transparent and accountable government offices"
+      },
+      {
+        "id": "b",
+        "text": "Our office is pushing for a more transparent and accountable, government offices"
+      },
+      {
+        "id": "c",
+        "text": "Our office is pushing for a more transparent and accountable government offices."
+      },
+      {
+        "id": "d",
+        "text": "Our office is pushing for a more transparent and accountable government offices?"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_041",
+    "text": "What is the main idea of the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Martha and Alicia are going to the province."
+      },
+      {
+        "id": "b",
+        "text": "The girls are excited to go to the museums."
+      },
+      {
+        "id": "c",
+        "text": "Martha and Agatha are going to the city for a vacation."
+      },
+      {
+        "id": "d",
+        "text": "The zoo is going to the province."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_042",
+    "text": "What is the main idea of the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People chose to go to Agartha to stay away from the war."
+      },
+      {
+        "id": "b",
+        "text": "Agartha is a beautiful place to live in."
+      },
+      {
+        "id": "c",
+        "text": "A conspiracy theory about Earth being hollow and with people living inside it."
+      },
+      {
+        "id": "d",
+        "text": "A theory where there are people who lives inside the core of the Earth called Agamemnons."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_043",
+    "text": "Which sentence is true based on the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conspiracy theories like the Secret Earth Theory are famous to some people."
+      },
+      {
+        "id": "b",
+        "text": "Agaertaha is a wonderful, progressive place."
+      },
+      {
+        "id": "c",
+        "text": "Agarthans are backward thinking people."
+      },
+      {
+        "id": "d",
+        "text": "Secret entrances to Agartha are spread all over the Earth."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_044",
+    "text": "The passage tells us about:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dreams of kindergartners."
+      },
+      {
+        "id": "b",
+        "text": "The video shoot held during a winter school day."
+      },
+      {
+        "id": "c",
+        "text": "The assignment to be passed to Ms. Hopper."
+      },
+      {
+        "id": "d",
+        "text": "The dreams of Ms. Hopper."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_045",
+    "text": "Why did Westley leave the farm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "to find his parents"
+      },
+      {
+        "id": "b",
+        "text": "to seek his fortune across the sea and afford to marry Buttercup"
+      },
+      {
+        "id": "c",
+        "text": "both a and b"
+      },
+      {
+        "id": "d",
+        "text": "all of the above"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_046",
+    "text": "How long does Melissa spend in training when she first started?",
+    "options": [
+      {
+        "id": "a",
+        "text": "one hour a day, three days a week"
+      },
+      {
+        "id": "b",
+        "text": "three hours a day, one day a week"
+      },
+      {
+        "id": "c",
+        "text": "three hours a day, five days a week"
+      },
+      {
+        "id": "d",
+        "text": "five hours a day, three days a week"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_047",
+    "text": "The manager caught the newly-hired employee laughing while cry.",
+    "options": [
+      {
+        "id": "a",
+        "text": "catch the new hired employee laughing while cry."
+      },
+      {
+        "id": "b",
+        "text": "catch the new hired employee laughing and cry."
+      },
+      {
+        "id": "c",
+        "text": "caught the newly-hired employee laughing while crying."
+      },
+      {
+        "id": "d",
+        "text": "caught the newly-hired employee laughing and cringing."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_048",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One day, I'll move out and chase my dreams."
+      },
+      {
+        "id": "b",
+        "text": "One day, I'll become my dreams chase."
+      },
+      {
+        "id": "c",
+        "text": "One day, my dreams will chase me and I'll move out."
+      },
+      {
+        "id": "d",
+        "text": "One day, my chase will be dreams."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_049",
+    "text": "I am anonymous in our town in the sense that nobody knows me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "I am unanimous on our town"
+      },
+      {
+        "id": "b",
+        "text": "I am unanimous in our town"
+      },
+      {
+        "id": "c",
+        "text": "I am anonymous on our town"
+      },
+      {
+        "id": "d",
+        "text": "I am Anonymous in our Town"
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_050",
+    "text": "Let the records shows that I swear to tell nothing but the truth.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the record show that I swore to tell nothing."
+      },
+      {
+        "id": "b",
+        "text": "Let the records show that I swear to tell nothing but the truth."
+      },
+      {
+        "id": "c",
+        "text": "Let the record shows that I swore to tell nothing."
+      },
+      {
+        "id": "d",
+        "text": "Let the records shows that I swear to tell nothing but the truth."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_051",
+    "text": "That is the lie that started all the trouble in your life!",
+    "options": [
+      {
+        "id": "a",
+        "text": "the lay that started all the troubles"
+      },
+      {
+        "id": "b",
+        "text": "the lie that started all the troubles"
+      },
+      {
+        "id": "c",
+        "text": "the lay that start trouble"
+      },
+      {
+        "id": "d",
+        "text": "the lie that start troubles"
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_052",
+    "text": "a. \"I should have killed you when I had the chance!\" the man said.",
+    "options": [
+      {
+        "id": "a",
+        "text": "I should have killed you when I had the chance. The man said."
+      },
+      {
+        "id": "b",
+        "text": "I should have killed you when I had the chance, the man said."
+      },
+      {
+        "id": "c",
+        "text": "I should had killed you when I have the chance. The Man said."
+      },
+      {
+        "id": "d",
+        "text": "I should had killed you when I have the chance, the Man said."
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_053",
+    "text": "The student who's car is parked in front of the gate is really pretty.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The student, whose car is parked in front of the gate, is really pretty."
+      },
+      {
+        "id": "b",
+        "text": "The student's car parked in front of the gate is really pretty."
+      },
+      {
+        "id": "c",
+        "text": "The student, who's car is parked in front of the gate, is really pretty."
+      },
+      {
+        "id": "d",
+        "text": "The student is a pretty car parked in front of the gate."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "whose = possessive; who's = who is",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_054",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Their car was parked there."
+      },
+      {
+        "id": "b",
+        "text": "Their car was parked their."
+      },
+      {
+        "id": "c",
+        "text": "There car was parked there."
+      },
+      {
+        "id": "d",
+        "text": "There car was parked their."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_055",
+    "text": "Solomon taught his sister how to play the guitar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solomon learn his sister how to play the guitar."
+      },
+      {
+        "id": "b",
+        "text": "Solomon learned his sister how to play the guitar."
+      },
+      {
+        "id": "c",
+        "text": "Solomon teach his sister how to play the guitar."
+      },
+      {
+        "id": "d",
+        "text": "Solomon teached his sister how to play the guitar."
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_056",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juliette finished this project fast than the other."
+      },
+      {
+        "id": "b",
+        "text": "Juliette finished this project faster than the other."
+      },
+      {
+        "id": "c",
+        "text": "Juliette finished this project fastest than the other."
+      },
+      {
+        "id": "d",
+        "text": "Juliette finished these project fast than the others."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
   }
 ]

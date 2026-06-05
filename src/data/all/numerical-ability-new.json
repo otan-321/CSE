@@ -1,0 +1,83 @@
+[
+  {
+    "id": "na_new_001",
+    "text": "The Lombardo siblings inherit P420,000 in ratio 4:3:3:2. How will it be divided?",
+    "options": [
+      {
+        "id": "a",
+        "text": "P140,000 : P105,000 : P105,000 : P70,000"
+      },
+      {
+        "id": "b",
+        "text": "P123,000 : P105,000 : P105,000 : P87,000"
+      },
+      {
+        "id": "c",
+        "text": "P134,000 : P108,000 : P108,000 : P70,000"
+      },
+      {
+        "id": "d",
+        "text": "P155,000 : P115,000 : P115,000 : P35,000"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Total parts=12; P420,000÷12=P35,000 per part; 4×35k=140k, 3×35k=105k, 3×35k=105k, 2×35k=70k",
+    "category": "Numerical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "na_new_002",
+    "text": "Which statement is FALSE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compagnie has the greatest number of job applicants."
+      },
+      {
+        "id": "b",
+        "text": "In October, Kompanya and Enterpresa had the same number of applicants."
+      },
+      {
+        "id": "c",
+        "text": "Gesellschaft has a decreasing trend in the number of job applicants."
+      },
+      {
+        "id": "d",
+        "text": "Gesellschaft has the record for the least number of applicants in a month."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Gesellschaft actually has an increasing trend from Aug onward: 34,45,50,58,59",
+    "category": "Numerical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "na_new_003",
+    "text": "Which best describes the graph?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is an increase in the number of passengers per year."
+      },
+      {
+        "id": "b",
+        "text": "There is a decrease in the number of passengers per year."
+      },
+      {
+        "id": "c",
+        "text": "In 2000, there are 70,000 passengers."
+      },
+      {
+        "id": "d",
+        "text": "There was an improvement in airport design in 15 years."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Numerical Ability",
+    "difficulty": "medium",
+    "language": "en"
+  }
+]

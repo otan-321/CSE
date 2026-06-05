@@ -1,0 +1,1514 @@
+[
+  {
+    "id": "va_new_001",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "These days, computers rules the world."
+      },
+      {
+        "id": "b",
+        "text": "This day, computers rules the world."
+      },
+      {
+        "id": "c",
+        "text": "These days, computers rule the world."
+      },
+      {
+        "id": "d",
+        "text": "This days, computers rule the world."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_002",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The guard hoped for help from everyone in finding the criminal."
+      },
+      {
+        "id": "b",
+        "text": "The guard hoped for help in finding the criminal from everyone."
+      },
+      {
+        "id": "c",
+        "text": "The guard hoped for everyone in finding the criminal."
+      },
+      {
+        "id": "d",
+        "text": "The guard hopes for everyone in finding the criminal."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_003",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Claire is the best daughter between the three daughters of the Gomez family."
+      },
+      {
+        "id": "b",
+        "text": "Claire is the best daughter among the three daughters of the Gomez family."
+      },
+      {
+        "id": "c",
+        "text": "Claire is the better daughter between the three daughters of the Gomez family."
+      },
+      {
+        "id": "d",
+        "text": "Claire is the better daughter among the three daughters of the Gomez family."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Use \"among\" for 3 or more; use superlative \"best\" for 3",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_004",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to win, Patricia wore a beautiful gown."
+      },
+      {
+        "id": "b",
+        "text": "In order to won, Patricia wore a beautiful gown."
+      },
+      {
+        "id": "c",
+        "text": "In order to wins, Patricia wears a beautiful gown."
+      },
+      {
+        "id": "d",
+        "text": "In order to wons, Patricia wears a beautiful gown."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_005",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After winning, passed out."
+      },
+      {
+        "id": "b",
+        "text": "After winning, she passed out."
+      },
+      {
+        "id": "c",
+        "text": "After winning, passed at."
+      },
+      {
+        "id": "d",
+        "text": "After winning, she passed at."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_006",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The regrets I have is worse than you."
+      },
+      {
+        "id": "b",
+        "text": "The regrets I have are bad than yours."
+      },
+      {
+        "id": "c",
+        "text": "The regrets I have are worse than yours."
+      },
+      {
+        "id": "d",
+        "text": "My regrets is bad than yours."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_007",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I may have eaten something bad."
+      },
+      {
+        "id": "b",
+        "text": "I may eat something bad."
+      },
+      {
+        "id": "c",
+        "text": "I may ate something bad."
+      },
+      {
+        "id": "d",
+        "text": "I may eats something bad."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_008",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People recognized that voice as my."
+      },
+      {
+        "id": "b",
+        "text": "People recognized that voice as mine."
+      },
+      {
+        "id": "c",
+        "text": "People recognized that voice as me."
+      },
+      {
+        "id": "d",
+        "text": "People recognized that voice as I."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_009",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I read everything I just can't see the assignment."
+      },
+      {
+        "id": "b",
+        "text": "I read everything I just can't find the assignment."
+      },
+      {
+        "id": "c",
+        "text": "I read everything but I can't see the assignment."
+      },
+      {
+        "id": "d",
+        "text": "I read everything but I can't find the assignment."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_010",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Did you do this to clear your conscience?"
+      },
+      {
+        "id": "b",
+        "text": "Do you did this to clear your conscience?"
+      },
+      {
+        "id": "c",
+        "text": "Did you do these to clears you conscience?"
+      },
+      {
+        "id": "d",
+        "text": "Do you does this to clear your conscience?"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_011",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Little kids who play with fire get their fingers burned."
+      },
+      {
+        "id": "b",
+        "text": "Little kid who play with fire gets their fingers burned."
+      },
+      {
+        "id": "c",
+        "text": "Little kids who play with fire gets their finger burned."
+      },
+      {
+        "id": "d",
+        "text": "Little kids who play with fire gets his fingers burned."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_012",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "My grandma always reminds me to be prepared for anything."
+      },
+      {
+        "id": "b",
+        "text": "My grandma always remind me to be prepared for anything."
+      },
+      {
+        "id": "c",
+        "text": "My grandma alway remind me to be prepared for anything."
+      },
+      {
+        "id": "d",
+        "text": "My grandma alway reminds me to be prepared for anything."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_013",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Love makes us act like we are fools."
+      },
+      {
+        "id": "b",
+        "text": "Love make us act like we are fools."
+      },
+      {
+        "id": "c",
+        "text": "Love makes us act like were fools."
+      },
+      {
+        "id": "d",
+        "text": "Loves make us act like we are fools."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_014",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To go ziplining is exciting and all but once your there though, it's scary."
+      },
+      {
+        "id": "b",
+        "text": "To go ziplining is exciting and all but once you're there though, it's scary."
+      },
+      {
+        "id": "c",
+        "text": "To go ziplining is exiting and all but once you're there though, it's scary."
+      },
+      {
+        "id": "d",
+        "text": "To go ziplining is exciting and all but once you're there though, its scary."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_015",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dog with the black collar belongs to Sofia."
+      },
+      {
+        "id": "b",
+        "text": "The dog with the black collar belong to Sofia."
+      },
+      {
+        "id": "c",
+        "text": "Sofia belongs to the dog with the black collar."
+      },
+      {
+        "id": "d",
+        "text": "Sofia belong to the dog with the black collar."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_016",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I caught a robber in the summer in my garden one night."
+      },
+      {
+        "id": "b",
+        "text": "I caught a summer robber in my garden one night."
+      },
+      {
+        "id": "c",
+        "text": "I caught a garden in the summer robbing one night."
+      },
+      {
+        "id": "d",
+        "text": "I caught a robber in my garden one summer night."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_017",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When he lost all his money, all his friends desserted him."
+      },
+      {
+        "id": "b",
+        "text": "When he lost all his money, all his friends deserted him."
+      },
+      {
+        "id": "c",
+        "text": "When he lost all he's money, all his friends desserted him."
+      },
+      {
+        "id": "d",
+        "text": "When he lost all his money, all he's friends deserted him."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_018",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "We first met on an April sunny day."
+      },
+      {
+        "id": "b",
+        "text": "We first met on a sunny April day."
+      },
+      {
+        "id": "c",
+        "text": "We first met on a day in sunny April."
+      },
+      {
+        "id": "d",
+        "text": "We first meet on a sunny April day."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_019",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "During the 2008 recession; my family was effected very hard."
+      },
+      {
+        "id": "b",
+        "text": "During the 2008 recession, my family was effected very hard."
+      },
+      {
+        "id": "c",
+        "text": "During the 2008 recession; my family was effected very hard."
+      },
+      {
+        "id": "d",
+        "text": "During the 2008 recession, my family was affected very hard."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_020",
+    "text": "Which is the correct sentence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perhaps the difficult endeavor is the lonely one."
+      },
+      {
+        "id": "b",
+        "text": "Perhaps the more difficult endeavor is the lonely one."
+      },
+      {
+        "id": "c",
+        "text": "Perhaps the most difficult endeavor is the lonely one."
+      },
+      {
+        "id": "d",
+        "text": "Perhaps the difficulter endeavor is the lonely one."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_021",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I always loved sweets: chocolates, candies, marshmallows, and caramel sundaes."
+      },
+      {
+        "id": "b",
+        "text": "I always loved sweets, chocolates, candies, marshmallows and caramel sundaes"
+      },
+      {
+        "id": "c",
+        "text": "I always loved sweets: chocolates, candies, marshmallows and caramel sundaes."
+      },
+      {
+        "id": "d",
+        "text": "I always loved sweets: chocolates, candies, marshmallows, and caramel sundaes"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_022",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annie's dad, George always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      },
+      {
+        "id": "b",
+        "text": "Annie's dad, George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels"
+      },
+      {
+        "id": "c",
+        "text": "Annie's dad George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      },
+      {
+        "id": "d",
+        "text": "Annie's dad, George, always buys her art materials like crayons, water colors, colored pencils, and oil pastels."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_023",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That girl, Lala, is our class valedictorian."
+      },
+      {
+        "id": "b",
+        "text": "That girl, Lala is our class valedictorian."
+      },
+      {
+        "id": "c",
+        "text": "That girl Lala, is our class valedictorian."
+      },
+      {
+        "id": "d",
+        "text": "That girl, Lala, is our class valedictorian"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_024",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lyle had a good time in Hong Kong - she enjoyed it very much"
+      },
+      {
+        "id": "b",
+        "text": "Lyle had a good time in Hong Kong - she enjoyed it very much."
+      },
+      {
+        "id": "c",
+        "text": "Lyle had a good time in Hong Kong she enjoyed it very much"
+      },
+      {
+        "id": "d",
+        "text": "Lyle had a good time in Hong Kong she enjoyed it very much."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_025",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "What are you going to do next Sunday!"
+      },
+      {
+        "id": "b",
+        "text": "What are you going to do next Sunday?"
+      },
+      {
+        "id": "c",
+        "text": "What are you going to do next Sunday."
+      },
+      {
+        "id": "d",
+        "text": "What are you going to do next Sunday"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_026",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "And he said to me, \"Make use of your talents wisely. Do not let them go to waste.\""
+      },
+      {
+        "id": "b",
+        "text": "And he said to me \"Make use of your talents wisely Do not let them go to waste.\""
+      },
+      {
+        "id": "c",
+        "text": "And he said to me 'Make use of your talents wisely. Do not let them go to waste.\""
+      },
+      {
+        "id": "d",
+        "text": "And he said to me, \"Make use of your talents wisely. Do not let them go to waste\""
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_027",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I hope we can tear down this 'wall' that keeps us apart"
+      },
+      {
+        "id": "b",
+        "text": "I hope we can tear down this 'wall\" that keeps us apart."
+      },
+      {
+        "id": "c",
+        "text": "I hope we can tear down this 'wall that keeps us apart."
+      },
+      {
+        "id": "d",
+        "text": "I hope we can tear down this 'wall' that keeps us apart."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_028",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Morganna still grieves for her sister's death"
+      },
+      {
+        "id": "b",
+        "text": "Morganna still grieves for her sister's death?"
+      },
+      {
+        "id": "c",
+        "text": "Morganna still grieves for her sisters death."
+      },
+      {
+        "id": "d",
+        "text": "Morganna still grieves for her sister's death."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_029",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "I had a vision that someday I\"ll travel to Russia, China, and France."
+      },
+      {
+        "id": "b",
+        "text": "I had a vision that someday I'll travel to Russia, China, and France."
+      },
+      {
+        "id": "c",
+        "text": "I had a vision that someday I'll travel to Russia, China, and France"
+      },
+      {
+        "id": "d",
+        "text": "I had a vision that someday Ill travel to Russia, China, and France."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_030",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Novah is about to meet Darwin's parents."
+      },
+      {
+        "id": "b",
+        "text": "Novah is about to meet Darwin's parents"
+      },
+      {
+        "id": "c",
+        "text": "Novah is about to meet Darwin's parents?"
+      },
+      {
+        "id": "d",
+        "text": "Novah is about to meet Darwins parents."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_031",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Airplane flights should always be on time."
+      },
+      {
+        "id": "b",
+        "text": "Airplane flight's should always be on time."
+      },
+      {
+        "id": "c",
+        "text": "Airplane flights should always be on time?"
+      },
+      {
+        "id": "d",
+        "text": "Airplane, flights should always be on time."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_032",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "If you really want to succeed in life make sure to always do your best in everything."
+      },
+      {
+        "id": "b",
+        "text": "If you really want to succeed in life, make sure to always do your best in everything"
+      },
+      {
+        "id": "c",
+        "text": "If you really want to succeed in life, make sure to always do your best in everything."
+      },
+      {
+        "id": "d",
+        "text": "If you really want to succeed in life. Make sure to always do your best in everything."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_033",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Well, I think I need somebody to accompany me tonight."
+      },
+      {
+        "id": "b",
+        "text": "Well I think I need somebody to accompany me tonight."
+      },
+      {
+        "id": "c",
+        "text": "Well, I think I need somebody to accompany me tonight"
+      },
+      {
+        "id": "d",
+        "text": "Well I think I need somebody to accompany me tonight"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_034",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Our new book will be released on May 15, 2021"
+      },
+      {
+        "id": "b",
+        "text": "Our new book will be released on May 15 2021."
+      },
+      {
+        "id": "c",
+        "text": "Our new book will be released on May 15 2021!"
+      },
+      {
+        "id": "d",
+        "text": "Our new book will be released on May 15, 2021."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_035",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He brought me fries, pizza, and burger in the office today"
+      },
+      {
+        "id": "b",
+        "text": "He brought me fries, pizza, and burger in the office today."
+      },
+      {
+        "id": "c",
+        "text": "He brought me fries pizza, and burger in the office today."
+      },
+      {
+        "id": "d",
+        "text": "He brought me fries, pizza and burger in the office today."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_036",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "\"Yes sir our meeting will last until 7 o'clock in the evening,\" my boss said."
+      },
+      {
+        "id": "b",
+        "text": "\"Yes sir, our meeting will last until 7 oclock in the evening,\" my boss said."
+      },
+      {
+        "id": "c",
+        "text": "\"Yes sir, our meeting will last until 7 o'clock in the evening,\" my boss said."
+      },
+      {
+        "id": "d",
+        "text": "\"Yes sir, our meeting will last until 7 o'clock in the evening\" my boss said."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_037",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The girl shouted at him, \"Get off me\""
+      },
+      {
+        "id": "b",
+        "text": "The girl shouted at him, \"Get off me!\""
+      },
+      {
+        "id": "c",
+        "text": "The girl shouted at him, \"Get off me!"
+      },
+      {
+        "id": "d",
+        "text": "The girl shouted at him \"Get off me!\""
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_038",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Are you available for an interview tomorrow afternoon?"
+      },
+      {
+        "id": "b",
+        "text": "Are you available for an interview tomorrow afternoon"
+      },
+      {
+        "id": "c",
+        "text": "Are you available for an interview tomorrow afternoon."
+      },
+      {
+        "id": "d",
+        "text": "Are you available for an interview tomorrow afternoon!"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_039",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The discussions in the orientation are very useful and practical."
+      },
+      {
+        "id": "b",
+        "text": "The discussions in the orientation are very useful and practical"
+      },
+      {
+        "id": "c",
+        "text": "The discussions in the orientation are very useful and practical."
+      },
+      {
+        "id": "d",
+        "text": "The discussions in the orientation are very useful and practical?"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_040",
+    "text": "Which is correctly punctuated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Our office is pushing for a more transparent and accountable government offices"
+      },
+      {
+        "id": "b",
+        "text": "Our office is pushing for a more transparent and accountable, government offices"
+      },
+      {
+        "id": "c",
+        "text": "Our office is pushing for a more transparent and accountable government offices."
+      },
+      {
+        "id": "d",
+        "text": "Our office is pushing for a more transparent and accountable government offices?"
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_041",
+    "text": "What is the main idea of the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Martha and Alicia are going to the province."
+      },
+      {
+        "id": "b",
+        "text": "The girls are excited to go to the museums."
+      },
+      {
+        "id": "c",
+        "text": "Martha and Agatha are going to the city for a vacation."
+      },
+      {
+        "id": "d",
+        "text": "The zoo is going to the province."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_042",
+    "text": "What is the main idea of the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People chose to go to Agartha to stay away from the war."
+      },
+      {
+        "id": "b",
+        "text": "Agartha is a beautiful place to live in."
+      },
+      {
+        "id": "c",
+        "text": "A conspiracy theory about Earth being hollow and with people living inside it."
+      },
+      {
+        "id": "d",
+        "text": "A theory where there are people who lives inside the core of the Earth called Agamemnons."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_043",
+    "text": "Which sentence is true based on the passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conspiracy theories like the Secret Earth Theory are famous to some people."
+      },
+      {
+        "id": "b",
+        "text": "Agaertaha is a wonderful, progressive place."
+      },
+      {
+        "id": "c",
+        "text": "Agarthans are backward thinking people."
+      },
+      {
+        "id": "d",
+        "text": "Secret entrances to Agartha are spread all over the Earth."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_044",
+    "text": "The passage tells us about:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dreams of kindergartners."
+      },
+      {
+        "id": "b",
+        "text": "The video shoot held during a winter school day."
+      },
+      {
+        "id": "c",
+        "text": "The assignment to be passed to Ms. Hopper."
+      },
+      {
+        "id": "d",
+        "text": "The dreams of Ms. Hopper."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_045",
+    "text": "Why did Westley leave the farm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "to find his parents"
+      },
+      {
+        "id": "b",
+        "text": "to seek his fortune across the sea and afford to marry Buttercup"
+      },
+      {
+        "id": "c",
+        "text": "both a and b"
+      },
+      {
+        "id": "d",
+        "text": "all of the above"
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_046",
+    "text": "How long does Melissa spend in training when she first started?",
+    "options": [
+      {
+        "id": "a",
+        "text": "one hour a day, three days a week"
+      },
+      {
+        "id": "b",
+        "text": "three hours a day, one day a week"
+      },
+      {
+        "id": "c",
+        "text": "three hours a day, five days a week"
+      },
+      {
+        "id": "d",
+        "text": "five hours a day, three days a week"
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_047",
+    "text": "The manager caught the newly-hired employee laughing while cry.",
+    "options": [
+      {
+        "id": "a",
+        "text": "catch the new hired employee laughing while cry."
+      },
+      {
+        "id": "b",
+        "text": "catch the new hired employee laughing and cry."
+      },
+      {
+        "id": "c",
+        "text": "caught the newly-hired employee laughing while crying."
+      },
+      {
+        "id": "d",
+        "text": "caught the newly-hired employee laughing and cringing."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_048",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One day, I'll move out and chase my dreams."
+      },
+      {
+        "id": "b",
+        "text": "One day, I'll become my dreams chase."
+      },
+      {
+        "id": "c",
+        "text": "One day, my dreams will chase me and I'll move out."
+      },
+      {
+        "id": "d",
+        "text": "One day, my chase will be dreams."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_049",
+    "text": "I am anonymous in our town in the sense that nobody knows me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "I am unanimous on our town"
+      },
+      {
+        "id": "b",
+        "text": "I am unanimous in our town"
+      },
+      {
+        "id": "c",
+        "text": "I am anonymous on our town"
+      },
+      {
+        "id": "d",
+        "text": "I am Anonymous in our Town"
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_050",
+    "text": "Let the records shows that I swear to tell nothing but the truth.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the record show that I swore to tell nothing."
+      },
+      {
+        "id": "b",
+        "text": "Let the records show that I swear to tell nothing but the truth."
+      },
+      {
+        "id": "c",
+        "text": "Let the record shows that I swore to tell nothing."
+      },
+      {
+        "id": "d",
+        "text": "Let the records shows that I swear to tell nothing but the truth."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_051",
+    "text": "That is the lie that started all the trouble in your life!",
+    "options": [
+      {
+        "id": "a",
+        "text": "the lay that started all the troubles"
+      },
+      {
+        "id": "b",
+        "text": "the lie that started all the troubles"
+      },
+      {
+        "id": "c",
+        "text": "the lay that start trouble"
+      },
+      {
+        "id": "d",
+        "text": "the lie that start troubles"
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_052",
+    "text": "a. \"I should have killed you when I had the chance!\" the man said.",
+    "options": [
+      {
+        "id": "a",
+        "text": "I should have killed you when I had the chance. The man said."
+      },
+      {
+        "id": "b",
+        "text": "I should have killed you when I had the chance, the man said."
+      },
+      {
+        "id": "c",
+        "text": "I should had killed you when I have the chance. The Man said."
+      },
+      {
+        "id": "d",
+        "text": "I should had killed you when I have the chance, the Man said."
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_053",
+    "text": "The student who's car is parked in front of the gate is really pretty.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The student, whose car is parked in front of the gate, is really pretty."
+      },
+      {
+        "id": "b",
+        "text": "The student's car parked in front of the gate is really pretty."
+      },
+      {
+        "id": "c",
+        "text": "The student, who's car is parked in front of the gate, is really pretty."
+      },
+      {
+        "id": "d",
+        "text": "The student is a pretty car parked in front of the gate."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "whose = possessive; who's = who is",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_054",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Their car was parked there."
+      },
+      {
+        "id": "b",
+        "text": "Their car was parked their."
+      },
+      {
+        "id": "c",
+        "text": "There car was parked there."
+      },
+      {
+        "id": "d",
+        "text": "There car was parked their."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_055",
+    "text": "Solomon taught his sister how to play the guitar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solomon learn his sister how to play the guitar."
+      },
+      {
+        "id": "b",
+        "text": "Solomon learned his sister how to play the guitar."
+      },
+      {
+        "id": "c",
+        "text": "Solomon teach his sister how to play the guitar."
+      },
+      {
+        "id": "d",
+        "text": "Solomon teached his sister how to play the guitar."
+      }
+    ],
+    "correctAnswer": "e",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "va_new_056",
+    "text": "Choose the best sentence:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juliette finished this project fast than the other."
+      },
+      {
+        "id": "b",
+        "text": "Juliette finished this project faster than the other."
+      },
+      {
+        "id": "c",
+        "text": "Juliette finished this project fastest than the other."
+      },
+      {
+        "id": "d",
+        "text": "Juliette finished these project fast than the others."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "",
+    "category": "Verbal Ability",
+    "difficulty": "medium",
+    "language": "en"
+  }
+]
