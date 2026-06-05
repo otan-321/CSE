@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { BookOpen, Trophy } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 function Header() {
   return (
@@ -33,7 +32,6 @@ function Header() {
               <Trophy className="w-4 h-4" />
               <span>Results</span>
             </Link>
-            <ThemeToggle />
           </nav>
         </div>
       </div>
