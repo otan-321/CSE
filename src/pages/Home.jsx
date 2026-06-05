@@ -37,6 +37,10 @@ function Home() {
         </div>
       </div>
 
+      <div id="exams" className="scroll-mt-16 mb-16">
+        <ExamSelection />
+      </div>
+
       <div className="mb-16">
         <div className="flex border-b border-gray-200 mb-4">
           <button
@@ -135,9 +139,6 @@ function Home() {
         </div>
       </div>
 
-      <div id="exams" className="scroll-mt-16">
-        <ExamSelection />
-      </div>
     </div>
   );
 }
