@@ -1,36 +1,55 @@
-import { BookOpen, Clock, ChevronRight, ArrowLeft } from "lucide-react";
+import { BookOpen, Clock, ChevronRight, FileText, Brain, Globe, BarChart2 } from "lucide-react";
 
 function Review() {
   const categories = [
     {
+      id: "verbal",
       title: "Verbal Ability",
-      color: "from-blue-500 to-blue-600",
-      light: "bg-blue-50 dark:bg-blue-950",
-      border: "border-blue-200 dark:border-blue-800",
+      description: "Vocabulary, grammar, reading comprehension, analogy and logic exercises.",
+      icon: "FileText",
+      color: "from-blue-500 to-cyan-500",
+      bgColor: "bg-blue-50 dark:bg-gray-950",
+      badge: "Language",
       subcategories: ["Vocabulary", "Grammar", "Reading Comprehension", "Analogy", "Logic"],
     },
     {
+      id: "numerical",
       title: "Numerical Ability",
-      color: "from-purple-500 to-purple-600",
-      light: "bg-purple-50 dark:bg-purple-950",
-      border: "border-purple-200 dark:border-purple-800",
+      description: "Basic math, word problems, number series and data interpretation.",
+      icon: "BarChart2",
+      color: "from-purple-500 to-pink-500",
+      bgColor: "bg-purple-50 dark:bg-gray-950",
+      badge: "Mathematics",
       subcategories: ["Basic Math", "Word Problems", "Number Series", "Data Interpretation"],
     },
     {
+      id: "general",
       title: "General Information",
-      color: "from-green-500 to-green-600",
-      light: "bg-green-50 dark:bg-green-950",
-      border: "border-green-200 dark:border-green-800",
+      description: "Philippine Constitution, environmental laws, human rights and RA 6713.",
+      icon: "Globe",
+      color: "from-green-500 to-emerald-500",
+      bgColor: "bg-green-50 dark:bg-gray-950",
+      badge: "Civics",
       subcategories: ["Philippine Constitution", "Environmental Management", "Peace and Human Rights", "RA 6713"],
     },
     {
+      id: "analytical",
       title: "Analytical Ability",
-      color: "from-orange-500 to-orange-600",
-      light: "bg-orange-50 dark:bg-orange-950",
-      border: "border-orange-200 dark:border-orange-800",
+      description: "Analytical reasoning for Professional level and clerical skills for Sub-Professional.",
+      icon: "Brain",
+      color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-50 dark:bg-gray-950",
+      badge: "Reasoning",
       subcategories: ["Analytical Ability (Pro)", "Clerical Ability (Sub)"],
     },
   ];
+
+  const iconMap = {
+    FileText: <FileText className="w-8 h-8" />,
+    BarChart2: <BarChart2 className="w-8 h-8" />,
+    Globe: <Globe className="w-8 h-8" />,
+    Brain: <Brain className="w-8 h-8" />,
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -39,41 +58,52 @@ function Review() {
           <BookOpen className="w-4 h-4 text-blue-500 mr-2" />
           <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Study Mode</span>
         </div>
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-          Start Review
-        </h1>
-        <p className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
-          Choose a category to begin reviewing. More features coming soon!
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-3">Choose a Category</h2>
+        <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">
+          Select a subject area to start reviewing. More features coming soon!
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {categories.map((cat) => (
-          <div key={cat.title} className={"rounded-2xl border " + cat.border + " " + cat.light + " p-6 shadow-md"}>
-            <div className={"inline-flex items-center px-4 py-2 bg-linear-to-r " + cat.color + " text-white rounded-xl font-semibold text-base mb-4"}>
-              {cat.title}
-            </div>
-            <div className="space-y-2">
-              {cat.subcategories.map((sub) => (
-                <div key={sub} className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:shadow-md transition-all group">
-                  <span className="text-gray-700 dark:text-gray-200 font-medium">{sub}</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-1 rounded-full font-medium flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      Coming Soon
-                    </span>
-                    <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors" />
-                  </div>
+          <div
+            key={cat.id}
+            className={"group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 " + cat.bgColor}
+          >
+            <div className="p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div className={"p-3 rounded-xl bg-linear-to-br " + cat.color + " text-white"}>
+                  {iconMap[cat.icon]}
                 </div>
-              ))}
+                <span className="px-3 py-1 bg-white dark:bg-gray-950 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm">
+                  {cat.badge}
+                </span>
+              </div>
+
+              <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">{cat.title}</h3>
+              <p className="text-gray-600 dark:text-gray-200 mb-4">{cat.description}</p>
+
+              <div className="space-y-2 mb-6">
+                {cat.subcategories.map((sub) => (
+                  <div key={sub} className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2 group-hover:shadow-sm transition-all">
+                    <span className="text-sm text-gray-700 dark:text-gray-200 font-medium">{sub}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-1 rounded-full font-medium flex items-center gap-1">
+                        <Clock className="w-3 h-3" />
+                        Coming Soon
+                      </span>
+                      <ChevronRight className="w-4 h-4 text-gray-400" />
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="text-center mt-10">
+      <div className="mt-10 text-center">
         <a href="/" className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 rounded-xl font-medium hover:shadow-md transition-all">
-          <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Home
         </a>
       </div>
