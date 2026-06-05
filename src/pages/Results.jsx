@@ -75,7 +75,7 @@ function Results() {
         
         doc.setFontSize(10);
         doc.setFont('helvetica', 'normal');
-        doc.text('Unofficial Result - Mock Reviewer PH (CSE)', 105, 30, { align: 'center' });
+        doc.text('Unofficial Result - CSE Reviewer (CSE)', 105, 30, { align: 'center' });
 
         // --- INFO GRID SECTION (2 Columns) ---
         let yPos = 60;

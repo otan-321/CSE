@@ -11,7 +11,7 @@ function Header() {
             <BookOpen className="w-8 h-8 text-blue-600 group-hover:text-blue-700 transition-colors" />
             <div>
               <h1 className="text-sm md:text-sm font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Mock Reviewer PH
+                CSE Reviewer
               </h1>
               <p className="text-xs text-gray-500 dark:text-gray-100">Your Go-To Reviewer</p>
             </div>

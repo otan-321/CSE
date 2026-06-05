@@ -12,7 +12,7 @@ function Tutorial() {
     {
       id: 'professional',
       title: 'Professional Level Exam - Snippet',
-      description: 'Get a quick look at how the Mock Reviewer PH CSC Professional Level mock exam works—featuring its interface, categories, and key functionalities. This snippet highlights how the system helps you practice across all 8 major subjects, including Numerical Ability, Analytical Ability, Verbal Ability, and more.',
+      description: 'Get a quick look at how the CSE Reviewer CSC Professional Level mock exam works—featuring its interface, categories, and key functionalities. This snippet highlights how the system helps you practice across all 8 major subjects, including Numerical Ability, Analytical Ability, Verbal Ability, and more.',
       duration: '03:39',
       thumbnail: '/tutorials/pro-thumbnail.png',
       date: '2025-12-04',
@@ -30,7 +30,7 @@ function Tutorial() {
     {
       id: 'subprofessional',
       title: 'Sub-Professional Level Exam - Snippet',
-      description: 'Get a quick look at how the Mock Reviewer PH CSC Sub-Professional Level mock exam works—featuring its interface, categories, and key functionalities. This snippet highlights how the system helps you practice across all 8 major subjects, including Numerical Ability, Clerical Ability, Verbal Ability, and more.',
+      description: 'Get a quick look at how the CSE Reviewer CSC Sub-Professional Level mock exam works—featuring its interface, categories, and key functionalities. This snippet highlights how the system helps you practice across all 8 major subjects, including Numerical Ability, Clerical Ability, Verbal Ability, and more.',
       duration: '01:12',
       thumbnail: '/tutorials/subpro-thumbnail.png',
       date: '2025-12-04',

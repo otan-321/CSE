@@ -1,8 +1,8 @@
 <p align="center">
   <div align="center">
-      <img alt="Mock Reviewer PH" src="https://raw.githubusercontent.com//CSE/refs/heads/main/public/logo/CSE-circle.png" width="220"/>
+      <img alt="CSE Reviewer" src="https://raw.githubusercontent.com//CSE/refs/heads/main/public/logo/CSE-circle.png" width="220"/>
   </div>
-    <h3 align="center">Mock Reviewer PH</h3>
+    <h3 align="center">CSE Reviewer</h3>
     <p align="center">
     <a href="https://github.com//CSE">
       <img src="https://img.shields.io/github/stars//CSE" alt="Github Stars">
@@ -14,8 +14,8 @@
 </p>
 </p>
 <p align="center">
-  <a href="https://CSE.pages.dev">Mock Reviewer PH</a> is an open-source web application that provide unofficial reviewer for different PH-related examinations. Built using Vite, ReactJS and Tailwind CSS. It lets you easily simulate a mock exams.
-    <img alt="Mock Reviewer PH" src="https://raw.githubusercontent.com//CSE/refs/heads/main/public/screenshots/CSE-desktop.png"/>
+  <a href="https://CSE.pages.dev">CSE Reviewer</a> is an open-source web application that provide unofficial reviewer for different PH-related examinations. Built using Vite, ReactJS and Tailwind CSS. It lets you easily simulate a mock exams.
+    <img alt="CSE Reviewer" src="https://raw.githubusercontent.com//CSE/refs/heads/main/public/screenshots/CSE-desktop.png"/>
  </p>
 
 <details>

@@ -7,13 +7,13 @@ const TermsOfUse = () => {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white dark:bg-gray-950 rounded-xl shadow-sm p-8">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">Terms of Use - Mock Reviewer PH</h1>
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">Terms of Use - CSE Reviewer</h1>
           <p className="text-gray-500 dark:text-gray-200 mb-8"><strong>Effective Date:</strong> {new Date().toLocaleDateString()}</p>
           
           <div className="space-y-6 text-gray-700 dark:text-gray-200">
             <section>
               <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">1. Nature of Service</h2>
-              <p>Mock Reviewer PH is a free online platform that simulates Civil Service Examination (CSE) mock tests. Our questions are sourced from various materials including social media groups, old review materials, community contributions, and AI-generated content for educational purposes only.</p>
+              <p>CSE Reviewer is a free online platform that simulates Civil Service Examination (CSE) mock tests. Our questions are sourced from various materials including social media groups, old review materials, community contributions, and AI-generated content for educational purposes only.</p>
             </section>
             
             <section>
@@ -46,7 +46,7 @@ const TermsOfUse = () => {
             
             <section>
               <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">5. Intellectual Property</h2>
-              <p>Mock Reviewer PH grants users a non-commercial, personal license to use this platform for exam preparation purposes. All test content, while compiled from various sources, is presented in a unique format. Original contributions by the platform are protected under applicable copyright laws.</p>
+              <p>CSE Reviewer grants users a non-commercial, personal license to use this platform for exam preparation purposes. All test content, while compiled from various sources, is presented in a unique format. Original contributions by the platform are protected under applicable copyright laws.</p>
             </section>
             
             <section>
@@ -63,7 +63,7 @@ const TermsOfUse = () => {
             
             <section>
               <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">7. Data Privacy</h2>
-              <p>Mock Reviewer PH does not collect personal information. All test results and progress data are stored locally on your device. We do not use cookies for tracking purposes. For backup purposes, users can export their data using the provided export features.</p>
+              <p>CSE Reviewer does not collect personal information. All test results and progress data are stored locally on your device. We do not use cookies for tracking purposes. For backup purposes, users can export their data using the provided export features.</p>
             </section>
             
             <section>
@@ -94,7 +94,7 @@ const TermsOfUse = () => {
               to="/"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline font-medium"
             >
-              ← Back to Mock Reviewer PH
+              ← Back to CSE Reviewer
             </Link>
           </div>
         </div>

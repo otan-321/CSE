@@ -49,7 +49,7 @@ function Home() {
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
           Master the Civil Service Exam with{' '}
           <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Mock Reviewer PH
+            CSE Reviewer
           </span>
         </h1>
         
