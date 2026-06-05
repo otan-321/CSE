@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, BookOpen } from 'lucide-react';
 import ExamSelection from '../components/ExamSelection';
 
 function Home() {
@@ -33,6 +33,10 @@ function Home() {
           <a href="#exams" className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
             Start Free Mock Examination
             <ArrowRight className="ml-2 w-5 h-5" />
+          </a>
+          <a href="/review" className="px-8 py-4 bg-white border-2 border-blue-500 text-blue-600 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
+            Start Review
+            <BookOpen className="ml-2 w-5 h-5" />
           </a>
         </div>
       </div>

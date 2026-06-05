@@ -7,14 +7,14 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
 import ErrorBoundary from './components/ErrorBoundary';
 import DisclaimerModal from './components/DisclaimerModal';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import Tutorial from './pages/Tutorial';
+import Review from './pages/Review';
 import './index.css';
 import 'katex/dist/katex.min.css';
 
 function App() {
-
   return (
     <ErrorBoundary>
       <Router>
@@ -29,6 +29,7 @@ function App() {
               <Route path="/tutorial" element={<Tutorial />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsOfUse />} />
+              <Route path="/review" element={<Review />} />
             </Routes>
           <Footer />
         </div>
