@@ -15,36 +15,28 @@ function Home() {
 
   return (
     <div className="container mx-auto px-4 py-4">
-      {/* Hero Section */}
       <div className="text-center mb-6 pt-4">
         <div className="inline-flex items-center px-4 py-2 bg-linear-to-r from-blue-100 to-purple-100 rounded-full mb-4">
           <Star className="w-4 h-4 text-yellow-500 mr-2" />
           <span className="text-sm font-medium text-gray-700 dark:text-gray-950">Philippine Civil Service Examination</span>
         </div>
-
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
           Master the Civil Service Exam with{' '}
           <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             CSE Reviewer
           </span>
         </h1>
-
         <p className="text-lg text-gray-600 dark:text-gray-200 max-w-3xl mx-auto mb-8">
           Prepare smarter with personalized mock tests and detailed explanations for both Professional and Sub-Professional levels.
         </p>
-
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          
-            href="#exams"
-            className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center"
-          >
+          <a href="#exams" className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
             Start Free Mock Examination
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
         </div>
       </div>
 
-      {/* Tabs Section */}
       <div className="mb-16">
         <div className="flex border-b border-gray-200 mb-4">
           <button
@@ -143,7 +135,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Exam Selection */}
       <div id="exams" className="scroll-mt-16">
         <ExamSelection />
       </div>
