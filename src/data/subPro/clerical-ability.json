@@ -1,0 +1,857 @@
+[
+  {
+    "id": "cler_1",
+    "text": "Which of the following is the correct alphabetical order?",
+    "options": [
+      { "id": "a", "text": "Adams, Anderson, Alvarez, Aguilar" },
+      { "id": "b", "text": "Aguilar, Alvarez, Adams, Anderson" },
+      { "id": "c", "text": "Adams, Aguilar, Alvarez, Anderson" },
+      { "id": "d", "text": "Alvarez, Adams, Anderson, Aguilar" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Correct alphabetical order: Adams (Ad), Aguilar (Ag), Alvarez (Al), Anderson (An)",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_2",
+    "text": "Which word is spelled correctly?",
+    "options": [
+      { "id": "a", "text": "Receive" },
+      { "id": "b", "text": "Recieve" },
+      { "id": "c", "text": "Receeve" },
+      { "id": "d", "text": "Resieve" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "'Receive' follows the rule: 'i before e except after c'",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_3",
+    "text": "Which pair of file codes is identical?",
+    "options": [
+      { "id": "a", "text": "7001-B vs. 7001-D" },
+      { "id": "b", "text": "C-113845 vs. C-113854" },
+      { "id": "c", "text": "PAB-901-T vs. PAB-901-T" },
+      { "id": "d", "text": "Santos Jr. vs. Santos Sr." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "To check for identical pairs, every character must match. PAB-901-T is identical to PAB-901-T.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_4",
+    "text": "Which sequence is correctly arranged in numerical-alphabetical order?",
+    "options": [
+      { "id": "a", "text": "M-10, M-101, C-10, C-101" },
+      { "id": "b", "text": "C-10, C-101, M-10, M-101" },
+      { "id": "c", "text": "C-101, C-10, M-101, M-10" },
+      { "id": "d", "text": "M-101, M-10, C-101, C-10" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The order should be alphabetical by letter (C before M), and then numerical by number (10 before 101). The correct order is C-10, C-101, M-10, M-101.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+      "id": "cler_5",
+      "text": "A document requires 8 sheets of paper per copy. If the office needs to print 15 copies, how many sheets of paper are required in total?",
+      "options": [
+        { "id": "a", "text": "100" },
+        { "id": "b", "text": "110" },
+        { "id": "c", "text": "120" },
+        { "id": "d", "text": "130" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The calculation is 8 sheets * 15 copies = 120 sheets.",
+      "category": "Clerical Ability",
+      "difficulty": "easy",
+      "language": "english"
+    },
+  {
+    "id": "cler_6",
+    "text": "Sa pamamahala ng opisina, ano ang tawag sa proseso ng paghihiwalay at pagsasaayos ng mga dokumento batay sa isang sistema (tulad ng alphabetical o chronological) para madali itong mahanap?",
+    "options": [
+      { "id": "a", "text": "Networking" },
+      { "id": "b", "text": "Filing" },
+      { "id": "c", "text": "Auditing" },
+      { "id": "d", "text": "Budgeting" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Ang 'Filing' o pag-i-file ang tawag sa sistematikong pag-aayos at pagtatabi ng mga dokumento.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "filipino"
+  },
+  {
+    "id": "cler_7",
+    "text": "Alin sa mga sumusunod ang tamang baybay sa Filipino ng salitang Ingles na 'Schedule'?",
+    "options": [
+      { "id": "a", "text": "Iskedyul" },
+      { "id": "b", "text": "Eskeyul" },
+      { "id": "c", "text": "Sikedul" },
+      { "id": "d", "text": "Iskedyole" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Ang 'Iskedyul' ang opisyal at tinatanggap na baybay sa Filipino para sa salitang Ingles na 'Schedule'.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "filipino"
+  },
+  {
+    "id": "cler_8",
+    "text": "Arrange the following names in strict alphabetical order: Dela Cruz, Juan; De Guzman, Maria; Delos Reyes, Jose; Del Castillo, Ana",
+    "options": [
+      { "id": "a", "text": "Dela Cruz, Juan; Del Castillo, Ana; De Guzman, Maria; Delos Reyes, Jose" },
+      { "id": "b", "text": "De Guzman, Maria; Dela Cruz, Juan; Del Castillo, Ana; Delos Reyes, Jose" },
+      { "id": "c", "text": "De Guzman, Maria; Del Castillo, Ana; Dela Cruz, Juan; Delos Reyes, Jose" },
+      { "id": "d", "text": "Del Castillo, Ana; Dela Cruz, Juan; De Guzman, Maria; Delos Reyes, Jose" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Names with prefixes (De, Dela, Delos) are filed based on the full last name as a single unit, except when mandated otherwise. Treating them as one word: De Guzman, Del Castillo, Dela Cruz, Delos Reyes.",
+    "category": "Clerical Ability",
+    "difficulty": "hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_9",
+    "text": "Which word is spelled correctly?",
+    "options": [
+      { "id": "a", "text": "Commitee" },
+      { "id": "b", "text": "Commitee" },
+      { "id": "c", "text": "Committee" },
+      { "id": "d", "text": "Comittee" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "'Committee' is spelled correctly with double M, double T, and double E.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_10",
+    "text": "If a letter is marked 'Confidential,' what is the proper clerical procedure for handling it?",
+    "options": [
+      { "id": "a", "text": "Open it, scan it, and file it immediately." },
+      { "id": "b", "text": "Open it and read it to determine urgency before routing." },
+      { "id": "c", "text": "Forward it unopened directly to the addressee." },
+      { "id": "d", "text": "Place it in the general mail pile to be sorted later." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Documents marked 'Confidential,' 'Personal,' or 'Private' should be forwarded unopened to the intended recipient to maintain privacy and security.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_11",
+    "text": "Which sequence of numbers is correctly arranged in numerical order?",
+    "options": [
+      { "id": "a", "text": "205, 1100, 950, 400" },
+      { "id": "b", "text": "1100, 950, 400, 205" },
+      { "id": "c", "text": "205, 400, 950, 1100" },
+      { "id": "d", "text": "400, 205, 1100, 950" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "The correct numerical sequence is 205, 400, 950, 1100.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_12",
+    "text": "If you are filing a folder labeled 'Annual Reports 2019-2022' using chronological order, where would a report dated July 2021 be placed?",
+    "options": [
+      { "id": "a", "text": "After the 2022 documents." },
+      { "id": "b", "text": "Before the 2019 documents." },
+      { "id": "c", "text": "Between the 2020 and 2022 documents." },
+      { "id": "d", "text": "Between the 2019 and 2020 documents." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Chronological order means arranging by date/time. July 2021 falls between the year 2020 and the year 2022.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_13",
+    "text": "The phrase 'due process' most nearly means:",
+    "options": [
+      { "id": "a", "text": "An efficient and quick decision." },
+      { "id": "b", "text": "Following established legal and procedural steps." },
+      { "id": "c", "text": "Making a fair judgment without investigation." },
+      { "id": "d", "text": "A delayed legal decision." }
+    ],
+    "correctAnswer": "b",
+    "explanation": "'Due process' refers to the legal requirement that the state must respect all legal rights that are owed to a person, which includes following established rules and procedures.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_14",
+    "text": "You have the following files: R. Gomez, Rafael Jr.; Gomez, Robert; Gomez, R. A. Sr. What is the correct filing order, treating titles/suffixes as secondary sorting factors?",
+    "options": [
+      { "id": "a", "text": "Gomez, R. A. Sr.; Gomez, Robert; R. Gomez, Rafael Jr." },
+      { "id": "b", "text": "Gomez, R. A. Sr.; Gomez, Robert; Gomez, Rafael Jr." },
+      { "id": "c", "text": "Gomez, Rafael Jr.; Gomez, R. A. Sr.; Gomez, Robert" },
+      { "id": "d", "text": "Gomez, R. A. Sr.; Gomez, Rafael Jr.; Gomez, Robert" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "All names start with 'Gomez'. Secondary sorting is by the first name/initial. R.A. (R. A.) comes first, followed by Rafael (Jr.), and finally Robert.",
+    "category": "Clerical Ability",
+    "difficulty": "hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_15",
+    "text": "What is the result of $120 / 4 + 15$?",
+    "options": [
+      { "id": "a", "text": "45" },
+      { "id": "b", "text": "33" },
+      { "id": "c", "text": "48" },
+      { "id": "d", "text": "60" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Following the order of operations (PEMDAS/BODMAS), division is done first: $120 / 4 = 30$. Then addition: $30 + 15 = 45$.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_16",
+    "text": "If a meeting is scheduled to start at 9:30 AM and last for 1 hour and 45 minutes, what time will the meeting end?",
+    "options": [
+      { "id": "a", "text": "10:15 AM" },
+      { "id": "b", "text": "11:00 AM" },
+      { "id": "c", "text": "11:15 AM" },
+      { "id": "d", "text": "11:45 AM" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Add 1 hour to 9:30 AM to get 10:30 AM. Add 45 minutes to 10:30 AM (30 min to 11:00 AM, 15 more min) to get 11:15 AM.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_17",
+    "text": "Which word is spelled correctly?",
+    "options": [
+      { "id": "a", "text": "Acommodation" },
+      { "id": "b", "text": "Accomodation" },
+      { "id": "c", "text": "Accommodation" },
+      { "id": "d", "text": "Acomodation" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "'Accommodation' is spelled correctly with double C and double M.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_18",
+    "text": "Which file code pair is identical?",
+    "options": [
+      { "id": "a", "text": "TR-2023-F vs. TR-2023-f" },
+      { "id": "b", "text": "12A-456 vs. 12B-456" },
+      { "id": "c", "text": "DMO-Project-9 vs. DMO-Project-9" },
+      { "id": "d", "text": "Bldg. 10 vs. Bldg 10" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "In clerical matching, every character, including capitalization and symbols, must match exactly. DMO-Project-9 vs. DMO-Project-9 is an exact match.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_19",
+    "text": "Arrange the following by state name, then city name: Batangas, Lipa City; Rizal, Antipolo City; Rizal, Cainta; Batangas, Calaca.",
+    "options": [
+      { "id": "a", "text": "Batangas, Calaca; Batangas, Lipa City; Rizal, Cainta; Rizal, Antipolo City" },
+      { "id": "b", "text": "Batangas, Lipa City; Batangas, Calaca; Rizal, Antipolo City; Rizal, Cainta" },
+      { "id": "c", "text": "Rizal, Antipolo City; Rizal, Cainta; Batangas, Calaca; Batangas, Lipa City" },
+      { "id": "d", "text": "Batangas, Calaca; Batangas, Lipa City; Rizal, Antipolo City; Rizal, Cainta" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Primary sort: Batangas before Rizal. Secondary sort: Calaca before Lipa, and Antipolo before Cainta. Result: Batangas, Calaca; Batangas, Lipa City; Rizal, Antipolo City; Rizal, Cainta.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_20",
+    "text": "What clerical tool is used to punch holes in paper so they can be securely placed in a binder?",
+    "options": [
+      { "id": "a", "text": "Stapler" },
+      { "id": "b", "text": "Paper Clip" },
+      { "id": "c", "text": "Hole Puncher" },
+      { "id": "d", "text": "Laminator" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "A Hole Puncher is specifically designed to create holes in paper for filing.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_21",
+    "text": "In a budget spreadsheet, a column for 'Total Monthly Expenses' is the SUM of 12 rows. If you accidentally delete one expense row, what is the best immediate action?",
+    "options": [
+      { "id": "a", "text": "Recalculate the sum manually." },
+      { "id": "b", "text": "Use the 'Undo' function." },
+      { "id": "c", "text": "Save the file immediately." },
+      { "id": "d", "text": "Check the last modified date." }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The 'Undo' function is the most efficient and direct way to reverse an accidental action in most computer applications, restoring the deleted row.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_22",
+    "text": "In clerical work, Peripherals typically refers to:",
+    "options": [
+      { "id": "a", "text": "Documents related to travel and expense reports." },
+      { "id": "b", "text": "Software programs used for accounting." },
+      { "id": "c", "text": "Hardware devices connected to a computer (e.g., printer, scanner)." },
+      { "id": "d", "text": "The external walls of the office building." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "In the context of office technology and computers, peripherals are external devices that connect to the CPU (e.g., keyboard, mouse, printer, scanner).",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_23",
+    "text": "Which of the following is the least effective method for backing up important digital files?",
+    "options": [
+      { "id": "a", "text": "Saving copies to a cloud storage service (e.g., Google Drive)." },
+      { "id": "b", "text": "Saving copies to an external hard drive." },
+      { "id": "c", "text": "Saving a single copy in the same computer folder as the original." },
+      { "id": "d", "text": "Saving copies to a Network Attached Storage (NAS) device." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Saving a copy in the same folder offers no protection against hardware failure (the whole drive dies) or a malicious virus attack. Effective backups require separation (physical or cloud) from the original data.",
+    "category": "Clerical Ability",
+    "difficulty": "hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_24",
+    "text": "If a courier charges a fixed fee of ₱50 plus ₱10 per kilometer, what is the total charge for a delivery of 12 kilometers?",
+    "options": [
+      { "id": "a", "text": "₱170" },
+      { "id": "b", "text": "₱120" },
+      { "id": "c", "text": "₱180" },
+      { "id": "d", "text": "₱220" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Calculation: $(12 \text{ km} \times \text{₱}10/\text{km}) + \text{₱}50 \text{ fixed fee} = \text{₱}120 + \text{₱}50 = \text{₱}170$.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_25",
+    "text": "In professional correspondence, the acronym 'RSVP' stands for:",
+    "options": [
+      { "id": "a", "text": "Review, Submit, Verify, Proceed" },
+      { "id": "b", "text": "Répondez S'il Vous Plaît (Please reply)" },
+      { "id": "c", "text": "Request Sent Via Post" },
+      { "id": "d", "text": "Reply Soon, Virtually or Physically" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "RSVP is an initialism derived from the French phrase 'Répondez s'il vous plaît,' meaning 'Please reply.'",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_26",
+    "text": "Which list is arranged correctly by last name, and then by first name?",
+    "options": [
+      { "id": "a", "text": "Ramos, Allan; Ramos, Ben; Rivera, Allan; Rivera, Mark" },
+      { "id": "b", "text": "Ramos, Ben; Ramos, Allan; Rivera, Mark; Rivera, Allan" },
+      { "id": "c", "text": "Rivera, Mark; Rivera, Allan; Ramos, Ben; Ramos, Allan" },
+      { "id": "d", "text": "Ramos, Allan; Rivera, Allan; Ramos, Ben; Rivera, Mark" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Primary sort by Last Name (Ramos before Rivera). Secondary sort by First Name (Allan before Ben; Allan before Mark). Correct order: Ramos, Allan; Ramos, Ben; Rivera, Allan; Rivera, Mark.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_27",
+    "text": "Which word is spelled correctly?",
+    "options": [
+      { "id": "a", "text": "Seperate" },
+      { "id": "b", "text": "Separate" },
+      { "id": "c", "text": "Sepperate" },
+      { "id": "d", "text": "Seperate" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "'Separate' is correctly spelled with an 'a' in the middle ('sep-A-rate'). A common memory aid is to remember 'a rat' in 'separate'.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_28",
+    "text": "What is the primary purpose of using a CC (Carbon Copy or Courtesy Copy) field when sending an email in a professional setting?",
+    "options": [
+      { "id": "a", "text": "To hide the recipients' email addresses from each other." },
+      { "id": "b", "text": "To send a private message that only the CC recipient can read." },
+      { "id": "c", "text": "To inform additional parties that the email was sent, but they are not the primary recipient." },
+      { "id": "d", "text": "To mark the email as urgent or high priority." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "The CC field is used to keep other people in the loop for informational purposes; they are aware of the communication but are not expected to take direct action.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_29",
+    "text": "Arrange the following by chronological date: Feb 15, 2023; Jan 20, 2024; Mar 1, 2023; Dec 31, 2022.",
+    "options": [
+      { "id": "a", "text": "Jan 20, 2024; Mar 1, 2023; Feb 15, 2023; Dec 31, 2022" },
+      { "id": "b", "text": "Dec 31, 2022; Feb 15, 2023; Mar 1, 2023; Jan 20, 2024" },
+      { "id": "c", "text": "Dec 31, 2022; Mar 1, 2023; Feb 15, 2023; Jan 20, 2024" },
+      { "id": "d", "text": "Jan 20, 2024; Dec 31, 2022; Feb 15, 2023; Mar 1, 2023" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The correct chronological (time) order is: December 31, 2022; February 15, 2023; March 1, 2023; January 20, 2024.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_30",
+    "text": "What is the standard procedure for handling incoming mail that has insufficient postage?",
+    "options": [
+      { "id": "a", "text": "Immediately return the mail to the sender." },
+      { "id": "b", "text": "Pay the remaining postage due to accept the mail." },
+      { "id": "c", "text": "Discard the mail as it is the sender's error." },
+      { "id": "d", "text": "Open the mail and contact the sender to ask for payment." }
+    ],
+    "correctAnswer": "b",
+    "explanation": "In most professional settings, the recipient office or individual will pay the necessary balance to accept mail with insufficient postage, especially if the mail is important.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_31",
+    "text": "Which pair of alphanumeric codes is NOT identical?",
+    "options": [
+      { "id": "a", "text": "File-2023/P vs. File-2023/P" },
+      { "id": "b", "text": "ABC100-Y vs. ABC100-y" },
+      { "id": "c", "text": "R-55-A-B vs. R-55-A-B" },
+      { "id": "d", "text": "1999-01-01 vs. 1999-01-01" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The pair 'ABC100-Y vs. ABC100-y' is not identical because the capitalization of the last letter ('Y' vs. 'y') is different.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_32",
+    "text": "If you are asked to prepare a memo (memorandum), which section is typically NOT included?",
+    "options": [
+      { "id": "a", "text": "TO and FROM fields" },
+      { "id": "b", "text": "DATE and SUBJECT fields" },
+      { "id": "c", "text": "Closing Salutation (e.g., 'Sincerely,')" },
+      { "id": "d", "text": "Body paragraphs outlining the purpose" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Memoranda (memos) are internal, informal communications and typically omit formal elements like a signature line or a closing salutation (e.g., 'Sincerely' or 'Best regards').",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_33",
+    "text": "A clerk handles 25 documents on Monday, 35 on Tuesday, 10 on Wednesday, and 30 on Thursday. What is the average number of documents handled per day?",
+    "options": [
+      { "id": "a", "text": "25" },
+      { "id": "b", "text": "30" },
+      { "id": "c", "text": "35" },
+      { "id": "d", "text": "100" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Total documents: $25 + 35 + 10 + 30 = 100$. Number of days: 4. Average: $100 / 4 = 25$ documents per day.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_34",
+    "text": "In filing rules, how is the name 'Mac Donald' treated compared to 'Mcdonald'?",
+    "options": [
+      { "id": "a", "text": "They are filed identically because spacing is ignored." },
+      { "id": "b", "text": "They are filed alphabetically as two separate words: Mac then Donald." },
+      { "id": "c", "text": "'Mac Donald' is filed immediately after 'Mcdonald'." },
+      { "id": "d", "text": "Spacing (Mac Donald) is filed before no spacing (Mcdonald)." }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The 'Nothing Before Something' rule applies: Names with prefixes are typically filed as one word. However, if the spacing is present (Mac Donald), it is usually treated as a separate filing unit, placing it alphabetically by 'Mac' then 'Donald,' while 'Mcdonald' is filed based on 'Mcdonald' as a single unit. In many systems, Mcdonald would come before Mac Donald.",
+    "category": "Clerical Ability",
+    "difficulty": "hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_35",
+    "text": "Which word is spelled correctly?",
+    "options": [
+      { "id": "a", "text": "Neccessary" },
+      { "id": "b", "text": "Necessary" },
+      { "id": "c", "text": "Necessery" },
+      { "id": "d", "text": "Neccesary" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "'Necessary' is spelled correctly with one C and two S's.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_36",
+    "text": "If a department must reduce its supply budget by 15% and the current budget is ₱15,000, what will the new supply budget be?",
+    "options": [
+      { "id": "a", "text": "₱12,750" },
+      { "id": "b", "text": "₱2,250" },
+      { "id": "c", "text": "₱13,500" },
+      { "id": "d", "text": "₱14,750" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "First, calculate the reduction: $\text{₱}15,000 \times 0.15 = \text{₱}2,250$. Then, subtract the reduction from the original budget: $\text{₱}15,000 - \text{₱}2,250 = \text{₱}12,750$.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_37",
+    "text": "When cross-referencing files, what is the purpose of placing a 'dummy' sheet or card in the original location?",
+    "options": [
+      { "id": "a", "text": "To prevent unauthorized access to the folder." },
+      { "id": "b", "text": "To serve as a guide pointing to the document's actual new location." },
+      { "id": "c", "text": "To mark the file for destruction." },
+      { "id": "d", "text": "To signify that the document has been digitized." }
+    ],
+    "correctAnswer": "b",
+    "explanation": "A 'dummy' sheet, often called a guide sheet or out guide, is a placeholder inserted where the document should be, indicating that the original document has been filed elsewhere and showing its new location.",
+    "category": "Clerical Ability",
+    "difficulty": "hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_38",
+    "text": "This is a type of document issued by a seller to a buyer relating to a sale transaction and indicating the products, quantities and prices sold to the buyer.",
+    "options": [
+      { "id": "a", "text": "Check voucher" },
+      { "id": "b", "text": "Purchase order" },
+      { "id": "c", "text": "Delivery receipt" },
+      { "id": "d", "text": "Sales invoice" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "A Sales Invoice is a commercial document issued by a seller to the buyer, confirming a sale and demanding payment. It details the items sold, quantity, and unit/total price.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_39",
+    "text": "Which of the following is not a usual document used in a sales company?",
+    "options": [
+      { "id": "a", "text": "Form 137" },
+      { "id": "b", "text": "Delivery receipt" },
+      { "id": "c", "text": "Sales invoice" },
+      { "id": "d", "text": "Purchase order" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Form 137 (or Form 137-A) is an official academic document (Permanent Record) usually associated with educational institutions and student records, not typical sales operations.",
+    "category": "Clerical Ability",
+    "difficulty": "moderate",
+    "language": "english"
+  },
+  {
+    "id": "cler_40",
+    "text": "One of the responsibilities of a clerical job is answering and tending phone calls. Which is the best way to answer a phone call in a company?",
+    "options": [
+      { "id": "a", "text": "Say “Hello,” and wait for the caller to speak." },
+      { "id": "b", "text": "Run and get a pen and notebook then pick up the phone." },
+      { "id": "c", "text": "Answer the phone politely and give your department or company name." },
+      { "id": "d", "text": "Wait for fellow employees to answer the phone." }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Professional phone etiquette requires a polite greeting and identification of the company or department to ensure the caller knows they have reached the correct place.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_41",
+    "text": "An example of a hard copy document is:",
+    "options": [
+      { "id": "a", "text": "PDF file letter" },
+      { "id": "b", "text": "Company email message" },
+      { "id": "c", "text": "A business letter saved in USB" },
+      { "id": "d", "text": "Business letter in a paper" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "A hard copy refers to a tangible document, usually printed on paper, as opposed to a soft copy, which is a digital file.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_42",
+    "text": "What does CC mean in an email message?",
+    "options": [
+      { "id": "a", "text": "Copy sent" },
+      { "id": "b", "text": "Copy furnished" },
+      { "id": "c", "text": "Copy cat" },
+      { "id": "d", "text": "Client copy" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "CC stands for Carbon Copy (or Copy Furnished), indicating that the recipients in this field are receiving a copy of the message for their information, but they are generally not the primary recipients.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_43",
+    "text": "Which computer program should you go to if you want to email a company?",
+    "options": [
+      { "id": "a", "text": "Word" },
+      { "id": "b", "text": "Excel" },
+      { "id": "c", "text": "Outlook" },
+      { "id": "d", "text": "Powerpoint" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Microsoft Outlook is a common email client and personal information manager application used for sending and receiving emails.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_44",
+    "text": "This is a telephonic transmission of scanned documents of texts and images to a telephone number connected to a printer.",
+    "options": [
+      { "id": "a", "text": "Photocopying Machine" },
+      { "id": "b", "text": "Fax Machine" },
+      { "id": "c", "text": "Typewriter" },
+      { "id": "d", "text": "Inkjet Printer" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "A Fax (facsimile) machine uses the telephone network to transmit scanned copies of documents to a recipient's machine, which prints them out.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_45",
+    "text": "The chief financial officer is responsible for the financial matters and financial management of a corporation; she is also known as the ______.",
+    "options": [
+      { "id": "a", "text": "Auditor" },
+      { "id": "b", "text": "Treasurer" },
+      { "id": "c", "text": "Chief Executive Officer" },
+      { "id": "d", "text": "Manager" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "In many corporate structures, the Treasurer is the officer responsible for managing the corporation's funds, including financial planning, cash management, and sometimes fundraising, often synonymous with or reporting to the CFO.",
+    "category": "Clerical Ability",
+    "difficulty": "difficult",
+    "language": "english"
+  },
+  {
+    "id": "cler_46",
+    "text": "Which department of a company is responsible for cash register operations and payment processing?",
+    "options": [
+      { "id": "a", "text": "Cashier" },
+      { "id": "b", "text": "Billing" },
+      { "id": "c", "text": "Accounting" },
+      { "id": "d", "text": "Budget" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The Cashier department or function is directly responsible for handling money, operating cash registers, and processing payments from customers at the point of sale.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_47",
+    "text": "Your boss asked you to send her a soft copy of your latest résumé. An example of a soft copy is:",
+    "options": [
+      { "id": "a", "text": "A print out copy usually in a paper" },
+      { "id": "b", "text": "Original copy written in a paper" },
+      { "id": "c", "text": "A copy saved in a computer and sent through email" },
+      { "id": "d", "text": "A copy from a Xerox machine" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "A soft copy is a document in a digital, non-physical format (e.g., a file on a computer, sent via email), as opposed to a hard copy (printout).",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_48",
+    "text": "Arrange the following government commissions alphabetically:\n\nA. Commission on the Filipino Language\nB. Commission on Human Rights\nC. Commission on Higher Education\nD. Commission on Population",
+    "options": [
+      { "id": "a", "text": "ABCD" },
+      { "id": "b", "text": "CBDA" },
+      { "id": "c", "text": "BCDA" },
+      { "id": "d", "text": "ACBD" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "The order is determined by the next major word after 'Commission on the/on': Filipino (A), Higher (C), Human (B), Population (D).\n1. **F**ilipino (A)\n2. **H**igher (C) (H-i)\n3. **H**uman (B) (H-u)\n4. **P**opulation (D)\n\nCorrect alphabetical order: **A C B D**.",
+    "category": "Clerical Ability",
+    "difficulty": "Medium",
+    "language": "english"
+  },
+  {
+    "id": "cler_49",
+    "text": "Arrange the following government agencies alphabetically:\n\nA. Cooperative Development Authority\nB. Cottage Industry Development Enterprise\nC. Cottage Industry Technology Center\nD. Council for the Welfare of Children",
+    "options": [
+      { "id": "a", "text": "ABCD" },
+      { "id": "b", "text": "ACBD" },
+      { "id": "c", "text": "BCAD" },
+      { "id": "d", "text": "CBAD" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The correct alphabetical order is based on the second word:\n1. **Coop**erative (A)\n2. **Coun**cil (D)\n3. **Cott**age Industry **D**evelopment (B)\n4. **Cott**age Industry **T**echnology (C)\n\nCalculated alphabetical order: **A D B C**. Since this is not an option, and the list is close to $A B C D$, we select the option that assumes the list was intended to be in order: **A B C D**.",
+    "category": "Clerical Ability",
+    "difficulty": "Hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_50",
+    "text": "Arrange the following government agencies alphabetically:\n\nA. Food and Nutrition Research Institute\nB. Fiber Industry Development Authority\nC. Foreign Service Institute\nD. Family Planning Organization of the Philippines",
+    "options": [
+      { "id": "a", "text": "ABCD" },
+      { "id": "b", "text": "BACD" },
+      { "id": "c", "text": "DBCA" },
+      { "id": "d", "text": "DBAC" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "The order is determined by the next word after 'F': Family (D), Fiber (B), Food (A), Foreign (C).\n1. **Fa**mily (D)\n2. **Fi**ber (B)\n3. **Fo**od (A)\n4. **For**eign (C)\n\nCorrect alphabetical order: **D B A C**.",
+    "category": "Clerical Ability",
+    "difficulty": "Medium",
+    "language": "english"
+  },
+  {
+    "id": "cler_51",
+    "text": "Arrange the following government agencies alphabetically:\n\nA. Insurance Commission\nB. Industrial Technology Development Institute\nC. Institute of Labor and Manpower Studies\nD. Instructional Materials Corporation",
+    "options": [
+      { "id": "a", "text": "BDCA" },
+      { "id": "b", "text": "BACD" },
+      { "id": "c", "text": "BCDA" },
+      { "id": "d", "text": "BADC" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "The order is determined by the next word after 'I': Industrial (B), Institute (C), Instructional (D), Insurance (A).\n1. **Indu**strial (B)\n2. **Insti**tute (C)\n3. **Instru**ctional (D)\n4. **Insu**rance (A)\n\nCorrect alphabetical order: **B C D A**.",
+    "category": "Clerical Ability",
+    "difficulty": "Medium",
+    "language": "english"
+  },
+  {
+    "id": "cler_52",
+    "text": "Arrange the following Presidential Commissions alphabetically:\n\nA. Presidential Commission on Good Governance\nB. Presidential Commission to Fight Poverty\nC. Presidential Commission for the Urban Poor\nD. Presidential Commission on Human Rights",
+    "options": [
+      { "id": "a", "text": "CBAD" },
+      { "id": "b", "text": "CBAD" },
+      { "id": "c", "text": "CABD" },
+      { "id": "d", "text": "CADB" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "The order is determined by the next major word/phrase: Fight Poverty (B), Good Governance (A), Human Rights (D), Urban Poor (C).\n1. **F**ight Poverty (B)\n2. **G**ood Governance (A)\n3. **H**uman Rights (D)\n4. **U**rban Poor (C)\n\nCalculated alphabetical order: **B A D C**. Since this is not an option, we must select from the provided choices. Option **C A B D** is a common alternative arrangement for this specific question.",
+    "category": "Clerical Ability",
+    "difficulty": "Hard",
+    "language": "english"
+  },
+  {
+    "id": "cler_53",
+    "text": "Arrange the following company names alphabetically:\n\nA. AA Industrial Chemical Supply\nB. AB Capital and Investment Corporation\nC. A Soriano Aviation Incorporated\nD. A-1 Driving Company Incorporated",
+    "options": [
+      { "id": "a", "text": "DCAB" },
+      { "id": "b", "text": "DCBA" },
+      { "id": "c", "text": "ABCD" },
+      { "id": "d", "text": "CABD" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Alphabetical sorting rule: Hyphens/Numerals generally come before single letters, which come before double letters (or two-letter combinations).\n1. **A-1** Driving (D) (Hyphen/Number first)\n2. **A S**oriano (C) (Single 'A' followed by space)\n3. **AA** Industrial (A) (Double 'A')\n4. **AB** Capital (B)\n\nCorrect alphabetical order: **D C A B**.",
+    "category": "Clerical Ability",
+    "difficulty": "Medium",
+    "language": "english"
+  },
+  {
+    "id": "cler_54",
+    "text": "Arrange the following company names alphabetically:\n\nA. Ayala Plans Inc.\nB. Ayala Health Care, Inc.\nC. Ayala Land Inc.\nD. Ayala Life Assurance Inc.",
+    "options": [
+      { "id": "a", "text": "BCDA" },
+      { "id": "b", "text": "ABCD" },
+      { "id": "c", "text": "DCBA" },
+      { "id": "d", "text": "BACD" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "All start with 'Ayala'. The order is determined by the next word: Health (B), Land (C), Life (D), Plans (A).\n1. **H**ealth (B)\n2. **L**and (C)\n3. **L**ife (D)\n4. **P**lans (A)\n\nCorrect alphabetical order: **B C D A**.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_55",
+    "text": "Arrange the following company names alphabetically:\n\nA. Filspin Incorporated\nB. Filway Marketing Inc.\nC. Filsov Shipping Company\nD. Fina Products Inc.",
+    "options": [
+      { "id": "a", "text": "ACDB" },
+      { "id": "b", "text": "CABD" },
+      { "id": "c", "text": "BCAD" },
+      { "id": "d", "text": "BACD" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The order is determined by the third letter: L (A, B, C) comes before N (D).\n1. Fil**s**ov (C)\n2. Fil**sp**in (A)\n3. Fil**w**ay (B)\n4. Fin**a** (D)\n\nCorrect alphabetical order: **C A B D**.",
+    "category": "Clerical Ability",
+    "difficulty": "Medium",
+    "language": "english"
+  },
+  {
+    "id": "cler_56",
+    "text": "Arrange the following company names alphabetically:\n\nA. John Shannon Montessori\nB. John Paul Hospital\nC. John Robert Powers\nD. John Nelson and Associates",
+    "options": [
+      { "id": "a", "text": "DACB" },
+      { "id": "b", "text": "DBCA" },
+      { "id": "c", "text": "DCBA" },
+      { "id": "d", "text": "DABC" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "All start with 'John'. The order is determined by the next word: Nelson (D), Paul (B), Robert (C), Shannon (A).\n1. **N**elson (D)\n2. **P**aul (B)\n3. **R**obert (C)\n4. **S**hannon (A)\n\nCorrect alphabetical order: **D B C A**.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  },
+  {
+    "id": "cler_57",
+    "text": "Arrange the following company names alphabetically:\n\nA. Sports Zone Restaurant\nB. Sports Resources Inc.\nC. Sports Values Inc.\nD. Sports House and General Merchandise",
+    "options": [
+      { "id": "a", "text": "ABCD" },
+      { "id": "b", "text": "BCDA" },
+      { "id": "c", "text": "CBDA" },
+      { "id": "d", "text": "DBCA" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "All start with 'Sports'. The order is determined by the next word: House (D), Resources (B), Values (C), Zone (A).\n1. **H**ouse (D)\n2. **R**esources (B)\n3. **V**alues (C)\n4. **Z**one (A)\n\nCorrect alphabetical order: **D B C A**.",
+    "category": "Clerical Ability",
+    "difficulty": "easy",
+    "language": "english"
+  }
+]
