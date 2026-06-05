@@ -1,6 +1,6 @@
 {
 "name": "CSE Reviewer",
-"short_name": "MRPH",
+"short_name": "CSE Reviewer",
 "start_url": "/",
 "display": "standalone",
 "description": "Web application for review PH-related examinations.",
