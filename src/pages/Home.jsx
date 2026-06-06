@@ -16,10 +16,6 @@ function Home() {
   return (
     <div className="container mx-auto px-4 py-4">
       <div className="text-center mb-6 pt-4">
-        <div className="inline-flex items-center px-4 py-2 bg-linear-to-r from-blue-100 to-purple-100 rounded-full mb-4">
-          <Star className="w-4 h-4 text-yellow-500 mr-2" />
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-950">Free. Focused. Built to Pass.</span>
-        </div>
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
           Pass the CSE.
           <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -31,7 +27,6 @@ function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <a href="#exams" className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
-            Start Exam Now
             <ArrowRight className="ml-2 w-5 h-5" />
           </a>
           <a href="/review" className="px-8 py-4 bg-white border-2 border-blue-500 text-blue-600 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
@@ -40,7 +35,6 @@ function Home() {
           </a>
         </div>
       </div>
-
       <div id="exams" className="scroll-mt-16 mb-16">
         <ExamSelection />
       </div>
