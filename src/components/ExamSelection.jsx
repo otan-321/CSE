@@ -90,12 +90,7 @@ function ExamSelection() {
         ))}
       </div>
 
-      <div className="mt-10 text-center">
-        <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white dark:bg-gray-950 rounded-full shadow-md">
-          <div className="w-2 h-2 bg-green-50 dark:bg-gray-900 rounded-full animate-pulse"></div>
-          <span className="text-sm text-gray-600 dark:text-gray-200">Some questions here are generated via AI (Gemini, Deepseek and ChatGPT), some are from social media groups and old reviewer from a review center. If you see inconsistency, please submit a report.</span>
-        </div>
-      </div>
+
     </div>
   );
 }
