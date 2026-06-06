@@ -1,0 +1,165 @@
+{
+  "id": "grammar",
+  "title": "Grammar",
+  "category": "Verbal Ability",
+  "subcategory": "Grammar",
+  "sections": [
+    {
+      "id": "grammar-pos",
+      "title": "Parts of Speech",
+      "type": "table",
+      "headers": ["Category", "Examples"],
+      "rows": [
+        ["Nouns", "house, group, love, UNDP, happiness"],
+        ["Verbs", "run, walk, do, be, shall, eat, love"],
+        ["Adjectives", "sad, green, asleep, burnt"],
+        ["Adverbs", "well, later, however, near"],
+        ["Pronouns", "you, me, I, them, yourself, anything"],
+        ["Articles", "a/an, the, some"],
+        ["Prepositions", "on, of, across, like"],
+        ["Conjunctions", "and, or, since, if"],
+        ["Interjections", "No!, Alas!, Oh!"]
+      ]
+    },
+    {
+      "id": "grammar-nouns",
+      "title": "Noun Types",
+      "type": "table",
+      "headers": ["Type", "Description", "Examples"],
+      "rows": [
+        ["Common Noun", "Refers to a class of nouns; general category", "president, city, book"],
+        ["Proper Noun", "Refers to a specific/particular noun; always capitalized", "Brainbox, Philippines, Harry Potter"],
+        ["Collective Nouns", "Refers to a group", "staff, battalion, class"],
+        ["Count Nouns", "Can be counted; can be pluralized", "apple(s), pen(s), city/cities"],
+        ["Non-count/Mass Nouns", "Cannot be counted", "sand, rice, food"],
+        ["Abstract Nouns", "Intangible nouns", "idea, love, happiness"],
+        ["Concrete Nouns", "Tangible nouns", "computer, book"]
+      ]
+    },
+    {
+      "id": "grammar-irregular-plurals",
+      "title": "Irregular Plurals",
+      "type": "table",
+      "headers": ["Singular", "Plural", "Singular", "Plural"],
+      "rows": [
+        ["child", "children", "alumnus", "alumni"],
+        ["tooth", "teeth", "datum", "data"],
+        ["mouse", "mice", "criterion", "criteria"],
+        ["phenomenon", "phenomena", "crisis", "crises"],
+        ["thesis", "theses", "analysis", "analyses"],
+        ["curriculum", "curricula", "formula", "formulae"],
+        ["focus", "foci", "nucleus", "nuclei"],
+        ["stimulus", "stimuli", "cactus", "cacti"]
+      ]
+    },
+    {
+      "id": "grammar-zero-plural",
+      "title": "Zero Plural (no change)",
+      "type": "text",
+      "content": "cod, series, deer, odds, sheep, wheat, elite, regalia, species, headquarters, means, swine"
+    },
+    {
+      "id": "grammar-always-singular",
+      "title": "Always Singular (no plural form)",
+      "type": "text",
+      "content": "advice, aid, ammunition, documentation, evidence, homework, implementation, jargon, jewelry, learning, smoke, work"
+    },
+    {
+      "id": "grammar-always-plural",
+      "title": "Always Plural (no singular form)",
+      "type": "text",
+      "content": "assets, lyrics, scissors, manners, minutes (of a meeting), shorts, belongings, spirits (alcoholic drinks), statistics (facts), clothes, pants, thanks, credentials, proceedings, ties, eyeglasses, riches, remains"
+    },
+    {
+      "id": "grammar-tenses",
+      "title": "Verb Tenses",
+      "type": "table",
+      "headers": ["Tense", "Use", "Example"],
+      "rows": [
+        ["Simple Present", "General/universal statements; regular/habitual actions", "I walk to school every day."],
+        ["Simple Past", "Action that began and ended before the present", "We visited the museum yesterday."],
+        ["Simple Future", "Action that will happen in the future", "My driver will pick me up at 3 PM."],
+        ["Present Progressive", "Action going on now (unfinished/incomplete)", "We are preparing for our final thesis defense."],
+        ["Past Progressive", "Action in progress at a certain time in the past", "My husband was working in the bodega last night."],
+        ["Future Progressive", "Ongoing action continuing into the future", "I will be dancing until the sun rises."],
+        ["Present Perfect", "Action completed at an indefinite time in the past", "The school has increased the tuition fee."],
+        ["Past Perfect", "Past event that happened before another past event", "When I arrived home, he had already called."],
+        ["Future Perfect", "Action completed by a specified time in the future", "We will have finished this job by April."],
+        ["Present Perfect Progressive", "Action that began but has not finished yet", "The value of the PHP has been falling."],
+        ["Past Perfect Progressive", "Continuing action in the past overtaken by another past action", "I had been waiting for your output before I got sick."],
+        ["Future Perfect Progressive", "Action happening now that will still be happening at a future moment", "At 8 PM, Divine will have been studying for ten hours straight."]
+      ]
+    },
+    {
+      "id": "grammar-sva",
+      "title": "Subject-Verb Agreement Rules",
+      "type": "table",
+      "headers": ["Rule", "Example"],
+      "rows": [
+        ["Singular subject → -s form verb", "The child runs towards the ice cream truck."],
+        ["Plural subject → base form verb", "The children run towards the ice cream truck."],
+        ["Singular indefinite pronouns (each, either, neither, everyone, nobody, etc.) → -s form verb", "Everybody wants to attend the concert."],
+        ["Plural indefinite pronouns (both, few, many, several) → base form verb", "Only a few keep lions as pets."],
+        ["Subjects joined by 'and' → base form verb", "A telephone line and an internet connection are sold together."],
+        ["or/nor, either…or, neither…nor → verb agrees with the nearer subject", "Neither the teacher nor the students are ready."],
+        ["Collective nouns → singular (one unit) or plural (individuals)", "The group has decided to go on a trip."],
+        ["'a number of' → base form verb", "A number of girls favor the new makeup set."],
+        ["'the number of' → -s form verb", "The number of girls has increased."],
+        ["Expressions of money, time, or measurement → -s form verb", "Ten pesos is not enough for a full meal."],
+        ["Nouns plural in form but singular in meaning → -s form verb", "The news was disheartening. (also: mumps, mathematics, economics, physics)"],
+        ["The + adjective used as noun → base form verb", "The wicked are not allowed in heaven."]
+      ]
+    },
+    {
+      "id": "grammar-pronouns",
+      "title": "Personal Pronouns",
+      "type": "table",
+      "headers": ["", "Subjective", "Objective", "Possessive Adjective", "Possessive Pronoun"],
+      "rows": [
+        ["1st Singular", "I", "me", "my", "mine"],
+        ["2nd Singular", "you", "you", "your", "yours"],
+        ["3rd Masc.", "he", "him", "his", "his"],
+        ["3rd Fem.", "she", "her", "her", "hers"],
+        ["3rd Neuter", "it", "it", "its", "—"],
+        ["1st Plural", "we", "us", "our", "ours"],
+        ["2nd Plural", "you", "you", "your", "yours"],
+        ["3rd Plural", "they", "them", "their", "theirs"]
+      ]
+    },
+    {
+      "id": "grammar-conjunctions",
+      "title": "Types of Conjunctions",
+      "type": "list",
+      "items": [
+        "Coordinating Conjunctions — Join elements of equal rank. FANBOYS: for, and, nor, but, or, yet, so.",
+        "Correlative Conjunctions — Paired conjunctions: not only…but also, both…and, either…or, neither…nor, not…but.",
+        "Subordinating Conjunctions — Join a subordinate clause to a main clause: after, although, as, because, before, if, since, unless, until, when, where, while.",
+        "Conjunctive Adverbs — Act like conjunctions; clauses they join remain independent: however, consequently, furthermore, moreover, nevertheless, therefore, thus."
+      ]
+    },
+    {
+      "id": "grammar-sentence-errors",
+      "title": "Common Sentence Errors",
+      "type": "list",
+      "items": [
+        "Run-on Sentence: Two or more sentences not separated by proper punctuation or conjunction. Fix with a period, semicolon, comma + coordinating conjunction, or subordinating conjunction.",
+        "Sentence Fragment: Incomplete sentence with missing subject or predicate. ❌ 'Andy studied hard. Passed all his tests.' ✅ 'Andy studied hard and passed all his tests.'",
+        "Parallel Structure: Elements performing the same purpose must be in the same form. ❌ 'I like running, biking, and to take a long hike.' ✅ 'I like running, biking, and taking a long hike.'",
+        "Misplaced Modifier: Modifier placed too far from the word it modifies. ❌ 'Elijah cut himself while shaving badly.' ✅ 'Elijah cut himself badly while shaving.'",
+        "Dangling Modifier: The word being modified is not in the sentence. ❌ 'To pass the exam, review lessons must be taken seriously.' ✅ 'To pass the exam, one must take review lessons seriously.'"
+      ]
+    },
+    {
+      "id": "grammar-modals",
+      "title": "Modal Verb Guidelines",
+      "type": "list",
+      "items": [
+        "shall vs. should — Use shall with I and we when asking for advice or making a suggestion: 'Shall we dance?' Use should for other persons.",
+        "will vs. would — Use will or would for requests (would is more formal). Use will for predictions.",
+        "can vs. may — Use can to ask permission under general rules or custom. Use may to ask permission from a specific person.",
+        "may vs. might — May = serious or immediate possibility. Might = remote possibility.",
+        "Modal verbs do not occur with each other. ❌ 'I will be going to submit my report.' ✅ 'I will be submitting my report.'"
+      ]
+    }
+  ]
+}

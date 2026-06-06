@@ -1,0 +1,95 @@
+{
+  "id": "word-problems",
+  "title": "Word Problems",
+  "category": "Numerical Ability",
+  "subcategory": "Word Problems",
+  "sections": [
+    {
+      "id": "wp-3rs",
+      "title": "The 3 R's and ESP Method",
+      "type": "list",
+      "items": [
+        "Read — Read the problem thoroughly.",
+        "Represent — Represent the unknown through a variable.",
+        "Relate — Relate variables to each other and to given values.",
+        "Equate — Write an equation using facts in the problem.",
+        "Solve — Solve the equation.",
+        "Prove — Check the answer.",
+        "Note: The value of x is not always the final answer — substitute x back into the representation."
+      ]
+    },
+    {
+      "id": "wp-translation",
+      "title": "Translating English to Algebra",
+      "type": "table",
+      "headers": ["English", "Algebraic Expression"],
+      "rows": [
+        ["plus; more than; increased by; sum of", "+"],
+        ["minus; less than; subtracted from; decreased by; difference", "−"],
+        ["times; product of; of", "×"],
+        ["divided by; quotient of; per", "÷"],
+        ["is/are/was/were/will be/equals/results", "="],
+        ["twice the number", "2x"],
+        ["4 less than the number", "x − 4"],
+        ["4 less than twice the number is 10", "2x − 4 = 10"],
+        ["3 times the sum of the number and 4", "3(x+4)"]
+      ]
+    },
+    {
+      "id": "wp-consecutive",
+      "title": "Consecutive Integers",
+      "type": "list",
+      "items": [
+        "Consecutive integers: x, x+1, x+2, x+3, …",
+        "Consecutive odd/even integers: x, x+2, x+4, x+6, … (gap is always 2)"
+      ]
+    },
+    {
+      "id": "wp-age",
+      "title": "Age Problems",
+      "type": "list",
+      "items": [
+        "Ages of all characters change at the same rate.",
+        "Assign variables to represent ages in the present.",
+        "Use a table to organize ages across different time frames.",
+        "2 years ago → age − 2",
+        "Now → age",
+        "5 years from now → age + 5"
+      ]
+    },
+    {
+      "id": "wp-work",
+      "title": "Work Problems",
+      "type": "list",
+      "items": [
+        "Formula: 1/x + 1/y = 1/z",
+        "x = time for person 1 to complete the job alone",
+        "y = time for person 2 to complete it alone",
+        "z = time for both working together",
+        "In 1 hour: person x does 1/x of the job; person y does 1/y; together they do 1/z."
+      ]
+    },
+    {
+      "id": "wp-motion",
+      "title": "Motion Problems",
+      "type": "list",
+      "items": [
+        "Formula: distance = speed × time",
+        "Use a table with columns: Distance, Speed, Time.",
+        "Moving toward each other: add the distances. d₁ + d₂ = total distance",
+        "Moving in opposite directions: same as above.",
+        "One chasing the other: set distances equal."
+      ]
+    },
+    {
+      "id": "wp-strategies",
+      "title": "Problem Solving Strategies",
+      "type": "list",
+      "items": [
+        "Working Backwards: Used when a series of events leads to a known final value. Reverse all operations: addition ↔ subtraction; multiplication ↔ division.",
+        "Make an Organized List: Used for trial-and-error problems. List all possible values based on the first description, then eliminate based on the next descriptions.",
+        "Making a Diagram: Useful for visualizing motion or distance problems. Draw a line; mark distances per unit of time."
+      ]
+    }
+  ]
+}

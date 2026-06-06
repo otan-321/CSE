@@ -1,0 +1,31 @@
+{
+  "id": "clerical-ability",
+  "title": "Clerical Ability (Sub)",
+  "category": "Analytical Ability",
+  "subcategory": "Clerical Ability (Sub)",
+  "sections": [
+    {
+      "id": "clerical-spelling-rules",
+      "title": "Spelling Rules",
+      "type": "list",
+      "items": [
+        "Rule 1 — I before E, except after C: achieve, believe, hygiene, grief, patience, friend. After C: receive, receipt, deceit, perceive. Exception (pronounced 'ay'): neighbor, freight, sleigh, vein, weigh. Other exceptions: either, neither, foreign, height, leisure, weird, seizure.",
+        "Rule 2 — Drop the Final E before a vowel suffix: judge → judging; acknowledge → acknowledging. Keep the e before a consonant suffix: advance → advancement. Exception: mileage, changeable, noticeable, management.",
+        "Rule 3 — Drop the Final Y: When a suffix is added and y is preceded by a consonant, change y to i: beauty → beautiful; worry → worried. Exception: keep y before -ing: cry → crying. When y is preceded by a vowel, keep the y: obey → obeyed.",
+        "Rule 4 — Double the Final Consonant before a vowel suffix when the last syllable is stressed and ends in single vowel + single consonant: submit → submitting. One-syllable words: double if final consonant is preceded by a vowel: flap → flapping. Do NOT double if two syllables with accent on first syllable: open → opening.",
+        "Rule 5 — Adding Affixes generally does not change the base spelling: unnecessary, dissatisfied, misinformation."
+      ]
+    },
+    {
+      "id": "clerical-alphabetizing",
+      "title": "Alphabetizing Rules",
+      "type": "list",
+      "items": [
+        "Rule 1 — A-B-C Order: Arrange according to the first letter of each word.",
+        "Rule 2 — Same First Letters: When first letters are the same, move to the second letter, then the third, and so on.",
+        "Rule 3 — Alphabetizing Titles: Disregard a, an, and the; arrange by the second word.",
+        "Rule 4 — Similar Words: The shorter word comes first. 'ant' before 'ants' (blank space is alphabetized before a letter)."
+      ]
+    }
+  ]
+}

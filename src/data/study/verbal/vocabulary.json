@@ -1,0 +1,150 @@
+{
+  "id": "vocabulary",
+  "title": "Vocabulary",
+  "category": "Verbal Ability",
+  "subcategory": "Vocabulary",
+  "sections": [
+    {
+      "id": "vocab-affixes",
+      "title": "Prefixes",
+      "type": "table",
+      "headers": ["Prefix", "Meaning", "Example"],
+      "rows": [
+        ["anti-", "against", "antidepressant, anticlimax"],
+        ["de-", "opposite, away from", "detoxify"],
+        ["dis-", "not, opposite of", "disease"],
+        ["en-, em-", "cause to", "encode, empathy"],
+        ["fore-", "before", "foreshadow"],
+        ["in-, im-", "in", "intoxicate, imbibe"],
+        ["in-, im-, il-, ir-", "not", "interminable, improbable, illegal, irrational"],
+        ["inter-", "between", "intervention"],
+        ["mid-", "middle", "midbrain"],
+        ["mis-", "wrongly", "mistake"],
+        ["non-", "not", "nonsense"],
+        ["over-", "above", "overdose"],
+        ["pre-", "before", "prescribe"],
+        ["re-", "again", "repetition"],
+        ["semi-", "half", "semicircle"],
+        ["sub-", "under", "submerge"],
+        ["super-", "above", "superimpose"],
+        ["trans-", "across", "transcript"],
+        ["un-", "not", "unprepared"],
+        ["under-", "below", "underscore"]
+      ]
+    },
+    {
+      "id": "vocab-suffixes",
+      "title": "Suffixes",
+      "type": "table",
+      "headers": ["Suffix", "Meaning", "Example"],
+      "rows": [
+        ["-able, -ible", "can be done", "consumable, digestible"],
+        ["-al, -ial", "having characteristics of", "personal, partial"],
+        ["-ed", "past tense", "transformed"],
+        ["-en", "made of", "sodden"],
+        ["-er", "comparative", "stronger"],
+        ["-er, -or", "one who", "learner, advisor"],
+        ["-est", "superlative", "toughest"],
+        ["-ful", "full of", "plentiful"],
+        ["-ic", "having characteristics of", "enthusiastic"],
+        ["-ing", "present participle", "transforming"],
+        ["-ion, -tion, -ation, -ition", "act, process", "opinion, attraction, duration, partition"],
+        ["-ity, -ty", "state of", "mobility"],
+        ["-ive, -ative, -itive", "adjective form", "passive, talkative, sensitive"],
+        ["-less", "without", "careless"],
+        ["-ly", "characteristic of", "lively"],
+        ["-ment", "action or process", "achievement"],
+        ["-ness", "state of, condition of", "readiness"],
+        ["-ous, -eous, -ious", "possessing the qualities of", "porous, igneous, ambitious"],
+        ["-s, -es", "more than one", "books, boxes"],
+        ["-y", "characterized by", "sensory"]
+      ]
+    },
+    {
+      "id": "vocab-synonyms",
+      "title": "Common Synonyms",
+      "type": "table",
+      "headers": ["Word", "Synonym"],
+      "rows": [
+        ["colloquial", "informal"],
+        ["divulge", "reveal"],
+        ["melancholy", "sadness"],
+        ["nemesis", "opponent"],
+        ["obscene", "indecent"],
+        ["predicament", "difficulty"],
+        ["scrutinize", "examine"],
+        ["temperamental", "unpredictable"],
+        ["treacherous", "unfaithful"],
+        ["vexed", "annoyed"],
+        ["abated", "lessened"],
+        ["elucidate", "explain"],
+        ["feeble", "weak"],
+        ["passé", "old"],
+        ["peculiar", "odd"],
+        ["repugnant", "disgusting"],
+        ["staunch", "loyal"],
+        ["stupefied", "dazed"],
+        ["wry", "ironic"],
+        ["zany", "crazy"]
+      ]
+    },
+    {
+      "id": "vocab-antonyms",
+      "title": "Common Antonyms",
+      "type": "table",
+      "headers": ["Word", "Antonym"],
+      "rows": [
+        ["abate", "increase"],
+        ["benevolent", "malevolent"],
+        ["concede", "infuriate"],
+        ["decorum", "abandon"],
+        ["excruciating", "pleasant"],
+        ["lanky", "rotund"],
+        ["loathsome", "delightful"],
+        ["mellifluous", "jarring"],
+        ["munificence", "miserliness"],
+        ["nascent", "moribund"],
+        ["alienate", "include"],
+        ["facile", "profound"],
+        ["garrulous", "taciturn"],
+        ["havoc", "order"],
+        ["inept", "competent"],
+        ["kinky", "conventional"],
+        ["ostracize", "include"],
+        ["preamble", "postscript"],
+        ["queer", "normal"],
+        ["scurrilous", "complimentary"]
+      ]
+    },
+    {
+      "id": "vocab-synonym-tips",
+      "title": "Tips for Synonym/Antonym Tests",
+      "type": "list",
+      "items": [
+        "Determine the part of speech — eliminate options that don't match.",
+        "Don't be tricked by words that look or sound similar to the given word.",
+        "Understand the context — the surrounding words give clues.",
+        "Substitute all possible answers to find the best fit.",
+        "Use the word in a sentence if it seems familiar."
+      ]
+    },
+    {
+      "id": "vocab-confused-words",
+      "title": "Commonly Confused Words",
+      "type": "table",
+      "headers": ["Words", "Distinction", "Example"],
+      "rows": [
+        ["a / an", "a before consonants; an before vowels", "a glass of water / an igloo"],
+        ["accept / except", "accept = to take; except = excluding", "All except Daryl accepted a gift."],
+        ["adverse / averse", "adverse = unfavorable; averse = unwilling", "The jury made an adverse decision. / She is risk-averse."],
+        ["advice / advise", "advice = noun; advise = verb", "He asked for advice; his teacher advised him."],
+        ["affect / effect", "affect = to influence (verb); effect = result (noun)", "The effects of malnutrition might affect their health."],
+        ["oral / verbal", "oral = spoken; verbal = in words (spoken or written)", "—"],
+        ["moral / morale", "moral = goodness/badness of actions; morale = state of spirits", "—"],
+        ["noted / notorious", "noted = famous; notorious = infamous", "—"],
+        ["stationary / stationery", "stationary = not moving (adj); stationery = writing materials (noun)", "—"],
+        ["your / you're", "your = possessive; you're = you are", "Your water is on my table. / You're the person I love."]
+      ]
+    }
+  ]
+}

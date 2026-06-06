@@ -1,0 +1,21 @@
+{
+  "id": "number-series",
+  "title": "Number Series",
+  "category": "Numerical Ability",
+  "subcategory": "Number Series",
+  "sections": [
+    {
+      "id": "ns-patterns",
+      "title": "Pattern Types",
+      "type": "list",
+      "items": [
+        "Repeating Pattern: A constant value is added throughout. Example: 1, 3, 5, 7, 9, … (+2 each time)",
+        "Increasing Pattern: The difference between consecutive numbers itself increases. Example: 2, 4, 7, 11, 16, … (differences: +2, +3, +4, +5, …)",
+        "Decreasing Pattern: The difference between consecutive numbers decreases. Example: 42, 38, 32, 24, 14, … (differences: −4, −6, −8, −10, …)",
+        "Alternating Pattern: Two or more patterns alternate. Example: 2, 4, 7, 9, 14, 16, … (alternating ×2 and +2)",
+        "Letter Pattern: A constant number of letters is skipped. Example: A, D, G, J, M, … (skip 2 letters each time)",
+        "Alphanumeric Pattern: Terms combine letters and numbers. Example: A2C, D4F, G6I (letters: skip 1, numbers: +2)"
+      ]
+    }
+  ]
+}

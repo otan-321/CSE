@@ -1,0 +1,78 @@
+{
+  "id": "analytical-ability",
+  "title": "Analytical Ability (Pro)",
+  "category": "Analytical Ability",
+  "subcategory": "Analytical Ability (Pro)",
+  "sections": [
+    {
+      "id": "aa-arguments",
+      "title": "Analyzing Arguments",
+      "type": "list",
+      "items": [
+        "Premises — statements analyzed to form a conclusion",
+        "Conclusion — result after analyzing premises",
+        "Major term — appears in one premise; is the predicate of the conclusion",
+        "Minor term — appears in one premise; is the subject of the conclusion",
+        "Middle term — appears in both premises but not in the conclusion",
+        "Syllogism — form of reasoning using two premises to make a logical conclusion"
+      ]
+    },
+    {
+      "id": "aa-syllogism",
+      "title": "Types of Syllogism",
+      "type": "list",
+      "items": [
+        "Categorical Syllogism: If A is B, and B is C, therefore A is C. Example: Sparky is a dog. Dogs can bark. Therefore, Sparky can bark.",
+        "Disjunctive Syllogism: A is either B or C. A is not C. Therefore, A is B.",
+        "Conditional — Modus Ponens: If A is true, then B is true. A is true. Therefore, B is true.",
+        "Conditional — Modus Tollens: If A is true, then B is true. B is NOT true. Therefore, A is NOT true.",
+        "Conditional — Hypothetical Chain: If A is true, then B is true. If B is true, then C is true. Therefore, if A is true, then C is true.",
+        "INVALID: Affirming the consequent OR denying the antecedent."
+      ]
+    },
+    {
+      "id": "aa-venn",
+      "title": "Venn Diagram",
+      "type": "list",
+      "items": [
+        "'All As are Bs' → Circle A is entirely inside Circle B.",
+        "'Some As are Bs' → Circles A and B partially overlap.",
+        "Draw each statement's diagram, then combine to make inferences.",
+        "Example: All kids are energetic. Some humans are kids. → Some humans are energetic."
+      ]
+    },
+    {
+      "id": "aa-diagram",
+      "title": "Diagramming Characters",
+      "type": "list",
+      "items": [
+        "Used when a problem involves multiple variables with varying features (ages, heights, rankings).",
+        "Step 1: Make a line and assign a direction (e.g., oldest at top).",
+        "Step 2: Write the first character in the middle.",
+        "Step 3: Analyze each statement and place characters based on comparisons.",
+        "Step 4: Create your conclusion based on the diagram."
+      ]
+    },
+    {
+      "id": "aa-alien-language",
+      "title": "Ancient/Alien Language Problems",
+      "type": "list",
+      "items": [
+        "Find words that appear at least twice across different sentences.",
+        "These repeated words help establish the sentence structure and meaning of each word.",
+        "Match the position of the word in the sentence with the position of its equivalent in the translation.",
+        "Use process of elimination for remaining words."
+      ]
+    },
+    {
+      "id": "aa-problem-solving",
+      "title": "Problem Solving Strategies",
+      "type": "list",
+      "items": [
+        "Working Backwards: Used when a series of events leads to a known final value. Reverse all operations.",
+        "Make an Organized List: List all possible values, then eliminate based on each description.",
+        "Making a Diagram: Useful for visualizing motion or distance problems."
+      ]
+    }
+  ]
+}
