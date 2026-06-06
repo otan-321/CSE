@@ -131,14 +131,19 @@ function Home() {
 
       {showExamModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-2xl p-6 max-w-4xl w-full border border-gray-100 dark:border-gray-800 max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Choose Your Exam Type</h2>
-              <button onClick={() => setShowExamModal(false)} className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400 transition-all">
+          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-2xl max-w-4xl w-full border border-gray-100 dark:border-gray-800 max-h-[90vh] overflow-y-auto">
+            <div className="bg-linear-to-r from-blue-500 to-purple-600 px-6 py-4 rounded-t-2xl flex items-center justify-between">
+              <div>
+                <h2 className="text-xl font-bold text-white">Choose Your Exam Type</h2>
+                <p className="text-blue-100 text-sm mt-0.5">Select the level that matches your qualifications</p>
+              </div>
+              <button onClick={() => setShowExamModal(false)} className="p-2 rounded-lg hover:bg-white/20 text-white transition-all">
                 <X className="w-5 h-5" />
               </button>
             </div>
-            <ExamSelection />
+            <div className="p-6">
+              <ExamSelection />
+            </div>
           </div>
         </div>
       )}

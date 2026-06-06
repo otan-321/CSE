@@ -39,13 +39,7 @@ function ExamSelection() {
   ];
 
   return (
-    <div className="py-8">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-3">Choose Your Exam Type</h2>
-        <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">
-          Select the Civil Service Exam level that matches your qualifications and goals
-        </p>
-      </div>
+    <div className="py-4">
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {exams.map((exam) => (
