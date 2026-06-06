@@ -69,13 +69,6 @@ export default function ExamCountdown() {
         </div>
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-600 mt-4">
-          {timeLeft.days === 0
-            ? "🔥 Exam is today! You got this!"
-            : timeLeft.days <= 7
-            ? "⚡ Final stretch — study hard!"
-            : timeLeft.days <= 30
-            ? "📚 Less than a month — stay focused!"
-            : "💪 Keep grinding — every day counts!"}
         </p>
       </div>
     </div>
