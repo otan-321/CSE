@@ -5,6 +5,7 @@ import ExamSelection from '../components/ExamSelection';
 function Home() {
   const [showExamModal, setShowExamModal] = useState(false);
   const [activeTab, setActiveTab] = useState('about');
+  const [showAbout, setShowAbout] = useState(false);
 
   const tips = [
     "Review basic grammar and vocabulary daily",
@@ -118,7 +119,10 @@ function Home() {
         </div>
 
         <div className="mb-16">
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
+          <button onClick={() => setShowAbout(!showAbout)} className="text-xs text-gray-400 dark:text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 transition-colors underline underline-offset-2 mb-3 block">
+            {showAbout ? "Hide" : "About this Project"}
+          </button>
+          {showAbout && <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
             <div className="bg-linear-to-r from-blue-500 to-purple-600 px-8 py-5">
               <h3 className="text-xl font-bold text-white">About This Project</h3>
               <p className="text-blue-100 text-sm mt-1">Made by Otan</p>
@@ -140,7 +144,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div>}
         </div>
       </div>
 
