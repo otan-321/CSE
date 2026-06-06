@@ -4,6 +4,7 @@ import { ArrowRight, BookOpen, Code2, Brain, Database, Heart } from 'lucide-reac
 import ExamSelection from '../components/ExamSelection';
 
 function Home() {
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
   const [activeTab, setActiveTab] = useState('about');
 
   const tips = [
@@ -28,10 +29,10 @@ function Home() {
           Stop wishing, start drilling. Free mock exams and full study guides built for the Philippine Civil Service Exam. No shortcuts — just results.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <a href="#exams" className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
+          <button onClick={() => setShowDisclaimer(true)} className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
             Start Exam Now
             <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
+          </button>
           <a href="/review" className="px-8 py-4 bg-white dark:bg-gray-950 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
             Study Hard
             <BookOpen className="ml-2 w-5 h-5" />
@@ -184,6 +185,33 @@ function Home() {
       </div>
 
     </div>
+
+      {/* Disclaimer Modal */}
+      {showDisclaimer && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-2xl p-8 max-w-md w-full border border-gray-100 dark:border-gray-800">
+            <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-4">Before You Start</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+              Some questions here are generated via AI (Gemini, Deepseek and ChatGPT), some are from social media groups and old reviewer from a review center. If you see any inconsistency, please submit a report.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              
+                href="#exams"
+                onClick={() => setShowDisclaimer(false)}
+                className="flex-1 px-6 py-3 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-center hover:from-blue-600 hover:to-purple-600 transition-all"
+              >
+                I Understand, Continue
+              </a>
+              <button
+                onClick={() => setShowDisclaimer(false)}
+                className="flex-1 px-6 py-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
   );
 }
 
