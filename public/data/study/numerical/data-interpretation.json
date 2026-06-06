@@ -1,0 +1,21 @@
+{
+  "id": "data-interpretation",
+  "title": "Data Interpretation",
+  "category": "Numerical Ability",
+  "subcategory": "Data Interpretation",
+  "sections": [
+    {
+      "id": "di-graphs",
+      "title": "Types of Charts and Graphs",
+      "type": "list",
+      "items": [
+        "Bar Graph: Rectangles represent a variable; height/length is proportional to value. X-axis = value; Y-axis = categories. Bars are independent of each other.",
+        "Pictogram: Uses images instead of bars. The legend tells you the value each image represents. Half of an image = half the value.",
+        "Histogram: Presents values in ranges (not exact values). Bars have no gaps between them. X-axis = range of values; Y-axis = frequency.",
+        "Pie Graph: Represents how a whole value is divided into portions. Percentages are placed in each portion. To find the amount: multiply the total by the percentage.",
+        "Line Graph: Represents a trend or constant change over time. The line shows direction (increasing, decreasing, fluctuating).",
+        "Table: Direct presentation of data. Best used when data is simple or contains non-quantifiable information (names, descriptions, types)."
+      ]
+    }
+  ]
+}

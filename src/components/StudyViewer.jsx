@@ -2,21 +2,21 @@ import { useState, useEffect } from "react";
 import "./StudyViewer.css";
 
 const DATA_MAP = {
-  "vocabulary":              "/src/data/study/verbal/vocabulary.json",
-  "grammar":                 "/src/data/study/verbal/grammar.json",
-  "reading-comprehension":   "/src/data/study/verbal/reading-comprehension.json",
-  "analogy":                 "/src/data/study/verbal/analogy.json",
-  "logic":                   "/src/data/study/verbal/logic.json",
-  "basic-math":              "/src/data/study/numerical/basic-math.json",
-  "word-problems":           "/src/data/study/numerical/word-problems.json",
-  "number-series":           "/src/data/study/numerical/number-series.json",
-  "data-interpretation":     "/src/data/study/numerical/data-interpretation.json",
-  "analytical-ability":      "/src/data/study/analytical/analytical-ability.json",
-  "clerical-ability":        "/src/data/study/clerical/clerical-ability.json",
-  "philippine-constitution": "/src/data/study/general/philippine-constitution.json",
-  "ra-6713":                 "/src/data/study/general/ra-6713.json",
-  "peace-human-rights":      "/src/data/study/general/peace-human-rights.json",
-  "environmental-management":"/src/data/study/general/environmental-management.json",
+  "vocabulary":              "/data/study/verbal/vocabulary.json",
+  "grammar":                 "/data/study/verbal/grammar.json",
+  "reading-comprehension":   "/data/study/verbal/reading-comprehension.json",
+  "analogy":                 "/data/study/verbal/analogy.json",
+  "logic":                   "/data/study/verbal/logic.json",
+  "basic-math":              "/data/study/numerical/basic-math.json",
+  "word-problems":           "/data/study/numerical/word-problems.json",
+  "number-series":           "/data/study/numerical/number-series.json",
+  "data-interpretation":     "/data/study/numerical/data-interpretation.json",
+  "analytical-ability":      "/data/study/analytical/analytical-ability.json",
+  "clerical-ability":        "/data/study/clerical/clerical-ability.json",
+  "philippine-constitution": "/data/study/general/philippine-constitution.json",
+  "ra-6713":                 "/data/study/general/ra-6713.json",
+  "peace-human-rights":      "/data/study/general/peace-human-rights.json",
+  "environmental-management":"/data/study/general/environmental-management.json",
 };
 
 const STUDY_KEYS = {

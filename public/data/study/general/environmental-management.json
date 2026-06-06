@@ -1,0 +1,86 @@
+{
+  "id": "environmental-management",
+  "title": "Environmental Management",
+  "category": "General Information",
+  "subcategory": "Environmental Management",
+  "sections": [
+    {
+      "id": "em-basis",
+      "title": "Constitutional Basis",
+      "type": "text",
+      "content": "Article II, Section 16 of the 1987 Philippine Constitution recognizes the people's right to a healthy and harmonious environment. The Department of Environment and Natural Resources (DENR) is the lead agency for environmental management and protection, with six specialized bureaus: Forest Management Bureau, Lands Management Bureau, Mines and Geo-Sciences Bureau, Environmental Management Bureau (EMB), Ecosystems Research and Development Bureau, and Protected Areas and Wildlife Bureau."
+    },
+    {
+      "id": "em-laws",
+      "title": "Key Environmental Laws",
+      "type": "table",
+      "headers": ["Law", "Key Provisions"],
+      "rows": [
+        ["R.A. 8749 — Philippine Clean Air Act of 1999", "Strives to attain clean air quality aligned with National Air Quality guidelines while minimizing adverse economic effects. LGUs have primary responsibility; area-based responsibility; clean air is a shared concern."],
+        ["P.D. 1181 — Pollution Control Law", "Ensures reduction, prevention, and control of vehicular pollution by defining maximum allowable emissions."],
+        ["R.A. 9275 — Philippine Clean Water Act of 2004", "Safeguards water resources from pollution from land-based sources."],
+        ["R.A. 9003 — Ecological Solid Waste Management Act of 2000", "Implements organized solid waste management; mandatory MRFs in barangays; prohibition of open dumps; mandatory waste segregation at source."],
+        ["R.A. 6969 — Toxic Substances, Hazardous and Nuclear Waste Control Act of 1990", "DENR authority to control importation, production, processing, sale, distribution, use, and disposal of chemical substances; forbids introduction of hazardous and nuclear waste."],
+        ["P.D. 1586 — Environmental Impact Statement (EIS) System of 1978", "Created the Environmental Impact Assessment (EIA) System; ECC required for Environmentally Critical Projects."],
+        ["R.A. 9729 — Climate Change Act of 2009", "Incorporates climate change into government policy; creates the Climate Change Commission."],
+        ["R.A. 9512 — Environmental Awareness and Education Act of 2008", "Promotes environmental awareness through education."]
+      ]
+    },
+    {
+      "id": "em-hazardous-waste",
+      "title": "Characteristics of Hazardous Waste",
+      "type": "list",
+      "items": [
+        "Toxicity — poisonous; carcinogenic, teratogenic, or mutagenic effects",
+        "Ignitability — can create fire under certain conditions",
+        "Corrosivity — acidic or basic; capable of corroding metals",
+        "Reactivity — unstable; can react violently with water; may detonate or produce toxic gases",
+        "Examples: chemical waste, toxic waste, medical waste, industrial waste, radioactive waste"
+      ]
+    },
+    {
+      "id": "em-pco",
+      "title": "Pollution Control Officer (PCO)",
+      "type": "list",
+      "items": [
+        "A person with technical expertise in pollution control; officially accredited by the EMB Regional Office.",
+        "Required for: establishments releasing solid, liquid, or gaseous waste; LGUs, Development Authorities, GOCCs, and other public establishments.",
+        "NOT required for: ambulant vendors and stall owners under R.A. 6977; Material Recovery Facilities operated by barangays (those not handling hazardous waste).",
+        "Duties: ensure legal compliance; handle all permits and registrations for pollution sources; actively participate in technical conferences; initiate environmental management activities."
+      ]
+    },
+    {
+      "id": "em-eis",
+      "title": "Environmental Impact Statement (EIS) System",
+      "type": "list",
+      "items": [
+        "ECC (Environmental Compliance Certificate) — issued by DENR/EMB; certifies compliance with EIS requirements.",
+        "No individual, partnership, or corporation may undertake an Environmentally Critical Project (ECP) or operate in an Environmentally Critical Area (ECA) without an ECC.",
+        "ECC Validity: Valid for the entire project lifespan unless there is significant expansion, change in technology/location, or the project is not implemented within 5 years from issuance.",
+        "Certificate of Non-Coverage — document stating a project falls outside the EIS system scope (does not exempt from other environmental laws)."
+      ]
+    },
+    {
+      "id": "em-denr-programs",
+      "title": "Priority Programs of DENR",
+      "type": "list",
+      "items": [
+        "1. Geo-Hazard, Groundwater Assessment and Responsible Mining: Rehabilitation of abandoned mines; assessment of coastal geo-hazards.",
+        "2. Enhanced National Greening Program: Rehabilitation of 1.2 million hectares of denuded forest lands. Goal: Plant 1.5 billion trees in 1.5 million hectares by 2028.",
+        "3. Intensified Environmental Protection — Clean Air Program: Motor Vehicle Emission Management; Industrial Emission Management; Roadside and General Ambient Air Monitoring.",
+        "4. Intensified Forest Protection and Anti-Illegal Logging: Neutralizing illegal logging hotspots; forest fire prevention; continuous forest patrolling through the Lawin System."
+      ]
+    },
+    {
+      "id": "em-chemical-tools",
+      "title": "Chemical Management Tools",
+      "type": "table",
+      "headers": ["Tool", "Description"],
+      "rows": [
+        ["Philippine Inventory of Chemicals & Chemical Substances", "Comprehensive list of all chemicals currently in use or traded in the Philippines"],
+        ["Priority Chemical List", "Compiled by DENR; lists chemicals posing unreasonable risks to public health, workplace safety, and the environment"],
+        ["Chemical Control Order (CCO)", "Regulatory instrument to restrict/limit/regulate handling, use, manufacture, import, export, transport, storage, and distribution of chemicals on the Priority Chemical List"]
+      ]
+    }
+  ]
+}

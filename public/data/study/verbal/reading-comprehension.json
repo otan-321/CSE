@@ -1,0 +1,77 @@
+{
+  "id": "reading-comprehension",
+  "title": "Reading Comprehension",
+  "category": "Verbal Ability",
+  "subcategory": "Reading Comprehension",
+  "sections": [
+    {
+      "id": "rc-skills",
+      "title": "Five Skills Tested",
+      "type": "list",
+      "items": [
+        "Noting Details — Who, What, When, Where, Why, How",
+        "Extent of Vocabulary — Understanding unfamiliar words from context",
+        "Identifying the Main Idea — Topic sentence or central theme",
+        "Inferring Details and Predicting Results — Going beyond what is explicitly stated",
+        "Tone/Attitude — Sensing the author's mood"
+      ]
+    },
+    {
+      "id": "rc-question-types",
+      "title": "Types of Questions",
+      "type": "table",
+      "headers": ["Type", "Key Phrases"],
+      "rows": [
+        ["Main Idea", "What is the article about? / The passage is primarily concerned with…"],
+        ["Specific Details", "According to the author… / The author states the following except…"],
+        ["Drawing Inferences", "The author implies that… / It is likely that…"],
+        ["Tone or Attitude", "Which best describes the tone? / The author's tone is…"],
+        ["Vocabulary", "The word '____' is used to denote… / The term '____' means…"]
+      ]
+    },
+    {
+      "id": "rc-tips",
+      "title": "Reading Tips",
+      "type": "list",
+      "items": [
+        "Read the paragraph before the questions.",
+        "Try to read fast but do not skip lines.",
+        "While reading, anticipate what the passage is about.",
+        "Always verify your answer by going back to the passage.",
+        "The main idea is usually in the first or last sentence.",
+        "Watch for too specific/broad titles — the right title covers everything in the passage.",
+        "For specific details questions, choose options directly stated in the paragraph.",
+        "For inference questions, choose options that logically develop from the information.",
+        "For mood/tone questions, look for emotion words (great, brutal, greedy, arrogant, etc.).",
+        "Use context clues for unfamiliar words."
+      ]
+    },
+    {
+      "id": "rc-paragraph-organization",
+      "title": "Paragraph Organization Techniques",
+      "type": "list",
+      "items": [
+        "Identify the Topic Sentence — It is usually broad and is supported by all other sentences.",
+        "Note Recurring Words and Phrases — Writers repeat words/phrases to establish one main topic.",
+        "Look Out for Transitions — Conjunctions and transitional words (for example, however, therefore, first, next, lastly) connect sentences and show relationships.",
+        "Spatial arrangement — Left to right, top to bottom, near to far.",
+        "Chronological arrangement — According to when events happened (first, second, next, then, lastly).",
+        "Topical arrangement — Ascending or descending order of importance.",
+        "Determine the Concluding Sentence — Sums up all the points; usually found at the end."
+      ]
+    },
+    {
+      "id": "rc-patterns",
+      "title": "Paragraph Organization Patterns",
+      "type": "table",
+      "headers": ["Pattern", "Structure"],
+      "rows": [
+        ["Time Sequence", "Situation → Incident 1 → Incident 2 → Incident 3 → Conclusion"],
+        ["Space", "Presentation → Looks from afar → Close-up view → Other features → Concluding impression"],
+        ["Inductive Reasoning", "Supposition (If…) → Supporting facts → Conclusion (Then…/Therefore…)"],
+        ["Deductive Reasoning", "Principle → Relevant facts/evidence → Restatement of principle"],
+        ["Expository", "Introduction of subject → Principal features → Other relevant points → Summary"]
+      ]
+    }
+  ]
+}

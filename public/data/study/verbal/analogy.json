@@ -1,0 +1,62 @@
+{
+  "id": "analogy",
+  "title": "Analogy",
+  "category": "Verbal Ability",
+  "subcategory": "Analogy",
+  "sections": [
+    {
+      "id": "analogy-intro",
+      "title": "What is Analogy?",
+      "type": "text",
+      "content": "An analogy identifies the similarity between like features of two different things by classifying the relationship between a pair of words."
+    },
+    {
+      "id": "analogy-approaches",
+      "title": "Two Approaches",
+      "type": "list",
+      "items": [
+        "Single-Word Approach — A pair of words + a third word; choose the word closely related to the third word in the same way as the first pair. Example: canine : dog :: feline : ____ → cat",
+        "Paired-Word Approach — A pair of words; choose the pair with the closest relationship. Example: mango : fruit :: ____ : ____ → rose : flower"
+      ]
+    },
+    {
+      "id": "analogy-techniques",
+      "title": "Techniques",
+      "type": "list",
+      "items": [
+        "DTR (Define the Relationship) — State the relationship using a sentence. Example: 'A frog is an example of an amphibian.' Find the pair with the same relationship.",
+        "Narrow the Relationship — If the relationship is too broad, be more specific. 'A club is used in hitting a ball when playing golf' (not just 'used in playing golf').",
+        "Substitute — Define the relationship, substitute the third word for the first, then find the fourth.",
+        "Observe Parallelism — All words in the analogy must follow the same grammatical form (noun:noun, adjective:adjective, etc.).",
+        "Don't Reverse the Order — Follow the same order as the given pair."
+      ]
+    },
+    {
+      "id": "analogy-relationships",
+      "title": "Common Analogy Relationships",
+      "type": "table",
+      "headers": ["Relationship", "Example"],
+      "rows": [
+        ["Synonym", "clean : tidy"],
+        ["Antonym", "dark : light"],
+        ["Classification (type of)", "stiletto : shoe"],
+        ["Part-Whole", "lens : camera"],
+        ["Sequence (becomes)", "wriggler : mosquito"],
+        ["Cause and Effect", "flood : typhoon"],
+        ["Complement", "yin : yang"],
+        ["Function/Purpose", "pencil : write"],
+        ["Tool-User", "arrow : archer"],
+        ["Composition", "human : cells"],
+        ["Difference in degree", "bungalow : mansion"],
+        ["Quantity", "pentagon : five"],
+        ["Characteristic", "boxing ring : square"],
+        ["Senses", "chirp : birds"],
+        ["Position/Location", "Manila : Philippines"],
+        ["Grammar (tense)", "see : saw"],
+        ["Age (young-adult)", "colt : stallion"],
+        ["Gender", "doe : stag"],
+        ["Symbol", "flag : independence"]
+      ]
+    }
+  ]
+}

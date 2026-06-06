@@ -1,0 +1,114 @@
+{
+  "id": "philippine-constitution",
+  "title": "Philippine Constitution",
+  "category": "General Information",
+  "subcategory": "Philippine Constitution",
+  "sections": [
+    {
+      "id": "pc-preamble",
+      "title": "Preamble",
+      "type": "text",
+      "content": "We, the sovereign Filipino people, imploring the aid of Almighty God, in order to build a just and humane society and establish a Government that shall embody our ideals and aspirations, promote the common good, conserve and develop our patrimony, and secure to ourselves and our posterity the blessings of independence and democracy under the rule of law and a regime of truth, justice, freedom, love, equality, and peace, do ordain and promulgate this Constitution. Ratified: February 2, 1987."
+    },
+    {
+      "id": "pc-articles",
+      "title": "Key Articles Overview",
+      "type": "table",
+      "headers": ["Article", "Subject", "Key Points"],
+      "rows": [
+        ["I", "National Territory", "Philippine archipelago + all territories with sovereignty; terrestrial, fluvial, and aerial domains; territorial sea, seabed, subsoil, insular shelves."],
+        ["II", "Declaration of Principles and State Policies", "Democratic and republican State; sovereignty in the people; renounces war; civilian authority supreme over military; separation of Church and State."],
+        ["III", "Bill of Rights", "Due process; equal protection; freedom of speech, religion, press; right to information; rights of the accused; writ of habeas corpus."],
+        ["IV", "Citizenship", "Natural-born citizens; jus sanguinis principle; naturalization."],
+        ["V", "Suffrage", "Voting age: at least 18; resident for at least 1 year; in voting place for at least 6 months before election."],
+        ["VI", "Legislative Department", "Senate (24 senators, 6-year term) + House of Representatives (max 250 members, 3-year term)."],
+        ["VII", "Executive Department", "President (40 years old, 6-year term, no reelection); Vice-President (6-year term, max 2 consecutive terms)."],
+        ["VIII", "Judicial Department", "Supreme Court: 1 Chief Justice + 14 Associate Justices."],
+        ["IX", "Constitutional Commissions", "CSC, COMELEC, COA — 7-year term without reappointment."],
+        ["X", "Local Government", "Provinces, cities, municipalities, barangays; autonomous regions in Muslim Mindanao and Cordilleras."],
+        ["XI", "Accountability of Public Officers", "'Public office is a public trust.' Impeachable officials; Ombudsman; Sandiganbayan."],
+        ["XII", "National Economy and Patrimony", "Natural resources owned by State; 60% Filipino capital for public utilities; 70% for advertising."],
+        ["XIII", "Social Justice and Human Rights", "Labor rights; agrarian reform; Commission on Human Rights."],
+        ["XIV", "Education, Science and Technology", "Free public elementary and high school; Filipino and English as official languages."],
+        ["XV", "The Family", "Marriage is an inviolable social institution."],
+        ["XVI", "General Provisions", "Philippine flag: red, white, blue with sun and three stars."],
+        ["XVII", "Amendments or Revisions", "3/4 Congress vote, constitutional convention, or people's initiative (12% of registered voters)."]
+      ]
+    },
+    {
+      "id": "pc-bill-of-rights",
+      "title": "Bill of Rights — Key Sections",
+      "type": "table",
+      "headers": ["Section", "Right"],
+      "rows": [
+        ["1", "Due process; equal protection of laws"],
+        ["2", "Right against unreasonable searches and seizures"],
+        ["3", "Privacy of communication; illegally obtained evidence is inadmissible"],
+        ["4", "Freedom of speech, expression, press, peaceful assembly, and petition"],
+        ["5", "Freedom of religion; no religious test for civil/political rights"],
+        ["6", "Liberty of abode and travel"],
+        ["7", "Right to information on matters of public concern"],
+        ["12", "Rights of the accused under custodial investigation (right to remain silent, right to counsel, no torture)"],
+        ["13", "Right to bail; no excessive bail"],
+        ["14", "Presumption of innocence; right to speedy/impartial/public trial"],
+        ["15", "Privilege of writ of habeas corpus (suspended only for invasion or rebellion)"],
+        ["17", "Right against self-incrimination"],
+        ["19", "No excessive fines; no cruel/degrading punishment"],
+        ["20", "No imprisonment for debt or poll tax"],
+        ["21", "No double jeopardy"],
+        ["22", "No ex post facto law or bill of attainder"]
+      ]
+    },
+    {
+      "id": "pc-legislature",
+      "title": "Legislative Department",
+      "type": "table",
+      "headers": ["", "Senate", "House of Representatives"],
+      "rows": [
+        ["Composition", "24 Senators", "Not more than 250 members"],
+        ["Age Requirement", "At least 35 years", "At least 25 years"],
+        ["Term", "6 years", "3 years"],
+        ["Term Limit", "Not more than 2 consecutive terms", "Not more than 3 consecutive terms"],
+        ["Citizenship", "Natural-born citizen", "Natural-born citizen"]
+      ]
+    },
+    {
+      "id": "pc-executive",
+      "title": "Executive Department",
+      "type": "list",
+      "items": [
+        "President: Natural-born citizen; at least 40 years old; 10-year residency; 6-year term; no reelection.",
+        "Vice-President: Same qualifications as President; 6-year term; not more than 2 consecutive terms.",
+        "Succession: Vice-President → Senate President → Speaker of the House.",
+        "Martial law: maximum 60 days; Congress can revoke.",
+        "Bills: President has 30 days to veto; Congress can override with 2/3 vote of all members of each house.",
+        "Appropriation, revenue, tariff bills must originate in the House of Representatives."
+      ]
+    },
+    {
+      "id": "pc-constitutional-commissions",
+      "title": "Constitutional Commissions",
+      "type": "table",
+      "headers": ["Commission", "Composition", "Key Qualification", "Term"],
+      "rows": [
+        ["Civil Service Commission (CSC)", "Chairman + 2 Commissioners", "Natural-born; at least 35; proven capacity for public administration", "7 years without reappointment"],
+        ["Commission on Elections (COMELEC)", "Chairman + 6 Commissioners", "Natural-born; at least 35; college degree; majority must be Bar members with 10+ years practice", "7 years without reappointment"],
+        ["Commission on Audit (COA)", "Chairman + 2 Commissioners", "Natural-born; at least 35; CPA with 10+ years auditing OR Bar member with 10+ years practice", "7 years without reappointment"]
+      ]
+    },
+    {
+      "id": "pc-impeachment",
+      "title": "Impeachment",
+      "type": "list",
+      "items": [
+        "Impeachable officials: President, Vice-President, Members of the Supreme Court, Members of Constitutional Commissions, Ombudsman.",
+        "Grounds: culpable violation of the Constitution, treason, bribery, graft and corruption, other high crimes, betrayal of public trust.",
+        "The House initiates impeachment; the Senate tries and decides.",
+        "Conviction requires 2/3 vote of all Senate members.",
+        "No impeachment proceedings against the same official more than once within a year.",
+        "Sandiganbayan — anti-graft court.",
+        "Ombudsman (Tanodbayan) — protector of the people; investigates public officials; 7-year term without reappointment."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "peace-human-rights",
+  "title": "Peace and Human Rights",
+  "category": "General Information",
+  "subcategory": "Peace and Human Rights",
+  "sections": [
+    {
+      "id": "phr-definition",
+      "title": "Definition of Human Rights",
+      "type": "text",
+      "content": "Fundamental entitlements every individual possesses against the State or any public authority simply by virtue of belonging to the human family. As outlined in the Universal Declaration of Human Rights (UDHR) of 1948: 'rights originating from the inherent dignity of the human person.'"
+    },
+    {
+      "id": "phr-characteristics",
+      "title": "Characteristics of Human Rights",
+      "type": "table",
+      "headers": ["Characteristic", "Description"],
+      "rows": [
+        ["1. Universality", "Apply to every individual, regardless of residence, gender, race, religion, culture, or ethnicity"],
+        ["2. Inalienability", "Cannot be legitimately stripped from a free individual, nor relinquished or forfeited willingly"],
+        ["3. Indivisibility", "Cannot be compartmentalized or withheld; all rights carry equal weight; denying one hinders others"],
+        ["4. Interdependence", "The realization of one right is contingent on the achievement of others"],
+        ["5. Inherent", "Not bestowed by any individual or governing body; do not need to be acquired or merited"],
+        ["6. Imprescriptible", "Do not expire; cannot be forfeited even through non-exercise"],
+        ["7. Essential and Necessary", "Without them, it is unfeasible to safeguard moral, physical, social, and spiritual well-being"],
+        ["8. In connection with human dignity", "Every person possesses equal worth and dignity; discrimination must not be tolerated"],
+        ["9. Irrevocable", "Immutable; cannot be revoked by any entity or authority"],
+        ["10. Participative and Inclusive", "Every individual has the right to engage in and access information on processes affecting their well-being"],
+        ["11. Not absolute", "Human rights are defined entitlements with specific limitations for the collective welfare"],
+        ["12. Dynamic", "Continue to evolve and adapt in response to socio-economic, cultural, and political shifts"],
+        ["13. Limit State Power", "States are accountable for adherence to international human rights agreements"]
+      ]
+    },
+    {
+      "id": "phr-udhr",
+      "title": "UDHR — Key Articles",
+      "type": "table",
+      "headers": ["Article", "Right"],
+      "rows": [
+        ["1", "All human beings born free and equal in dignity and rights"],
+        ["3", "Right to life, liberty, and security of person"],
+        ["4", "No slavery or servitude"],
+        ["5", "No torture, cruel, inhuman, or degrading treatment"],
+        ["6", "Right to recognition as a person before the law"],
+        ["7", "Equal protection before the law"],
+        ["9", "No arbitrary arrest, detention, or exile"],
+        ["11", "Presumption of innocence; no retroactive criminal law"],
+        ["12", "Right to privacy"],
+        ["13", "Freedom of movement and residence; right to leave and return to one's country"],
+        ["14", "Right to seek asylum from persecution"],
+        ["15", "Right to a nationality"],
+        ["16", "Right to marry; family as a natural/fundamental group unit"],
+        ["17", "Right to own property"],
+        ["18", "Freedom of thought, conscience, and religion"],
+        ["19", "Freedom of opinion and expression"],
+        ["20", "Freedom of peaceful assembly and association"],
+        ["21", "Right to participate in government; right to equal access to public service"],
+        ["22", "Right to social security"],
+        ["23", "Right to work, free choice of employment, just conditions, equal pay"],
+        ["24", "Right to rest and leisure"],
+        ["25", "Right to adequate standard of living; special care for motherhood and childhood"],
+        ["26", "Right to education; free elementary education"],
+        ["27", "Right to participate in cultural life and benefit from scientific advancement"],
+        ["29", "Everyone has duties to the community; rights subject to limitations determined by law"]
+      ]
+    },
+    {
+      "id": "phr-ph-laws",
+      "title": "Notable Philippine Legislation on Human Rights",
+      "type": "table",
+      "headers": ["Law", "Summary"],
+      "rows": [
+        ["R.A. 11862 (2022) — Expanded Anti-Trafficking in Persons Act", "Strengthens mechanisms against trafficking; covers online sexual abuse and child laundering"],
+        ["R.A. 11767 (2022) — Foundling Recognition and Protection Act", "Recognizes foundlings as natural-born citizens"],
+        ["R.A. 11648 (2022)", "Raised minimum age of sexual consent from 12 to 16 years old"],
+        ["R.A. 11642 (2022) — Domestic Administrative Adoption Act", "Simplifies domestic adoption; created NACC"],
+        ["R.A. 11596 (2021)", "Prohibits child marriage; defines it as child abuse"],
+        ["R.A. 11641 (2021) — Department of Migrant Workers Act", "Establishes one government agency dedicated to migrant workers"],
+        ["R.A. 11861 (2022) — Expanded Solo Parents Act", "Expanded definition of solo parents to include family members of migrant workers abroad for 12+ uninterrupted months"],
+        ["E.O. 163 (2022)", "Guarantees protection services for refugees, stateless persons, and asylum seekers"]
+      ]
+    }
+  ]
+}

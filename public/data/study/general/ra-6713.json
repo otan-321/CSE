@@ -1,0 +1,99 @@
+{
+  "id": "ra-6713",
+  "title": "RA 6713",
+  "category": "General Information",
+  "subcategory": "RA 6713",
+  "sections": [
+    {
+      "id": "ra-overview",
+      "title": "Overview",
+      "type": "text",
+      "content": "Republic Act No. 6713 — Code of Conduct and Ethical Standards for Public Officials and Employees. It upholds the time-honored principle that public office is a public trust. Enacted to promote high standards of ethics in public service."
+    },
+    {
+      "id": "ra-definitions",
+      "title": "Key Definitions",
+      "type": "table",
+      "headers": ["Term", "Definition"],
+      "rows": [
+        ["Government", "National, local governments, all instrumentalities, agencies, branches, GOCCs, and subsidiaries"],
+        ["Public Officials", "Elective and appointive officials and employees, permanent or temporary, career or non-career, including military and police — whether or not they receive compensation"],
+        ["Gift", "A thing or right disposed of gratuitously in favor of another; includes simulated sales"],
+        ["Loan", "Simple loan, commodatum, guarantees, financing arrangements intended to ensure approval"],
+        ["Substantial stockholder", "Owns enough shares to elect a director of a corporation"],
+        ["Family of public officials", "Spouses and unmarried children under 18 years of age"],
+        ["Conflict of interest", "When a public official is a board member, officer, or substantial stockholder of a private corporation whose interests may conflict with faithful performance of official duty"],
+        ["Divestment", "Transfer of title or disposal of interest in property by completely depriving oneself of right or title"],
+        ["Relatives", "Persons related within the fourth civil degree of consanguinity or affinity, including bilas, inso, and balae"]
+      ]
+    },
+    {
+      "id": "ra-norms",
+      "title": "Norms of Conduct (Section 4)",
+      "type": "table",
+      "headers": ["Norm", "Description"],
+      "rows": [
+        ["Commitment to public interest", "Always uphold public interest over personal interest; use government resources efficiently and honestly"],
+        ["Professionalism", "Perform duties with excellence, professionalism, intelligence, and skill"],
+        ["Justness and sincerity", "Remain true to the people; do not discriminate; respect the rights of others"],
+        ["Political neutrality", "Provide service without unfair discrimination regardless of party affiliation or preference"],
+        ["Responsiveness to the public", "Extend prompt, courteous, and adequate service; ensure openness of information; avoid red tape"],
+        ["Nationalism and patriotism", "Be loyal to the Republic; promote locally produced goods; maintain Philippine sovereignty"],
+        ["Commitment to democracy", "Commit to democratic values; maintain public accountability; uphold civilian authority"],
+        ["Simple living", "Lead modest lives appropriate to position and income; no extravagant display of wealth"]
+      ]
+    },
+    {
+      "id": "ra-duties",
+      "title": "Duties of Public Officials (Section 5)",
+      "type": "table",
+      "headers": ["Duty", "Requirement"],
+      "rows": [
+        ["Act promptly on letters and requests", "Respond within 15 working days from receipt; reply must contain action taken"],
+        ["Submit annual performance reports", "Within 45 working days from year-end; must be open and available to the public"],
+        ["Process documents and papers expeditiously", "Complete within a reasonable time; not more than 3 signatories"],
+        ["Act immediately on the public's personal transactions", "Attend to anyone wanting services; act promptly and expeditiously"],
+        ["Make documents accessible to the public", "All public documents accessible and readily available for inspection within reasonable working hours"]
+      ]
+    },
+    {
+      "id": "ra-prohibited",
+      "title": "Prohibited Acts and Transactions (Section 7)",
+      "type": "list",
+      "items": [
+        "Financial or material interest in transactions requiring office approval",
+        "Owning/managing/accepting employment in private enterprises regulated by their office (without legal authority)",
+        "Engaging in private practice of profession without constitutional or legal authority",
+        "Recommending any person to any position in a private enterprise with official transactions",
+        "Using or divulging confidential/classified information for private interests",
+        "Soliciting or accepting any gift, gratuity, favor, entertainment, loan, or anything of monetary value in the course of official duties",
+        "Exception: Gifts of nominal value as souvenirs from foreign governments; scholarships, fellowships, or medical treatment; travel grants for travel entirely outside the Philippines."
+      ]
+    },
+    {
+      "id": "ra-saln",
+      "title": "SALN — Statement of Assets, Liabilities, and Net Worth",
+      "type": "list",
+      "items": [
+        "All public officials must file under oath their SALN and Disclosure of Business Interests.",
+        "Filing deadlines: within 30 days after assumption of office; on or before April 30 of every year; within 30 days after separation from service.",
+        "Available to the public for 10 years after receipt.",
+        "Constitutional/national elective officials → Office of the Ombudsman",
+        "Senators and Congressmen → Secretaries of Senate/House",
+        "Justices → Clerk of Supreme Court",
+        "National executive officials → Office of the President",
+        "Regional/local officials → Deputy Ombudsman of their region",
+        "All other public officials → Civil Service Commission"
+      ]
+    },
+    {
+      "id": "ra-divestment",
+      "title": "Divestment",
+      "type": "list",
+      "items": [
+        "Public official must resign from private business within 30 days of assumption of office.",
+        "Must divest shareholdings within 60 days of assumption."
+      ]
+    }
+  ]
+}
