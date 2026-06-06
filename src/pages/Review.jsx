@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { BookOpen, ChevronRight, FileText, Brain, Globe, BarChart2, CheckCircle2 } from "lucide-react";
+import { BookOpen, ChevronRight, FileText, Brain, Globe, BarChart2, CheckCircle2, Layers } from "lucide-react";
 import StudyViewer from "../components/StudyViewer";
+import FlashcardViewer from "../components/FlashcardViewer";
 
 const STUDY_KEYS = {
   "Vocabulary":               "vocabulary",
@@ -25,7 +26,6 @@ const PROGRESS_KEY = "studyProgress";
 function getProgress() {
   try { return JSON.parse(localStorage.getItem(PROGRESS_KEY) || "{}"); } catch { return {}; }
 }
-
 function markStudied(key) {
   const p = getProgress();
   if (!p[key]) {
@@ -35,51 +35,40 @@ function markStudied(key) {
 }
 
 function Review() {
-  const [activeStudy, setActiveStudy] = useState(null);
-  const [progress, setProgress] = useState(getProgress());
+  const [activeStudy, setActiveStudy]       = useState(null);
+  const [activeFlashcard, setActiveFlashcard] = useState(null);
+  const [progress, setProgress]             = useState(getProgress());
 
-  useEffect(() => { setProgress(getProgress()); }, [activeStudy]);
+  useEffect(() => { setProgress(getProgress()); }, [activeStudy, activeFlashcard]);
 
   const categories = [
     {
-      id: "verbal",
-      title: "Verbal Ability",
+      id: "verbal", title: "Verbal Ability",
       description: "Vocabulary, grammar, reading comprehension, analogy and logic exercises.",
-      icon: "FileText",
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50 dark:bg-gray-950",
-      badge: "Language",
-      subcategories: ["Vocabulary", "Grammar", "Reading Comprehension", "Analogy", "Logic"],
+      icon: "FileText", color: "from-blue-500 to-cyan-500",
+      bgColor: "bg-blue-50 dark:bg-gray-950", badge: "Language",
+      subcategories: ["Vocabulary","Grammar","Reading Comprehension","Analogy","Logic"],
     },
     {
-      id: "numerical",
-      title: "Numerical Ability",
+      id: "numerical", title: "Numerical Ability",
       description: "Basic math, word problems, number series and data interpretation.",
-      icon: "BarChart2",
-      color: "from-purple-500 to-pink-500",
-      bgColor: "bg-purple-50 dark:bg-gray-950",
-      badge: "Mathematics",
-      subcategories: ["Basic Math", "Word Problems", "Number Series", "Data Interpretation"],
+      icon: "BarChart2", color: "from-purple-500 to-pink-500",
+      bgColor: "bg-purple-50 dark:bg-gray-950", badge: "Mathematics",
+      subcategories: ["Basic Math","Word Problems","Number Series","Data Interpretation"],
     },
     {
-      id: "general",
-      title: "General Information",
+      id: "general", title: "General Information",
       description: "Philippine Constitution, environmental laws, human rights and RA 6713.",
-      icon: "Globe",
-      color: "from-green-500 to-emerald-500",
-      bgColor: "bg-green-50 dark:bg-gray-950",
-      badge: "Civics",
-      subcategories: ["Philippine Constitution", "Environmental Management", "Peace and Human Rights", "RA 6713"],
+      icon: "Globe", color: "from-green-500 to-emerald-500",
+      bgColor: "bg-green-50 dark:bg-gray-950", badge: "Civics",
+      subcategories: ["Philippine Constitution","Environmental Management","Peace and Human Rights","RA 6713"],
     },
     {
-      id: "analytical",
-      title: "Analytical Ability",
+      id: "analytical", title: "Analytical Ability",
       description: "Analytical reasoning for Professional level and clerical skills for Sub-Professional.",
-      icon: "Brain",
-      color: "from-orange-500 to-red-500",
-      bgColor: "bg-orange-50 dark:bg-gray-950",
-      badge: "Reasoning",
-      subcategories: ["Analytical Ability (Pro)", "Clerical Ability (Sub)"],
+      icon: "Brain", color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-50 dark:bg-gray-950", badge: "Reasoning",
+      subcategories: ["Analytical Ability (Pro)","Clerical Ability (Sub)"],
     },
   ];
 
@@ -91,13 +80,21 @@ function Review() {
   };
 
   const totalAll = Object.keys(STUDY_KEYS).length;
-  const doneAll = Object.keys(progress).length;
+  const doneAll  = Object.keys(progress).length;
   const overallPct = Math.round((doneAll / totalAll) * 100);
 
   if (activeStudy) {
     return (
       <div className="container mx-auto px-4 py-8">
         <StudyViewer subcategory={activeStudy} onBack={() => setActiveStudy(null)} />
+      </div>
+    );
+  }
+
+  if (activeFlashcard) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <FlashcardViewer subcategory={activeFlashcard} onBack={() => setActiveFlashcard(null)} />
       </div>
     );
   }
@@ -113,7 +110,7 @@ function Review() {
         <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">Select a subject area to start reviewing.</p>
       </div>
 
-      {/* Overall Progress Banner */}
+      {/* Overall Progress */}
       <div className="max-w-4xl mx-auto mb-8 bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
         <div className="flex items-center justify-between mb-2">
           <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">Overall Study Progress</span>
@@ -137,9 +134,9 @@ function Review() {
 
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {categories.map((cat) => {
-          const catDone = cat.subcategories.filter(sub => progress[STUDY_KEYS[sub]]).length;
+          const catDone  = cat.subcategories.filter(sub => progress[STUDY_KEYS[sub]]).length;
           const catTotal = cat.subcategories.length;
-          const catPct = Math.round((catDone / catTotal) * 100);
+          const catPct   = Math.round((catDone / catTotal) * 100);
 
           return (
             <div
@@ -152,53 +149,56 @@ function Review() {
                     {iconMap[cat.icon]}
                   </div>
                   <div className="flex flex-col items-end gap-1">
-                    <span className="px-3 py-1 bg-white dark:bg-gray-950 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm">
-                      {cat.badge}
-                    </span>
+                    <span className="px-3 py-1 bg-white dark:bg-gray-950 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm">{cat.badge}</span>
                     <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">{catDone}/{catTotal} done</span>
                   </div>
                 </div>
 
                 <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-1">{cat.title}</h3>
-
-                {/* Per-category progress bar */}
                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mb-3">
                   <div
                     className={"h-1.5 rounded-full bg-linear-to-r " + cat.color + " transition-all duration-500"}
                     style={{ width: `${catPct}%` }}
                   />
                 </div>
-
                 <p className="text-gray-600 dark:text-gray-200 mb-4 text-sm">{cat.description}</p>
 
                 <div className="space-y-2 mb-2">
                   {cat.subcategories.map((sub) => {
-                    const key = STUDY_KEYS[sub];
+                    const key     = STUDY_KEYS[sub];
                     const studied = !!progress[key];
                     return (
-                      <button
+                      <div
                         key={sub}
-                        onClick={() => {
-                          markStudied(key);
-                          setActiveStudy(key);
-                        }}
-                        className="w-full flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2 group-hover:shadow-sm transition-all hover:bg-blue-50 dark:hover:bg-gray-700 cursor-pointer"
+                        className="w-full flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2.5 group-hover:shadow-sm transition-all"
                       >
-                        <div className="flex items-center gap-2">
+                        {/* Left: check + name */}
+                        <div className="flex items-center gap-2 min-w-0">
                           {studied
                             ? <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
                             : <div className="w-4 h-4 rounded-full border-2 border-gray-300 dark:border-gray-600 flex-shrink-0" />
                           }
-                          <span className="text-sm text-gray-700 dark:text-gray-200 font-medium">{sub}</span>
+                          <span className="text-sm text-gray-700 dark:text-gray-200 font-medium truncate">{sub}</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <span className={`text-xs px-2 py-1 rounded-full font-medium flex items-center gap-1 ${studied ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300' : 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'}`}>
+                        {/* Right: two buttons */}
+                        <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+                          <button
+                            onClick={() => { markStudied(key); setActiveStudy(key); }}
+                            className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-all"
+                          >
                             <BookOpen className="w-3 h-3" />
-                            {studied ? 'Reviewed' : 'Study'}
-                          </span>
+                            Study
+                          </button>
+                          <button
+                            onClick={() => { markStudied(key); setActiveFlashcard(key); }}
+                            className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all"
+                          >
+                            <Layers className="w-3 h-3" />
+                            Cards
+                          </button>
                           <ChevronRight className="w-4 h-4 text-gray-400" />
                         </div>
-                      </button>
+                      </div>
                     );
                   })}
                 </div>
