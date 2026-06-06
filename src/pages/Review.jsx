@@ -102,10 +102,6 @@ function Review() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-10">
-        <div className="inline-flex items-center px-4 py-2 bg-linear-to-r from-blue-100 to-purple-100 rounded-full mb-4">
-          <BookOpen className="w-4 h-4 text-blue-500 mr-2" />
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Study Mode</span>
-        </div>
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-3">Choose a Category</h2>
         <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">Select a subject area to start reviewing.</p>
       </div>
