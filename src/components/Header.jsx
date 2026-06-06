@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Trophy, BookOpen, History, ClipboardList } from 'lucide-react';
+import ExamCountdown from './ExamCountdown';
 
 function Header() {
   return (
@@ -16,6 +17,7 @@ function Header() {
             </div>
           </Link>
           <nav className="flex items-center space-x-1">
+            <ExamCountdown />
             <Link
               to="/"
               className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
