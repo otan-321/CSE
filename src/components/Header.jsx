@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Trophy } from 'lucide-react';
-import { BookOpen } from 'lucide-react';
+import { Trophy, BookOpen, History, ClipboardList } from 'lucide-react';
+
 function Header() {
   return (
     <header className="bg-white dark:bg-gray-950 shadow-md sticky top-0 z-50">
@@ -15,20 +15,34 @@ function Header() {
               <p className="text-xs text-gray-500 dark:text-gray-100">Your Go-To Reviewer</p>
             </div>
           </Link>
-          <nav className="flex items-center space-x-4">
+          <nav className="flex items-center space-x-1">
             <Link
               to="/"
-              className="flex items-center space-x-1 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
             >
               <BookOpen className="w-4 h-4" />
-              <span>Home</span>
+              <span className="hidden sm:inline">Home</span>
+            </Link>
+            <Link
+              to="/review"
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
+            >
+              <ClipboardList className="w-4 h-4" />
+              <span className="hidden sm:inline">Review</span>
+            </Link>
+            <Link
+              to="/history"
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
+            >
+              <History className="w-4 h-4" />
+              <span className="hidden sm:inline">History</span>
             </Link>
             <Link
               to="/results"
-              className="flex items-center space-x-1 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
+              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
             >
               <Trophy className="w-4 h-4" />
-              <span>Results</span>
+              <span className="hidden sm:inline">Results</span>
             </Link>
           </nav>
         </div>
@@ -36,4 +50,5 @@ function Header() {
     </header>
   );
 }
+
 export default Header;
