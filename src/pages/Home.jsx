@@ -141,7 +141,7 @@ function Home() {
                 <X className="w-5 h-5" />
               </button>
             </div>
-            <div className="p-6">
+            <div className="px-6 pt-2 pb-6">
               <ExamSelection />
             </div>
           </div>
