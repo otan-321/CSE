@@ -39,6 +39,21 @@ function Home() {
           </div>
         </div>
 
+      {/* Stats Bar */}
+      <div className="grid grid-cols-3 gap-4 mb-10">
+        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
+          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">680+</div>
+          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Questions</div>
+        </div>
+        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
+          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">15</div>
+          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Topics</div>
+        </div>
+        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
+          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">100%</div>
+          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Free</div>
+        </div>
+      </div>
         <div className="mb-16">
           <div className="flex border-b border-gray-200 mb-4">
             <button className={`px-6 py-3 font-medium text-lg ${activeTab === 'about' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 dark:text-gray-100'}`} onClick={() => setActiveTab('about')}>About the Exam</button>
