@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ExamCountdown from '../components/ExamCountdown';
 import { ArrowRight, BookOpen, Code2, Brain, Database, Heart } from 'lucide-react';
 import ExamSelection from '../components/ExamSelection';
 
