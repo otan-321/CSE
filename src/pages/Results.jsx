@@ -242,15 +242,15 @@ function Results() {
 
   if (!result) {
     return (
-      <div className="container mx-auto px-4 py-4 text-center">
-        <div className="max-w-md mx-auto bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">No Results Found</h2>
-          <p className="text-gray-600 dark:text-gray-200 mb-6">
+      <div style={{background:"#0a0a0a",minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:32,maxWidth:420,width:"100%"}}>
+          <h2 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:24,fontWeight:400,marginBottom:12}}>No Results Found</h2>
+          <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:12,marginBottom:24}}>
             You haven't taken any exams yet. Start your preparation now!
           </p>
           <button
             onClick={() => navigate('/')}
-            className="px-6 py-3 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-600 transition-all"
+            className="btn btn-white"
           >
             Take an Exam
           </button>
@@ -260,25 +260,25 @@ function Results() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-4 max-w-6xl">
+    <div className="container mx-auto px-4 py-8 max-w-6xl" style={{background:"#0a0a0a",minHeight:"100vh"}}>
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-        <div className="flex items-center space-x-4">
+      <div style={{display:"flex",flexWrap:"wrap",alignItems:"center",justifyContent:"space-between",marginBottom:32,gap:16}}>
+        <div style={{display:"flex",alignItems:"center",gap:16}}>
           <button
             onClick={() => navigate('/')}
-            className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-gray-300 font-medium"
+            className="btn btn-dark" style={{padding:"8px 16px",fontSize:11}}
           >
             <ArrowLeft className="w-5 h-5" />
             <span>Back to Home</span>
           </button>
         </div>
 
-        <div className="flex items-center space-x-3">
+        <div style={{display:"flex",alignItems:"center",gap:10}}>
           <div className="relative">
             <button
               onClick={handleDownloadPDF}
               disabled={isGeneratingPDF}
-              className="flex items-center space-x-2 px-3 py-2 bg-linear-to-r from-red-500 to-red-600 text-white rounded-xl font-medium hover:from-red-600 hover:to-red-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{display:"flex",alignItems:"center",gap:6,padding:"7px 14px",background:"#1a0505",color:"#ef4444",border:"1px solid #3a1010",borderRadius:7,fontSize:11,fontFamily:"'IBM Plex Mono',monospace",cursor:"pointer"}}
             >
               {isGeneratingPDF ? (
                 <>
@@ -295,7 +295,7 @@ function Results() {
           </div>
           <button
             onClick={handleDownloadJSON}
-            className="flex items-center space-x-2 px-3 py-2 bg-white dark:bg-gray-950 border border-gray-300 text-gray-700 dark:text-gray-200 rounded-xl hover:bg-gray-50 hover:dark:bg-gray-500 transition-colors"
+            style={{display:"flex",alignItems:"center",gap:6,padding:"7px 14px",background:"transparent",color:"#fff",border:"1px solid #2a2a2a",borderRadius:7,fontSize:11,fontFamily:"'IBM Plex Mono',monospace",cursor:"pointer"}}
           >
             <Download className="w-4 h-4" />
             <span className="text-sm">JSON</span>
@@ -314,14 +314,14 @@ function Results() {
                 alert('Results copied to clipboard!');
               }
             }}
-            className="flex items-center space-x-2 px-3 py-2 bg-white dark:bg-gray-950 border border-gray-300 text-gray-700 dark:text-gray-200 rounded-xl hover:bg-gray-50 hover:dark:bg-gray-500 transition-colors"
+            style={{display:"flex",alignItems:"center",gap:6,padding:"7px 14px",background:"transparent",color:"#fff",border:"1px solid #2a2a2a",borderRadius:7,fontSize:11,fontFamily:"'IBM Plex Mono',monospace",cursor:"pointer"}}
           >
             <Share2 className="w-4 h-4" />
             <span className="text-sm">Share</span>
           </button>
           <button
             onClick={handleRetakeExam}
-            className="flex items-center space-x-2 px-4 py-2 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-medium hover:from-blue-600 hover:to-purple-600 transition-all"
+            className="btn btn-white" style={{padding:"7px 16px",fontSize:11}}
           >
             <RotateCcw className="w-4 h-4" />
             <span className="text-sm">Retake?</span>
@@ -335,42 +335,42 @@ function Results() {
       </div>
 
       {/* Study Recommendations */}
-      <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-6 mb-8">
-        <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-6">Study Recommendations</h3>
+      <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:24,marginBottom:24}}>
+        <h3 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:20,fontWeight:400,marginBottom:24}}>Study Recommendations</h3>
         
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="p-4 bg-blue-50 dark:bg-gray-900 rounded-xl">
-            <div className="text-blue-600 font-bold text-lg mb-2">Strengths</div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:14,marginBottom:24}}>
+          <div style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:8,padding:16}}>
+            <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#3b82f6",fontSize:16,fontWeight:400,marginBottom:8}}>Strengths</div>
             {result.categoryScores && Object.entries(result.categoryScores)
               .filter(([category, scores]) => scores.percentage >= 80)
               .map(([category, scores]) => (
                 <div key={category} className="flex items-center justify-between mb-1">
-                  <span className="text-sm text-gray-700 dark:text-gray-200">{category}</span>
+                  <span style={{fontFamily:"'IBM Plex Mono',monospace",color:"#888",fontSize:11}}>{category}</span>
                   <span className="text-sm font-bold text-green-600">{scores.percentage}%</span>
                 </div>
               ))}
             {!Object.entries(result.categoryScores || {}).some(([, scores]) => scores.percentage >= 80) && (
-              <p className="text-sm text-gray-600 dark:text-gray-200">Keep practicing to identify your strengths!</p>
+              <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#888",fontSize:11}}>Keep practicing to identify your strengths!</p>
             )}
           </div>
           
-          <div className="p-4 bg-yellow-50 rounded-xl">
-            <div className="text-yellow-600 font-bold text-lg mb-2">Areas to Improve</div>
+          <div style={{background:"#111",border:"1px solid #2a1f00",borderRadius:8,padding:16}}>
+            <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#eab308",fontSize:16,fontWeight:400,marginBottom:8}}>Areas to Improve</div>
             {result.categoryScores && Object.entries(result.categoryScores)
               .filter(([category, scores]) => scores.percentage < 60)
               .map(([category, scores]) => (
                 <div key={category} className="flex items-center justify-between mb-1">
-                  <span className="text-sm text-gray-700 dark:text-gray-200">{category}</span>
+                  <span style={{fontFamily:"'IBM Plex Mono',monospace",color:"#888",fontSize:11}}>{category}</span>
                   <span className="text-sm font-bold text-red-600">{scores.percentage}%</span>
                 </div>
               ))}
             {!Object.entries(result.categoryScores || {}).some(([, scores]) => scores.percentage < 60) && (
-              <p className="text-sm text-gray-600 dark:text-gray-200">Great job! Focus on maintaining your performance.</p>
+              <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#888",fontSize:11}}>Great job! Focus on maintaining your performance.</p>
             )}
           </div>
           
-          <div className="p-4 bg-green-50 dark:bg-gray-900 rounded-xl">
-            <div className="text-green-600 font-bold text-lg mb-2">Next Steps</div>
+          <div style={{background:"#111",border:"1px solid #0a2a1a",borderRadius:8,padding:16}}>
+            <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#22c55e",fontSize:16,fontWeight:400,marginBottom:8}}>Next Steps</div>
             <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1">
               <li>• Review explanations for incorrect answers</li>
               <li>• Focus on weaker categories</li>
@@ -382,27 +382,27 @@ function Results() {
 
         {/* Study Plan */}
         <div>
-          <h4 className="font-semibold text-gray-700 dark:text-gray-200 mb-4">Recommended Study Plan</h4>
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="p-4 bg-blue-50 dark:bg-gray-900 rounded-xl">
-              <div className="text-blue-600 font-bold text-lg mb-2">Week 1-2</div>
-              <ul className="text-gray-700 dark:text-gray-200 space-y-1 text-sm">
+          <h4 style={{fontFamily:"'IBM Plex Mono',monospace",color:"#666",fontSize:11,textTransform:"uppercase",letterSpacing:"0.08em",marginBottom:16}}>Recommended Study Plan</h4>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:12}}>
+            <div style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:8,padding:16}}>
+              <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#3b82f6",fontSize:16,fontWeight:400,marginBottom:8}}>Week 1-2</div>
+              <ul style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:11,lineHeight:1.8}}>
                 <li>• Review basic concepts</li>
                 <li>• Focus on weaker areas</li>
                 <li>• Daily practice questions</li>
               </ul>
             </div>
-            <div className="p-4 bg-purple-50 rounded-xl">
-              <div className="text-purple-600 font-bold text-lg mb-2">Week 3-4</div>
-              <ul className="text-gray-700 dark:text-gray-200 space-y-1 text-sm">
+            <div style={{background:"#111",border:"1px solid #1a0d3c",borderRadius:8,padding:16}}>
+              <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#8b5cf6",fontSize:16,fontWeight:400,marginBottom:8}}>Week 3-4</div>
+              <ul style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:11,lineHeight:1.8}}>
                 <li>• Practice timed tests</li>
                 <li>• Review question patterns</li>
                 <li>• Focus on accuracy</li>
               </ul>
             </div>
-            <div className="p-4 bg-green-50 dark:bg-gray-900 rounded-xl">
-              <div className="text-green-600 font-bold text-lg mb-2">Week 5-6</div>
-              <ul className="text-gray-700 dark:text-gray-200 space-y-1 text-sm">
+            <div style={{background:"#111",border:"1px solid #0a2a1a",borderRadius:8,padding:16}}>
+              <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#22c55e",fontSize:16,fontWeight:400,marginBottom:8}}>Week 5-6</div>
+              <ul style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:11,lineHeight:1.8}}>
                 <li>• Full-length mock exams</li>
                 <li>• Review all explanations</li>
                 <li>• Final preparation</li>
@@ -413,23 +413,23 @@ function Results() {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <div style={{display:"flex",flexWrap:"wrap",gap:12,justifyContent:"center"}}>
         <button
           onClick={handleRetakeExam}
-          className="px-8 py-3 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg"
+          className="btn btn-white"
         >
           Take Another Test
         </button>
         <button
           onClick={() => navigate('/')}
-          className="px-8 py-3 bg-white dark:bg-gray-950 border-2 border-gray-300 text-gray-700 dark:text-gray-200 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
+          className="btn btn-dark"
         >
           Back to Dashboard
         </button>
         <button
           onClick={handleDownloadPDF}
           disabled={isGeneratingPDF}
-          className="px-8 py-3 bg-linear-to-r from-red-500 to-red-600 text-white rounded-xl font-semibold hover:from-red-600 hover:to-red-700 transition-all shadow-lg flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+          style={{display:"flex",alignItems:"center",justifyContent:"center",padding:"13px 30px",background:"#1a0505",color:"#ef4444",border:"1px solid #3a1010",borderRadius:7,fontSize:13,fontFamily:"'IBM Plex Mono',monospace",fontWeight:700,cursor:"pointer"}}
         >
           {isGeneratingPDF ? (
             <>

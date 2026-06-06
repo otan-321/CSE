@@ -19,7 +19,7 @@ function App() {
   return (
     <ErrorBoundary>
       <Router>
-        <div className="min-h-screen bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-950">
+        <div className="min-h-screen" style={{background:"#0a0a0a"}}>
           <DisclaimerModal />
           <Header />
           <ScrollToTop />

@@ -1,53 +1,45 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Trophy, BookOpen, History, ClipboardList } from 'lucide-react';
 import ExamCountdown from './ExamCountdown';
 
 function Header() {
+  const location = useLocation();
+  const links = [
+    { to: '/', label: 'Home', icon: <BookOpen className="w-3 h-3" /> },
+    { to: '/review', label: 'Review', icon: <ClipboardList className="w-3 h-3" /> },
+    { to: '/history', label: 'History', icon: <History className="w-3 h-3" /> },
+    { to: '/results', label: 'Results', icon: <Trophy className="w-3 h-3" /> },
+  ];
+
   return (
-    <header className="bg-white dark:bg-gray-950 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <img src="/logo/logo.png" alt="Logo" className="w-8 h-8" />
-            <div>
-              <h1 className="text-sm md:text-sm font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                CSE Reviewer
-              </h1>
-              <p className="text-xs text-gray-500 dark:text-gray-100">Your Go-To Reviewer</p>
-            </div>
-          </Link>
-          <nav className="flex items-center space-x-1">
-            <ExamCountdown />
+    <header style={{ background: '#0a0a0a', borderBottom: '1px solid #1e1e1e', position: 'sticky', top: 0, zIndex: 50 }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 28px', height: 56, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+
+        {/* Logo */}
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+          <img src="/logo/logo.png" alt="Logo" style={{ width: 26, height: 26, borderRadius: 6 }} />
+          <span style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 15, color: '#fff', letterSpacing: '-0.3px' }}>
+            CSE<span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: '#444', letterSpacing: '0.06em', marginLeft: 6, fontWeight: 400 }}>Reviewer</span>
+          </span>
+        </Link>
+
+        {/* Nav */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+          {links.map((l) => (
             <Link
-              to="/"
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
+              key={l.to}
+              to={l.to}
+              className="nav-link"
+              style={{ color: location.pathname === l.to ? '#fff' : '#444' }}
             >
-              <BookOpen className="w-4 h-4" />
-              <span className="hidden sm:inline">Home</span>
+              {l.icon}
+              <span className="hidden sm:inline">{l.label}</span>
             </Link>
-            <Link
-              to="/review"
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
-            >
-              <ClipboardList className="w-4 h-4" />
-              <span className="hidden sm:inline">Review</span>
-            </Link>
-            <Link
-              to="/history"
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
-            >
-              <History className="w-4 h-4" />
-              <span className="hidden sm:inline">History</span>
-            </Link>
-            <Link
-              to="/results"
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-blue-100 hover:dark:bg-gray-800 dark:bg-gray-950 transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 md:text-sm"
-            >
-              <Trophy className="w-4 h-4" />
-              <span className="hidden sm:inline">Results</span>
-            </Link>
-          </nav>
-        </div>
+          ))}
+        </nav>
+
+        {/* Countdown */}
+        <ExamCountdown />
       </div>
     </header>
   );

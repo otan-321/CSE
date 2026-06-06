@@ -91,13 +91,13 @@ function History() {
   const passing = history.filter(r => Math.round((r.score / r.totalQuestions) * 100) >= 80).length;
 
   return (
-    <div className="container mx-auto px-4 py-4 max-w-4xl">
+    <div className="container mx-auto px-4 py-8 max-w-4xl" style={{background:"#0a0a0a",minHeight:"100vh"}}>
 
       {/* Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:32}}>
         <button
           onClick={() => navigate('/')}
-          className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-gray-300 font-medium"
+          className="btn btn-dark" style={{padding:"8px 16px",fontSize:11}}
         >
           <ArrowLeft className="w-5 h-5" />
           <span>Back to Home</span>
@@ -105,7 +105,7 @@ function History() {
         {history.length > 0 && (
           <button
             onClick={clearHistory}
-            className="flex items-center space-x-2 px-3 py-2 bg-white dark:bg-gray-950 border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-200 rounded-xl hover:bg-red-50 hover:text-red-600 hover:border-red-300 transition-all text-sm"
+            className="btn btn-danger"
           >
             <Trash2 className="w-4 h-4" />
             <span>Clear All</span>
@@ -113,44 +113,44 @@ function History() {
         )}
       </div>
 
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Score History</h2>
+      <h2 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:28,fontWeight:400,marginBottom:24,letterSpacing:"-0.5px"}}>Score History</h2>
 
       {/* Summary Stats */}
       {history.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:12,marginBottom:28}}>
+          <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:20}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
+              <div style={{padding:6,background:"#0d1f3c",borderRadius:6}}>
                 <Target className="w-4 h-4 text-blue-600 dark:text-blue-300" />
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">Exams Taken</span>
+              <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.1em"}}>Exams Taken</span>
             </div>
-            <div className="text-3xl font-bold text-gray-800 dark:text-white">{history.length}</div>
+            <div style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:32,fontWeight:400}}>{history.length}</div>
           </div>
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
+          <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:20}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
+              <div style={{padding:6,background:"#1a0d3c",borderRadius:6}}>
                 <TrendingUp className="w-4 h-4 text-purple-600 dark:text-purple-300" />
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">Average</span>
+              <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.1em"}}>Average</span>
             </div>
             <div className={`text-3xl font-bold ${getScoreColor(avg)}`}>{avg}%</div>
           </div>
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="p-2 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
+          <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:20}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
+              <div style={{padding:6,background:"#2a1f00",borderRadius:6}}>
                 <Trophy className="w-4 h-4 text-yellow-600 dark:text-yellow-300" />
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">Best Score</span>
+              <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.1em"}}>Best Score</span>
             </div>
             <div className={`text-3xl font-bold ${getScoreColor(best)}`}>{best}%</div>
           </div>
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
+          <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:20}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
+              <div style={{padding:6,background:"#0a2a1a",borderRadius:6}}>
                 <Target className="w-4 h-4 text-green-600 dark:text-green-300" />
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">Passing</span>
+              <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.1em"}}>Passing</span>
             </div>
             <div className="text-3xl font-bold text-green-500">{passing}/{history.length}</div>
           </div>
@@ -159,17 +159,17 @@ function History() {
 
       {/* Weak Areas */}
       {weakAreas.length > 0 && (
-        <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-6 mb-8 border-l-4 border-red-500">
-          <div className="flex items-center gap-2 mb-4">
+        <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderLeft:"3px solid #ef4444",borderRadius:10,padding:24,marginBottom:24}}>
+          <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:16}}>
             <AlertTriangle className="w-5 h-5 text-red-500" />
-            <h3 className="text-base font-bold text-gray-800 dark:text-white">Weak Areas — Focus Here</h3>
-            <span className="text-xs text-gray-400 dark:text-gray-500 ml-1">(avg below 60% across all exams)</span>
+            <h3 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:16,fontWeight:400}}>Weak Areas — Focus Here</h3>
+            <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:10,color:"#333",marginLeft:4}}>(avg below 60% across all exams)</span>
           </div>
-          <div className="space-y-3">
+          <div style={{display:"flex",flexDirection:"column",gap:10}}>
             {weakAreas.map(({ cat, avg: catAvg }) => (
-              <div key={cat} className="flex items-center gap-3">
-                <span className="text-sm text-gray-700 dark:text-gray-300 w-52 truncate font-medium">{cat}</span>
-                <div className="flex-1 bg-gray-100 dark:bg-gray-800 rounded-full h-2.5">
+              <div key={cat} style={{display:"flex",alignItems:"center",gap:10}}>
+                <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:11,color:"#888",width:180,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{cat}</span>
+                <div style={{flex:1,background:"#1a1a1a",borderRadius:999,height:6}}>
                   <div
                     className="h-2.5 rounded-full bg-linear-to-r from-red-500 to-rose-400 transition-all"
                     style={{ width: `${catAvg}%` }}
@@ -178,7 +178,7 @@ function History() {
                 <span className="text-sm font-bold text-red-500 w-10 text-right">{catAvg}%</span>
                 <button
                   onClick={() => navigate('/review')}
-                  className="flex items-center gap-1 px-2 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg text-xs font-medium hover:bg-red-100 transition-all"
+                  style={{display:"flex",alignItems:"center",gap:4,padding:"3px 8px",background:"#2a0a0a",color:"#ef4444",border:"1px solid #4a1a1a",borderRadius:5,fontSize:10,fontFamily:"'IBM Plex Mono',monospace",cursor:"pointer"}}
                 >
                   <BookOpen className="w-3 h-3" />
                   Study
@@ -191,13 +191,13 @@ function History() {
 
       {/* Score Trend */}
       {history.length > 1 && (
-        <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-6 mb-8">
-          <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-4">Score Trend (latest → oldest)</h3>
-          <div className="flex items-end gap-2 h-20">
+        <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:24,marginBottom:24}}>
+          <h3 style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.12em",marginBottom:16}}>Score Trend (latest → oldest)</h3>
+          <div style={{display:"flex",alignItems:"flex-end",gap:4,height:80}}>
             {[...history].slice(0, 20).map((r, i) => {
               const pct = Math.round((r.score / r.totalQuestions) * 100);
               return (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
+                <div key={i} style={{flex:1,display:"flex",flexDirection:"column",alignItems:"center",gap:4,position:"relative"}}>
                   <div
                     className={`w-full rounded-t-md bg-linear-to-t ${getScoreBg(pct)} transition-all`}
                     style={{ height: `${Math.max(8, pct * 0.72)}px` }}
@@ -209,7 +209,7 @@ function History() {
               );
             })}
           </div>
-          <div className="flex justify-between text-xs text-gray-400 mt-1">
+          <div style={{display:"flex",justifyContent:"space-between",marginTop:6}}>
             <span>Latest</span>
             <span>Oldest</span>
           </div>
@@ -218,72 +218,72 @@ function History() {
 
       {/* History List */}
       {history.length === 0 ? (
-        <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-12 text-center">
-          <Trophy className="w-16 h-16 text-gray-300 dark:text-gray-700 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">No Exam History Yet</h3>
-          <p className="text-gray-500 dark:text-gray-400 mb-6">Take a mock exam to start tracking your progress.</p>
+        <div style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:48,textAlign:"center"}}>
+          <Trophy style={{width:48,height:48,color:"#222",margin:"0 auto 16px"}} />
+          <h3 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:22,fontWeight:400,marginBottom:8}}>No Exam History Yet</h3>
+          <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:12,marginBottom:24}}>Take a mock exam to start tracking your progress.</p>
           <button
             onClick={() => navigate('/')}
-            className="px-6 py-3 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-600 transition-all"
+            className="btn btn-white"
           >
             Start an Exam
           </button>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div style={{display:"flex",flexDirection:"column",gap:12}}>
           {history.map((r, i) => {
             const pct = Math.round((r.score / r.totalQuestions) * 100);
             const badge = getBadge(pct);
             const isOpen = expanded === i;
             const label = r.examType === 'professional' ? 'Professional' : r.examType === 'subprofessional' ? 'Sub-Professional' : 'Practice';
             return (
-              <div key={i} className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
-                <div className="flex items-center justify-between p-5 gap-4">
+              <div key={i} style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,overflow:"hidden"}}>
+                <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:20,gap:16}}>
                   <div className={`w-14 h-14 rounded-full bg-linear-to-br ${getScoreBg(pct)} flex items-center justify-center flex-shrink-0`}>
                     <span className="text-white font-bold text-sm">{pct}%</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-semibold text-gray-800 dark:text-white">{label}</span>
+                  <div style={{flex:1,minWidth:0}}>
+                    <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap"}}>
+                      <span style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:15,fontWeight:400}}>{label}</span>
                       <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${badge.cls}`}>{badge.label}</span>
                     </div>
-                    <div className="flex items-center gap-3 mt-1 text-sm text-gray-500 dark:text-gray-400 flex-wrap">
+                    <div style={{display:"flex",alignItems:"center",gap:10,marginTop:4,flexWrap:"wrap"}}>
                       <span>{r.score}/{r.totalQuestions} correct</span>
-                      <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{r.timeTaken}</span>
+                      <span style={{display:"flex",alignItems:"center",gap:4}}><Clock className="w-3 h-3" />{r.timeTaken}</span>
                       <span>{new Date(r.date).toLocaleDateString('en-PH', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 flex-shrink-0">
+                  <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
                     <button
                       onClick={() => { localStorage.setItem('lastExamResult', JSON.stringify(r)); navigate('/results'); }}
-                      className="p-2 bg-blue-50 dark:bg-gray-900 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-100 transition-all"
+                      style={{padding:7,background:"#0d1f3c",color:"#3b82f6",border:"1px solid #1a3a6a",borderRadius:6,cursor:"pointer"}}
                       title="View full results"
                     >
                       <RotateCcw className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => deleteOne(r.date)}
-                      className="p-2 bg-gray-50 dark:bg-gray-900 text-gray-400 rounded-lg hover:bg-red-50 hover:text-red-500 transition-all"
+                      style={{padding:7,background:"#111",color:"#444",border:"1px solid #1e1e1e",borderRadius:6,cursor:"pointer"}}
                       title="Delete"
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => setExpanded(isOpen ? null : i)}
-                      className="p-2 bg-gray-50 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg hover:bg-gray-100 transition-all"
+                      style={{padding:7,background:"#111",color:"#444",border:"1px solid #1e1e1e",borderRadius:6,cursor:"pointer"}}
                     >
                       {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </button>
                   </div>
                 </div>
                 {isOpen && r.categoryScores && (
-                  <div className="px-5 pb-5 border-t border-gray-100 dark:border-gray-800 pt-4">
-                    <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">Category Breakdown</p>
-                    <div className="space-y-2">
+                  <div style={{padding:"16px 20px 20px",borderTop:"1px solid #1e1e1e"}}>
+                    <p style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444",textTransform:"uppercase",letterSpacing:"0.12em",marginBottom:12}}>Category Breakdown</p>
+                    <div style={{display:"flex",flexDirection:"column",gap:8}}>
                       {Object.entries(r.categoryScores).map(([cat, scores]) => (
-                        <div key={cat} className="flex items-center gap-3">
-                          <span className="text-sm text-gray-600 dark:text-gray-300 w-44 truncate">{cat}</span>
-                          <div className="flex-1 bg-gray-100 dark:bg-gray-800 rounded-full h-2">
+                        <div key={cat} style={{display:"flex",alignItems:"center",gap:10}}>
+                          <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:11,color:"#666",width:160,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{cat}</span>
+                          <div style={{flex:1,background:"#1a1a1a",borderRadius:999,height:4}}>
                             <div className={`h-2 rounded-full bg-linear-to-r ${getScoreBg(scores.percentage)}`} style={{ width: `${scores.percentage}%` }} />
                           </div>
                           <span className={`text-sm font-semibold w-10 text-right ${getScoreColor(scores.percentage)}`}>{scores.percentage}%</span>
@@ -299,33 +299,33 @@ function History() {
       )}
 
       {/* ── Reset All Data ── */}
-      <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+      <div style={{marginTop:48,paddingTop:32,borderTop:"1px solid #1e1e1e"}}>
         {!showResetConfirm ? (
-          <div className="text-center">
-            <p className="text-xs text-gray-400 dark:text-gray-600 mb-3">This will erase all exam history and study progress.</p>
+          <div style={{textAlign:"center"}}>
+            <p style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:10,color:"#333",marginBottom:12}}>This will erase all exam history and study progress.</p>
             <button
               onClick={() => setShowResetConfirm(true)}
-              className="flex items-center gap-2 mx-auto px-5 py-2.5 bg-white dark:bg-gray-950 border border-red-300 dark:border-red-800 text-red-500 rounded-xl text-sm font-medium hover:bg-red-50 dark:hover:bg-red-950 transition-all"
+              className="btn btn-danger" style={{margin:"0 auto",display:"flex"}}
             >
               <Trash2 className="w-4 h-4" />
               Reset All Data
             </button>
           </div>
         ) : (
-          <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-2xl p-6 text-center max-w-md mx-auto">
-            <AlertTriangle className="w-8 h-8 text-red-500 mx-auto mb-3" />
-            <p className="font-semibold text-gray-800 dark:text-white mb-1">Reset everything?</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">All exam history and study progress will be permanently deleted. This cannot be undone.</p>
-            <div className="flex gap-3 justify-center">
+          <div style={{background:"#1a0505",border:"1px solid #3a1010",borderRadius:10,padding:24,textAlign:"center",maxWidth:420,margin:"0 auto"}}>
+            <AlertTriangle style={{width:28,height:28,color:"#ef4444",margin:"0 auto 12px"}} />
+            <p style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:16,fontWeight:400,marginBottom:4}}>Reset everything?</p>
+            <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:11,marginBottom:20}}>All exam history and study progress will be permanently deleted. This cannot be undone.</p>
+            <div style={{display:"flex",gap:10,justifyContent:"center"}}>
               <button
                 onClick={() => setShowResetConfirm(false)}
-                className="px-5 py-2 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200 rounded-xl text-sm font-medium hover:bg-gray-50 transition-all"
+                className="btn btn-dark" style={{padding:"8px 18px",fontSize:11}}
               >
                 Cancel
               </button>
               <button
                 onClick={resetAllData}
-                className="px-5 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl text-sm font-bold transition-all"
+                className="btn btn-danger" style={{padding:"8px 18px",fontSize:11,background:"#ef4444",color:"#fff"}}
               >
                 Yes, Reset Everything
               </button>

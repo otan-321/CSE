@@ -24,10 +24,11 @@ export default function ExamCountdown() {
   const shortDate = examDate.toLocaleDateString('en-PH', { month: 'short', day: 'numeric' });
 
   return (
-    <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-gray-900 border border-blue-400 dark:border-blue-600 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300">
-      <span>🗓</span>
-      <span>{shortDate}</span>
-      <span className="text-blue-500 font-bold">{days}d</span>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '5px 12px', border: '1px solid #2a2a2a', borderRadius: 999, background: '#111' }}>
+      <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#3b82f6' }} />
+      <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: '#555', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+        {shortDate} · <strong style={{ color: '#fff' }}>{days}d</strong>
+      </span>
     </div>
   );
 }

@@ -4,163 +4,180 @@ import ExamSelection from '../components/ExamSelection';
 
 function Home() {
   const [showExamModal, setShowExamModal] = useState(false);
-  const [activeTab, setActiveTab] = useState('about');
-  const [showAbout, setShowAbout] = useState(false);
+  const [activeTab, setActiveTab]         = useState('about');
+  const [showAbout, setShowAbout]         = useState(false);
 
   const tips = [
-    "Review basic grammar and vocabulary daily",
-    "Practice mathematical operations without calculator",
-    "Study Philippine Constitution and government structure",
-    "Take timed practice tests regularly",
-    "Focus on weakest areas"
+    'Review basic grammar and vocabulary daily',
+    'Practice mathematical operations without calculator',
+    'Study Philippine Constitution and government structure',
+    'Take timed practice tests regularly',
+    'Focus on weakest areas',
   ];
+
+  const C = {
+    bg: '#0a0a0a', bg2: '#0f0f0f', bg3: '#111',
+    border: '#1e1e1e', border2: '#2a2a2a',
+    text: '#fff', muted: '#555', dim: '#333',
+    blue: '#3b82f6', green: '#22c55e',
+    font: "'DM Serif Display', Georgia, serif",
+    mono: "'IBM Plex Mono', monospace",
+  };
 
   return (
     <>
-      <div className="container mx-auto px-4 py-4">
-        <div className="text-center mb-6 pt-4">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            Pass the CSE.
-            <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              No Excuses.
-            </span>
+      {/* ── HERO ── */}
+      <section style={{ background: C.bg, padding: '100px 24px 80px', position: 'relative', overflow: 'hidden', textAlign: 'center' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(${C.border} 1px, transparent 1px), linear-gradient(90deg, ${C.border} 1px, transparent 1px)`, backgroundSize: '64px 64px', opacity: 0.45 }} />
+        <div style={{ position: 'absolute', top: '25%', left: '50%', transform: 'translateX(-50%)', width: 700, height: 400, background: 'radial-gradient(ellipse, rgba(59,130,246,0.09) 0%, transparent 70%)', pointerEvents: 'none' }} />
+
+        <div style={{ position: 'relative', maxWidth: 780, margin: '0 auto' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '5px 14px', border: `1px solid ${C.border2}`, borderRadius: 999, marginBottom: 40, background: C.bg3 }}>
+            <div style={{ width: 6, height: 6, borderRadius: '50%', background: C.green }} />
+            <span style={{ fontFamily: C.mono, fontSize: 10, color: C.muted, letterSpacing: '0.06em' }}>FREE · NO ADS · BUILT FOR FILIPINOS 🇵🇭</span>
+          </div>
+
+          <h1 style={{ fontFamily: C.font, fontSize: 'clamp(48px,8vw,90px)', fontWeight: 400, color: C.text, lineHeight: 1.0, letterSpacing: '-3px', margin: '0 0 20px' }}>
+            Pass the CSE.<br />
+            <span style={{ background: 'linear-gradient(135deg,#3b82f6,#8b5cf6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>No Excuses.</span>
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-200 max-w-3xl mx-auto mb-8">
-            Stop wishing, start drilling. Free mock exams and full study guides built for the Philippine Civil Service Exam. No shortcuts — just results.
+
+          <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 13, lineHeight: 1.9, marginBottom: 52, letterSpacing: '0.01em' }}>
+            Stop wishing, start drilling. Free mock exams and full study guides<br />built for the Philippine Civil Service Exam. No shortcuts — just results.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <button onClick={() => setShowExamModal(true)} className="px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
-              Start Exam Now
-              <ArrowRight className="ml-2 w-5 h-5" />
+
+          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button className="btn btn-white" onClick={() => setShowExamModal(true)}>
+              Start Exam Now <ArrowRight className="w-4 h-4" />
             </button>
-            <a href="/review" className="px-8 py-4 bg-white dark:bg-gray-950 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center justify-center">
-              Study Hard
-              <BookOpen className="ml-2 w-5 h-5" />
+            <a href="/review" className="btn btn-dark">
+              Study Hard <BookOpen className="w-4 h-4" />
             </a>
           </div>
         </div>
 
-      {/* Stats Bar */}
-      <div className="grid grid-cols-3 gap-4 mb-10">
-        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
-          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">680+</div>
-          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Questions</div>
+        {/* Stats */}
+        <div style={{ position: 'relative', display: 'inline-flex', marginTop: 80, border: `1px solid ${C.border}`, borderRadius: 10, overflow: 'hidden', background: C.bg2 }}>
+          {[{ v: '680+', l: 'Questions' }, { v: '15', l: 'Topics' }, { v: '100%', l: 'Free' }].map((s, i) => (
+            <div key={s.l} style={{ padding: '18px 44px', borderLeft: i > 0 ? `1px solid ${C.border}` : 'none', textAlign: 'center' }}>
+              <div style={{ fontFamily: C.font, fontSize: 28, color: C.text }}>{s.v}</div>
+              <div style={{ fontFamily: C.mono, fontSize: 9, color: C.dim, marginTop: 5, textTransform: 'uppercase', letterSpacing: '0.14em' }}>{s.l}</div>
+            </div>
+          ))}
         </div>
-        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
-          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">15</div>
-          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Topics</div>
-        </div>
-        <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-800">
-          <div className="text-2xl font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">100%</div>
-          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide">Free</div>
-        </div>
-      </div>
-        <div className="mb-16">
-          <div className="flex border-b border-gray-200 mb-4">
-            <button className={`px-6 py-3 font-medium text-lg ${activeTab === 'about' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 dark:text-gray-100'}`} onClick={() => setActiveTab('about')}>About the Exam</button>
-            <button className={`px-6 py-3 font-medium text-lg ${activeTab === 'tips' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 dark:text-gray-100'}`} onClick={() => setActiveTab('tips')}>Study Tips</button>
-            <button className={`px-6 py-3 font-medium text-lg ${activeTab === 'requirements' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 dark:text-gray-100'}`} onClick={() => setActiveTab('requirements')}>Requirements</button>
+      </section>
+
+      {/* ── TABS ── */}
+      <section style={{ background: C.bg, borderTop: `1px solid ${C.border}`, padding: '72px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <div style={{ display: 'flex', borderBottom: `1px solid ${C.border}` }}>
+            {[{ id: 'about', label: 'About the Exam' }, { id: 'tips', label: 'Study Tips' }, { id: 'requirements', label: 'Requirements' }].map((t) => (
+              <button key={t.id} onClick={() => setActiveTab(t.id)} style={{ padding: '11px 22px', background: 'transparent', border: 'none', borderBottom: activeTab === t.id ? '2px solid #fff' : '2px solid transparent', color: activeTab === t.id ? C.text : C.muted, fontFamily: C.mono, fontSize: 11, cursor: 'pointer', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: -1, transition: 'color 0.2s' }}>
+                {t.label}
+              </button>
+            ))}
           </div>
-          <div className="bg-white dark:bg-gray-950 rounded-2xl p-8 shadow-lg">
+          <div style={{ background: C.bg2, border: `1px solid ${C.border}`, borderTop: 'none', borderRadius: '0 0 10px 10px', padding: 36 }}>
             {activeTab === 'about' && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">About the Civil Service Exam</h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-4">The Civil Service Examination (CSE) is conducted by the Philippine Civil Service Commission (CSC) to determine the fitness of individuals who want to enter government service.</p>
-                <div className="grid md:grid-cols-2 gap-6 mt-6">
-                  <div className="p-4 bg-blue-50 dark:bg-gray-900 rounded-xl">
-                    <h4 className="font-bold text-gray-800 dark:text-white mb-2">Professional Level</h4>
-                    <ul className="text-gray-700 dark:text-gray-200 space-y-2">
-                      <li>For college graduates</li>
-                      <li>170 multiple-choice items</li>
-                      <li>3.5 hours duration</li>
-                      <li>Higher salary grade eligibility</li>
-                    </ul>
-                  </div>
-                  <div className="p-4 bg-green-50 dark:bg-gray-900 rounded-xl">
-                    <h4 className="font-bold text-gray-800 dark:text-white mb-2">Sub-Professional Level</h4>
-                    <ul className="text-gray-700 dark:text-gray-200 space-y-2">
-                      <li>For non-college graduates</li>
-                      <li>165 multiple-choice items</li>
-                      <li>2.5 hours duration</li>
-                      <li>Entry-level government positions</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
-            {activeTab === 'tips' && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Effective Study Tips</h3>
-                <div className="space-y-4">
-                  {tips.map((tip, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="p-2 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg">
-                        <span className="text-white font-bold">{index + 1}</span>
-                      </div>
-                      <p className="text-gray-700 dark:text-gray-200 pt-1">{tip}</p>
+                <h3 style={{ fontFamily: C.font, color: C.text, fontSize: 28, fontWeight: 400, marginBottom: 14, letterSpacing: '-0.5px' }}>About the Civil Service Exam</h3>
+                <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 12, lineHeight: 1.9, marginBottom: 28 }}>The Civil Service Examination (CSE) is conducted by the Philippine Civil Service Commission (CSC) to determine the fitness of individuals who want to enter government service.</p>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+                  {[
+                    { title: 'Professional Level', items: ['For college graduates', '170 multiple-choice items', '3.5 hours duration', 'Higher salary grade eligibility'], accent: '#3b82f6' },
+                    { title: 'Sub-Professional Level', items: ['For non-college graduates', '165 multiple-choice items', '2.5 hours duration', 'Entry-level government positions'], accent: '#22c55e' },
+                  ].map((card) => (
+                    <div key={card.title} style={{ background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 8, padding: 18 }}>
+                      <div style={{ width: 2, height: 14, background: card.accent, borderRadius: 2, marginBottom: 10 }} />
+                      <h4 style={{ fontFamily: C.font, color: C.text, fontSize: 15, fontWeight: 400, marginBottom: 10 }}>{card.title}</h4>
+                      {card.items.map((item) => (
+                        <div key={item} style={{ fontFamily: C.mono, color: C.muted, fontSize: 11, marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <span style={{ color: card.accent, fontSize: 9 }}>▸</span> {item}
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </div>
               </div>
             )}
+            {activeTab === 'tips' && (
+              <div>
+                <h3 style={{ fontFamily: C.font, color: C.text, fontSize: 28, fontWeight: 400, marginBottom: 22, letterSpacing: '-0.5px' }}>Effective Study Tips</h3>
+                {tips.map((tip, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 7, padding: '13px 16px', marginBottom: 10 }}>
+                    <span style={{ fontFamily: C.font, fontSize: 18, color: '#3b82f6', minWidth: 26 }}>{String(i + 1).padStart(2, '0')}</span>
+                    <span style={{ fontFamily: C.mono, color: C.muted, fontSize: 12, lineHeight: 1.7 }}>{tip}</span>
+                  </div>
+                ))}
+              </div>
+            )}
             {activeTab === 'requirements' && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Examination Requirements</h3>
-                <ul className="space-y-3 text-gray-700 dark:text-gray-200">
-                  <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>Filipino citizen</li>
-                  <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>At least 18 years old</li>
-                  <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>Of good moral character</li>
-                  <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>No criminal record</li>
-                  <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>Not removed from service for cause</li>
-                </ul>
+                <h3 style={{ fontFamily: C.font, color: C.text, fontSize: 28, fontWeight: 400, marginBottom: 22, letterSpacing: '-0.5px' }}>Examination Requirements</h3>
+                {['Filipino citizen', 'At least 18 years old', 'Of good moral character', 'No criminal record', 'Not removed from service for cause'].map((req) => (
+                  <div key={req} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '13px 16px', background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 7, marginBottom: 10 }}>
+                    <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#3b82f6', flexShrink: 0 }} />
+                    <span style={{ fontFamily: C.mono, color: C.muted, fontSize: 12 }}>{req}</span>
+                  </div>
+                ))}
               </div>
             )}
           </div>
         </div>
+      </section>
 
-        <div className="mb-16">
-          <button onClick={() => setShowAbout(!showAbout)} className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 transition-colors mb-3 mx-auto block text-center">
-            {showAbout ? "Hide" : "About this Project"}
+      {/* ── ABOUT PROJECT ── */}
+      <section style={{ background: C.bg, padding: '0 24px 80px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <button onClick={() => setShowAbout(!showAbout)} style={{ display: 'block', margin: '0 auto 20px', background: 'transparent', border: 'none', color: C.dim, fontFamily: C.mono, fontSize: 10, cursor: 'pointer', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+            {showAbout ? '▲ hide' : '▼ about this project'}
           </button>
-          {showAbout && <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
-            <div className="bg-linear-to-r from-blue-500 to-purple-600 px-8 py-5">
-              <h3 className="text-xl font-bold text-white">About This Project</h3>
-              <p className="text-blue-100 text-sm mt-1">Made by Otan</p>
-            </div>
-            <div className="p-8">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-blue-50 dark:bg-gray-900 rounded-xl p-4 text-center"><Code2 className="w-6 h-6 text-blue-500 mx-auto mb-2" /><div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Built With</div><div className="text-sm font-bold text-gray-800 dark:text-white mt-1">Vibe Coding</div></div>
-                <div className="bg-purple-50 dark:bg-gray-900 rounded-xl p-4 text-center"><Brain className="w-6 h-6 text-purple-500 mx-auto mb-2" /><div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Powered By</div><div className="text-sm font-bold text-gray-800 dark:text-white mt-1">Claude AI</div></div>
-                <div className="bg-green-50 dark:bg-gray-900 rounded-xl p-4 text-center"><Database className="w-6 h-6 text-green-500 mx-auto mb-2" /><div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Questions</div><div className="text-sm font-bold text-gray-800 dark:text-white mt-1">Multi-Source</div></div>
-                <div className="bg-red-50 dark:bg-gray-900 rounded-xl p-4 text-center"><Heart className="w-6 h-6 text-red-500 mx-auto mb-2" /><div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Cost</div><div className="text-sm font-bold text-gray-800 dark:text-white mt-1">100% Free</div></div>
+          {showAbout && (
+            <div style={{ background: C.bg2, border: `1px solid ${C.border}`, borderRadius: 10, overflow: 'hidden' }}>
+              <div style={{ background: 'linear-gradient(90deg,#0d1f3c,#130d2e)', padding: '18px 24px', borderBottom: `1px solid ${C.border}` }}>
+                <div style={{ fontFamily: C.font, color: C.text, fontSize: 18 }}>About This Project</div>
+                <div style={{ fontFamily: C.mono, color: C.muted, fontSize: 10, marginTop: 4 }}>Made by Otan</div>
               </div>
-              <div className="space-y-4 text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                <p>This is not your typical reviewer app. It was built entirely through <span className="font-semibold text-blue-500">vibe coding</span> — no traditional hand-coding, no computer science degree required. Every feature, every component, and every line of code was generated using <span className="font-semibold text-purple-500">Claude AI</span> by Anthropic, guided by ideas and direction from the creator.</p>
-                <p>The project started as a clone and evolved into something original — redesigned, expanded, and continuously improved through conversations with AI.</p>
-                <p><span className="font-semibold text-gray-800 dark:text-white">Study materials and mock exam questions</span> are compiled from different reviewers — including AI-generated content (Gemini, DeepSeek, ChatGPT), CSE review centers, social media study groups, and old Philippine Civil Service reviewer books. Some questions may have inconsistencies — reports are welcome.</p>
-                <div className="mt-4 bg-linear-to-r from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-900 border border-blue-100 dark:border-gray-800 rounded-xl p-4 text-center">
-                  <p className="font-bold text-gray-800 dark:text-white">This site is and will always be free.</p>
-                  <p className="text-gray-500 dark:text-gray-400 text-xs mt-1">No ads. No paywalls. Built for Filipinos, by a Filipino, with a little help from AI.</p>
+              <div style={{ padding: 24 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 10, marginBottom: 24 }}>
+                  {[
+                    { icon: <Code2 className="w-4 h-4" />, label: 'Built With', value: 'Vibe Coding' },
+                    { icon: <Brain className="w-4 h-4" />, label: 'Powered By', value: 'Claude AI' },
+                    { icon: <Database className="w-4 h-4" />, label: 'Questions', value: 'Multi-Source' },
+                    { icon: <Heart className="w-4 h-4" />, label: 'Cost', value: '100% Free' },
+                  ].map((m) => (
+                    <div key={m.label} style={{ background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 7, padding: '14px 10px', textAlign: 'center' }}>
+                      <div style={{ color: '#3b82f6', marginBottom: 6, display: 'flex', justifyContent: 'center' }}>{m.icon}</div>
+                      <div style={{ fontFamily: C.mono, fontSize: 8, color: C.dim, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>{m.label}</div>
+                      <div style={{ fontFamily: C.font, fontSize: 13, color: C.text }}>{m.value}</div>
+                    </div>
+                  ))}
+                </div>
+                <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 11, lineHeight: 1.9, marginBottom: 12 }}>This is not your typical reviewer app. Built entirely through <span style={{ color: '#3b82f6' }}>vibe coding</span> — no traditional hand-coding, no computer science degree required. Every line of code was generated using <span style={{ color: '#8b5cf6' }}>Claude AI</span> by Anthropic.</p>
+                <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 11, lineHeight: 1.9, marginBottom: 12 }}>The project started as a clone and evolved into something original — redesigned, expanded, and continuously improved through AI conversations.</p>
+                <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 11, lineHeight: 1.9, marginBottom: 16 }}><span style={{ color: C.text }}>Study materials and mock exam questions</span> are compiled from AI-generated content (Gemini, DeepSeek, ChatGPT), CSE review centers, social media study groups, and old Philippine Civil Service reviewer books. Some questions may have inconsistencies — reports are welcome.</p>
+                <div style={{ background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 7, padding: '14px 18px', textAlign: 'center' }}>
+                  <div style={{ fontFamily: C.font, color: C.text, fontSize: 15 }}>This site is and will always be free.</div>
+                  <div style={{ fontFamily: C.mono, color: C.dim, fontSize: 10, marginTop: 6, letterSpacing: '0.04em' }}>No ads. No paywalls. Built for Filipinos, by a Filipino, with a little help from AI.</div>
                 </div>
               </div>
             </div>
-          </div>}
+          )}
         </div>
-      </div>
+      </section>
 
+      {/* ── EXAM MODAL ── */}
       {showExamModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
-          <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-2xl max-w-4xl w-full border border-gray-100 dark:border-gray-800 max-h-[90vh] overflow-y-auto">
-            <div className="bg-linear-to-r from-blue-500 to-purple-600 px-6 py-4 rounded-t-2xl flex items-center justify-between">
+        <div onClick={() => setShowExamModal(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.9)', backdropFilter: 'blur(8px)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
+          <div onClick={(e) => e.stopPropagation()} style={{ background: C.bg2, border: `1px solid ${C.border}`, borderRadius: 14, width: '100%', maxWidth: 860, maxHeight: '90vh', overflowY: 'auto' }}>
+            <div style={{ padding: '20px 26px', borderBottom: `1px solid ${C.border}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
-                <h2 className="text-xl font-bold text-white">Choose Your Exam Type</h2>
-                <p className="text-blue-100 text-sm mt-0.5">Select the level that matches your qualifications</p>
+                <h2 style={{ fontFamily: C.font, color: C.text, fontSize: 24, fontWeight: 400, letterSpacing: '-0.5px', margin: 0 }}>Choose Your Exam Type</h2>
+                <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 10, margin: '5px 0 0', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Select the level that matches your qualifications</p>
               </div>
-              <button onClick={() => setShowExamModal(false)} className="p-2 rounded-lg hover:bg-white/20 text-white transition-all">
-                <X className="w-5 h-5" />
-              </button>
+              <button onClick={() => setShowExamModal(false)} style={{ background: C.bg3, border: `1px solid ${C.border2}`, color: C.muted, borderRadius: 6, width: 30, height: 30, cursor: 'pointer', fontSize: 13, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: C.mono }}>✕</button>
             </div>
-            <div className="px-6 pt-2 pb-6">
+            <div style={{ padding: 20 }}>
               <ExamSelection />
             </div>
           </div>

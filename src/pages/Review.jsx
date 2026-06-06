@@ -85,7 +85,7 @@ function Review() {
 
   if (activeStudy) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8" style={{background:"#0a0a0a",minHeight:"100vh"}}>
         <StudyViewer subcategory={activeStudy} onBack={() => setActiveStudy(null)} />
       </div>
     );
@@ -93,42 +93,42 @@ function Review() {
 
   if (activeFlashcard) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8" style={{background:"#0a0a0a",minHeight:"100vh"}}>
         <FlashcardViewer subcategory={activeFlashcard} onBack={() => setActiveFlashcard(null)} />
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" style={{background:"#0a0a0a",minHeight:"100vh"}}>
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-3">Choose a Category</h2>
-        <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">Select a subject area to start reviewing.</p>
+        <h2 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:28,fontWeight:400,marginBottom:12,letterSpacing:"-0.5px"}}>Choose a Category</h2>
+        <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:12,maxWidth:600,margin:"0 auto"}}>Select a subject area to start reviewing.</p>
       </div>
 
       {/* Overall Progress */}
-      <div className="max-w-4xl mx-auto mb-8 bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-5">
+      <div style={{maxWidth:896,margin:"0 auto 24px",background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,padding:20}}>
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">Overall Study Progress</span>
-          <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{doneAll}/{totalAll} topics</span>
+          <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:11,color:"#888",textTransform:"uppercase",letterSpacing:"0.06em"}}>Overall Study Progress</span>
+          <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:11,color:"#3b82f6",fontWeight:700}}>{doneAll}/{totalAll} topics</span>
         </div>
-        <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-3">
+        <div style={{width:"100%",background:"#1a1a1a",borderRadius:999,height:8,margin:"8px 0"}}>
           <div
-            className="h-3 rounded-full bg-linear-to-r from-blue-500 to-purple-500 transition-all duration-500"
+            style={{height:8,borderRadius:999,background:"linear-gradient(90deg,#3b82f6,#8b5cf6)",transition:"width 0.5s"}}
             style={{ width: `${overallPct}%` }}
           />
         </div>
         <div className="flex justify-between mt-1">
-          <span className="text-xs text-gray-400">{overallPct}% complete</span>
+          <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:10,color:"#333"}}>{overallPct}% complete</span>
           {doneAll === totalAll && (
-            <span className="text-xs text-green-500 font-semibold flex items-center gap-1">
+            <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:10,color:"#22c55e",display:"flex",alignItems:"center",gap:4}}>
               <CheckCircle2 className="w-3 h-3" /> All topics reviewed!
             </span>
           )}
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:16,maxWidth:896,margin:"0 auto"}}>
         {categories.map((cat) => {
           const catDone  = cat.subcategories.filter(sub => progress[STUDY_KEYS[sub]]).length;
           const catTotal = cat.subcategories.length;
@@ -137,57 +137,57 @@ function Review() {
           return (
             <div
               key={cat.id}
-              className={"group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 " + cat.bgColor}
+              style={{background:"#0f0f0f",border:"1px solid #1e1e1e",borderRadius:10,transition:"border-color 0.2s"}} onMouseEnter={(e)=>e.currentTarget.style.borderColor="#3b82f6"} onMouseLeave={(e)=>e.currentTarget.style.borderColor="#1e1e1e"}
             >
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div className={"p-3 rounded-xl bg-linear-to-br " + cat.color + " text-white"}>
+              <div style={{padding:20}}>
+                <div style={{display:"flex",alignItems:"flex-start",justifyContent:"space-between",marginBottom:14}}>
+                  <div style={{padding:10,borderRadius:8,background:"linear-gradient(135deg,#1a1a1a,#222)",border:"1px solid #2a2a2a",color:"#fff"}}>
                     {iconMap[cat.icon]}
                   </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <span className="px-3 py-1 bg-white dark:bg-gray-950 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm">{cat.badge}</span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">{catDone}/{catTotal} done</span>
+                  <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:4}}>
+                    <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#555",border:"1px solid #2a2a2a",borderRadius:999,padding:"2px 8px",textTransform:"uppercase",letterSpacing:"0.08em"}}>{cat.badge}</span>
+                    <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:9,color:"#444"}}>{catDone}/{catTotal} done</span>
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-1">{cat.title}</h3>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mb-3">
+                <h3 style={{fontFamily:"'DM Serif Display',Georgia,serif",color:"#fff",fontSize:17,fontWeight:400,marginBottom:4,letterSpacing:"-0.3px"}}>{cat.title}</h3>
+                <div style={{width:"100%",background:"#1a1a1a",borderRadius:999,height:4,marginBottom:10}}>
                   <div
-                    className={"h-1.5 rounded-full bg-linear-to-r " + cat.color + " transition-all duration-500"}
+                    style={{height:4,borderRadius:999,background:"linear-gradient(90deg,#3b82f6,#8b5cf6)",transition:"width 0.5s"}}
                     style={{ width: `${catPct}%` }}
                   />
                 </div>
-                <p className="text-gray-600 dark:text-gray-200 mb-4 text-sm">{cat.description}</p>
+                <p style={{fontFamily:"'IBM Plex Mono',monospace",color:"#555",fontSize:11,lineHeight:1.7,marginBottom:14}}>{cat.description}</p>
 
-                <div className="space-y-2 mb-2">
+                <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:8}}>
                   {cat.subcategories.map((sub) => {
                     const key     = STUDY_KEYS[sub];
                     const studied = !!progress[key];
                     return (
                       <div
                         key={sub}
-                        className="w-full flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2.5 group-hover:shadow-sm transition-all"
+                        style={{display:"flex",alignItems:"center",justifyContent:"space-between",background:"#111",border:"1px solid #1e1e1e",borderRadius:7,padding:"10px 12px"}}
                       >
                         {/* Left: check + name */}
-                        <div className="flex items-center gap-2 min-w-0">
+                        <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
                           {studied
                             ? <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
-                            : <div className="w-4 h-4 rounded-full border-2 border-gray-300 dark:border-gray-600 flex-shrink-0" />
+                            : <div style={{width:14,height:14,borderRadius:"50%",border:"2px solid #2a2a2a",flexShrink:0}} />
                           }
-                          <span className="text-sm text-gray-700 dark:text-gray-200 font-medium truncate">{sub}</span>
+                          <span style={{fontFamily:"'IBM Plex Mono',monospace",fontSize:11,color:"#888",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{sub}</span>
                         </div>
                         {/* Right: two buttons */}
-                        <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+                        <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0,marginLeft:8}}>
                           <button
                             onClick={() => { markStudied(key); setActiveStudy(key); }}
-                            className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-all"
+                            style={{display:"flex",alignItems:"center",gap:4,padding:"4px 8px",borderRadius:5,fontSize:10,fontFamily:"'IBM Plex Mono',monospace",background:"#0d1f3c",color:"#3b82f6",border:"1px solid #1a3a6a",cursor:"pointer"}}
                           >
                             <BookOpen className="w-3 h-3" />
                             Study
                           </button>
                           <button
                             onClick={() => { markStudied(key); setActiveFlashcard(key); }}
-                            className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all"
+                            style={{display:"flex",alignItems:"center",gap:4,padding:"4px 8px",borderRadius:5,fontSize:10,fontFamily:"'IBM Plex Mono',monospace",background:"#1a0d3c",color:"#8b5cf6",border:"1px solid #3a1a6a",cursor:"pointer"}}
                           >
                             <Layers className="w-3 h-3" />
                             Cards
@@ -205,7 +205,7 @@ function Review() {
       </div>
 
       <div className="mt-10 text-center">
-        <a href="/" className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 rounded-xl font-medium hover:shadow-md transition-all">
+        <a href="/" className="btn btn-dark" style={{marginTop:40,display:"inline-flex"}}>
           Back to Home
         </a>
       </div>

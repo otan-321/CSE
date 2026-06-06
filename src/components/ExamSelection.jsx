@@ -2,89 +2,35 @@ import { Link } from 'react-router-dom';
 import { ClipboardCheck, Users, Clock, TrendingUp } from 'lucide-react';
 
 function ExamSelection() {
+  const C = { bg3: '#111', border: '#1e1e1e', text: '#fff', muted: '#555', dim: '#333', mono: "'IBM Plex Mono', monospace", font: "'DM Serif Display', Georgia, serif" };
   const exams = [
-    {
-      id: 'professional',
-      title: 'Professional Level',
-      description: 'For college graduates. 170 items, 3.5 hours duration.',
-      items: 170,
-      duration: '3.5 hours',
-      difficulty: 'Advanced',
-      icon: <ClipboardCheck className="w-8 h-8" />,
-      color: 'from-blue-500 to-cyan-500',
-      bgColor: 'bg-white dark:bg-gray-950'
-    },
-    {
-      id: 'subprofessional',
-      title: 'Sub-Professional Level',
-      description: 'For non-college graduates. 165 items, 2.5 hours duration.',
-      items: 165,
-      duration: '2.5 hours',
-      difficulty: 'Intermediate',
-      icon: <Users className="w-8 h-8" />,
-      color: 'from-green-500 to-emerald-500',
-      bgColor: 'bg-white dark:bg-gray-950'
-    },
-    {
-      id: 'practice',
-      title: 'Quick Practice',
-      description: '60-item practice test with questions from both Professional and Sub-Professional levels.',
-      items: 60,
-      duration: '30 mins',
-      difficulty: 'All Levels',
-      icon: <TrendingUp className="w-8 h-8" />,
-      color: 'from-purple-500 to-pink-500',
-      bgColor: 'bg-white dark:bg-gray-950'
-    }
+    { id: 'professional',    title: 'Professional Level',    desc: 'For college graduates. 170 items, 3.5 hours duration.',           items: '170 items', dur: '3.5 hrs', diff: 'Advanced',     accent: '#3b82f6', icon: <ClipboardCheck className="w-5 h-5" /> },
+    { id: 'subprofessional', title: 'Sub-Professional',      desc: 'For non-college graduates. 165 items, 2.5 hours.',                items: '165 items', dur: '2.5 hrs', diff: 'Intermediate', accent: '#22c55e', icon: <Users className="w-5 h-5" /> },
+    { id: 'practice',        title: 'Quick Practice',        desc: '60-item practice test from both levels. 30 minutes.',            items: '60 items',  dur: '30 mins', diff: 'All Levels',  accent: '#8b5cf6', icon: <TrendingUp className="w-5 h-5" /> },
   ];
 
   return (
-    <div className="py-4">
-
-      <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {exams.map((exam) => (
-          <Link
-            key={exam.id}
-            to={`/exam/${exam.id}`}
-            className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 dark:border-gray-800 ${exam.bgColor}`}
-          >
-            <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            
-            <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
-                <div className={`p-3 rounded-xl bg-linear-to-br ${exam.color} text-white`}>
-                  {exam.icon}
-                </div>
-                <span className="px-3 py-1 bg-white dark:bg-gray-950 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm">
-                  {exam.difficulty}
-                </span>
-              </div>
-
-              <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">{exam.title}</h3>
-              <p className="text-gray-600 dark:text-gray-200 mb-6">{exam.description}</p>
-
-              <div className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-200">
-                <div className="flex items-center space-x-2">
-                  <ClipboardCheck className="w-4 h-4 text-gray-400" />
-                  <span>{exam.items} items</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-4 h-4 text-gray-400" />
-                  <span>{exam.duration}</span>
-                </div>
-              </div>
-
-              <div className="mt-6">
-                <button className="w-full py-3 bg-white dark:bg-gray-900 text-gray-950 dark:text-white font-semibold rounded-xl border-2 border-gray-200 group-hover:border-gray-500 group-hover:bg-gray-50 group-hover:dark:text-gray-950 transition-all">
-                  Start Exam
-                </button>
-              </div>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14 }}>
+      {exams.map((e) => (
+        <Link key={e.id} to={`/exam/${e.id}`} style={{ textDecoration: 'none' }}>
+          <div className="dark-card" style={{ background: C.bg3, border: `1px solid ${C.border}`, borderRadius: 10, padding: 20, cursor: 'pointer', height: '100%' }}
+            onMouseEnter={(ev) => (ev.currentTarget.style.borderColor = e.accent)}
+            onMouseLeave={(ev) => (ev.currentTarget.style.borderColor = C.border)}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+              <div style={{ color: e.accent }}>{e.icon}</div>
+              <span style={{ fontFamily: C.mono, fontSize: 9, color: e.accent, textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700 }}>{e.diff}</span>
             </div>
-          </Link>
-        ))}
-      </div>
-
-
+            <h3 style={{ fontFamily: C.font, color: C.text, fontSize: 17, fontWeight: 400, margin: '0 0 8px', letterSpacing: '-0.3px' }}>{e.title}</h3>
+            <p style={{ fontFamily: C.mono, color: C.muted, fontSize: 11, lineHeight: 1.7, margin: '0 0 14px' }}>{e.desc}</p>
+            <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
+              {[e.items, e.dur].map((d) => (
+                <span key={d} style={{ fontFamily: C.mono, fontSize: 9, color: C.dim, border: `1px solid ${C.border}`, borderRadius: 4, padding: '3px 7px' }}>{d}</span>
+              ))}
+            </div>
+            <button className="btn btn-sm">Start Exam</button>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 }
