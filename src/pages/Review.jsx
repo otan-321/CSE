@@ -1,6 +1,28 @@
+import { useState } from "react";
 import { BookOpen, Clock, ChevronRight, FileText, Brain, Globe, BarChart2 } from "lucide-react";
+import StudyViewer from "../components/StudyViewer";
+
+const STUDY_KEYS = {
+  "Vocabulary":               "vocabulary",
+  "Grammar":                  "grammar",
+  "Reading Comprehension":    "reading-comprehension",
+  "Analogy":                  "analogy",
+  "Logic":                    "logic",
+  "Basic Math":               "basic-math",
+  "Word Problems":            "word-problems",
+  "Number Series":            "number-series",
+  "Data Interpretation":      "data-interpretation",
+  "Analytical Ability (Pro)": "analytical-ability",
+  "Clerical Ability (Sub)":   "clerical-ability",
+  "Philippine Constitution":  "philippine-constitution",
+  "Environmental Management": "environmental-management",
+  "Peace and Human Rights":   "peace-human-rights",
+  "RA 6713":                  "ra-6713",
+};
 
 function Review() {
+  const [activeStudy, setActiveStudy] = useState(null);
+
   const categories = [
     {
       id: "verbal",
@@ -51,6 +73,14 @@ function Review() {
     Brain: <Brain className="w-8 h-8" />,
   };
 
+  if (activeStudy) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <StudyViewer subcategory={activeStudy} onBack={() => setActiveStudy(null)} />
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-10">
@@ -60,7 +90,7 @@ function Review() {
         </div>
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-3">Choose a Category</h2>
         <p className="text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">
-          Select a subject area to start reviewing. More features coming soon!
+          Select a subject area to start reviewing.
         </p>
       </div>
 
@@ -85,16 +115,20 @@ function Review() {
 
               <div className="space-y-2 mb-6">
                 {cat.subcategories.map((sub) => (
-                  <div key={sub} className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2 group-hover:shadow-sm transition-all">
+                  <button
+                    key={sub}
+                    onClick={() => setActiveStudy(STUDY_KEYS[sub])}
+                    className="w-full flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl px-4 py-2 group-hover:shadow-sm transition-all hover:bg-blue-50 dark:hover:bg-gray-700 cursor-pointer"
+                  >
                     <span className="text-sm text-gray-700 dark:text-gray-200 font-medium">{sub}</span>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-1 rounded-full font-medium flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        Coming Soon
+                      <span className="text-xs bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300 px-2 py-1 rounded-full font-medium flex items-center gap-1">
+                        <BookOpen className="w-3 h-3" />
+                        Study
                       </span>
                       <ChevronRight className="w-4 h-4 text-gray-400" />
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
