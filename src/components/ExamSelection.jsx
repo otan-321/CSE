@@ -12,7 +12,7 @@ function ExamSelection() {
       difficulty: 'Advanced',
       icon: <ClipboardCheck className="w-8 h-8" />,
       color: 'from-blue-500 to-cyan-500',
-      bgColor: 'bg-blue-50 dark:bg-gray-900 dark:bg-gray-950'
+      bgColor: 'bg-white dark:bg-gray-950'
     },
     {
       id: 'subprofessional',
@@ -23,7 +23,7 @@ function ExamSelection() {
       difficulty: 'Intermediate',
       icon: <Users className="w-8 h-8" />,
       color: 'from-green-500 to-emerald-500',
-      bgColor: 'bg-green-50 dark:bg-gray-900 dark:bg-gray-950'
+      bgColor: 'bg-white dark:bg-gray-950'
     },
     {
       id: 'practice',
@@ -34,7 +34,7 @@ function ExamSelection() {
       difficulty: 'All Levels',
       icon: <TrendingUp className="w-8 h-8" />,
       color: 'from-purple-500 to-pink-500',
-      bgColor: 'bg-purple-50 dark:bg-gray-950'
+      bgColor: 'bg-white dark:bg-gray-950'
     }
   ];
 
@@ -46,7 +46,7 @@ function ExamSelection() {
           <Link
             key={exam.id}
             to={`/exam/${exam.id}`}
-            className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ${exam.bgColor}`}
+            className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 dark:border-gray-800 ${exam.bgColor}`}
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             
