@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import Tutorial from './pages/Tutorial';
 import Review from './pages/Review';
+import History from './pages/History';
 import './index.css';
 import 'katex/dist/katex.min.css';
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsOfUse />} />
               <Route path="/review" element={<Review />} />
+              <Route path="/history" element={<History />} />
             </Routes>
           <Footer />
         </div>
