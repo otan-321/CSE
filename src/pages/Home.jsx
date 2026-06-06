@@ -119,7 +119,7 @@ function Home() {
         </div>
 
         <div className="mb-16">
-          <button onClick={() => setShowAbout(!showAbout)} className="text-xs text-gray-400 dark:text-gray-600 hover:text-gray-500 dark:hover:text-gray-400 transition-colors underline underline-offset-2 mb-3 block">
+          <button onClick={() => setShowAbout(!showAbout)} className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 transition-colors mb-3 mx-auto block text-center">
             {showAbout ? "Hide" : "About this Project"}
           </button>
           {showAbout && <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
