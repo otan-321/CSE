@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ExamCountdown from '../components/ExamCountdown';
+
 import { ArrowRight, BookOpen, Code2, Brain, Database, Heart } from 'lucide-react';
 import ExamSelection from '../components/ExamSelection';
 
@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <div className="container mx-auto px-4 py-4">
-      <ExamCountdown />
+      
       <div className="text-center mb-6 pt-4">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
           Pass the CSE.

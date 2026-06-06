@@ -24,7 +24,7 @@ export default function ExamCountdown() {
   const shortDate = examDate.toLocaleDateString('en-PH', { month: 'short', day: 'numeric' });
 
   return (
-    <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300">
+    <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-gray-900 border border-blue-400 dark:border-blue-600 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300">
       <span>🗓</span>
       <span>{shortDate}</span>
       <span className="text-blue-500 font-bold">{days}d</span>
