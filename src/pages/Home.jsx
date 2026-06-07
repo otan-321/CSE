@@ -280,7 +280,7 @@ function Home() {
               }}>
                 Visit Official CSC Website
               </a>
-              <button onClick={() => setShowDisclaimer(false); localStorage.setItem('disclaimerAccepted', '1')} style={{
+              <button onClick={() => { setShowDisclaimer(false); localStorage.setItem('disclaimerAccepted', '1'); }} style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
                 padding: '13px', border: 'none',
                 background: C.white,
