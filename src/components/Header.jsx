@@ -80,10 +80,10 @@ function Header() {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <div className="mobile-menu" style={{
+        <div style={{
           position: 'fixed', top: '56px', left: 0, right: 0, zIndex: 49,
           background: colors.bg, borderBottom: `1px solid ${colors.border}`,
-          padding: '16px 20px', display: 'none', flexDirection: 'column', gap: '4px',
+          padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: '4px',
         }}>
           {navLinks.map(({ to, label }) => {
             const active = location.pathname === to;
