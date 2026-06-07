@@ -69,9 +69,6 @@ function Header() {
         {/* Desktop right — hidden on mobile */}
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <ExamCountdown obsidian />
-          <Link to="/" className="ob-btn-primary" style={{ padding: '8px 16px', textDecoration: 'none', fontSize: '10px' }}>
-            START EXAM
-          </Link>
         </div>
 
         {/* Mobile hamburger */}
