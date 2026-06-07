@@ -57,10 +57,10 @@ function Home() {
           {/* CTAs */}
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button className="ob-btn-primary" onClick={() => setShowExamModal(true)}>
-              START EXAM NOW →
+              START EXAM
             </button>
             <a href="/review" className="ob-btn-ghost" style={{ textDecoration: 'none' }}>
-              STUDY HARD
+              STUDY
             </a>
           </div>
         </div>
