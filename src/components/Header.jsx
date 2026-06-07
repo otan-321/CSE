@@ -29,7 +29,7 @@ function Header() {
       }}>
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', flexShrink: 0 }}>
-          <img src="/logo/cse-icon.png" alt="CSE Reviewer" style={{ width: '28px', height: '28px', borderRadius: '50%' }} />
+          <img src="/logo/broccoli.png" alt="CSE Reviewer" style={{ width: '28px', height: '28px', borderRadius: '50%' }} />
           <span className="ob-font-display" style={{
             fontWeight: 700, fontSize: '14px', letterSpacing: '-0.02em', color: colors.white,
           }}>
