@@ -24,10 +24,10 @@ function Home() {
     <>
       {/* ── HERO ── */}
       <section style={{
-        position: 'relative', minHeight: '88vh',
+        position: 'relative', minHeight: '70vh',
         display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center',
-        textAlign: 'center', padding: '0 24px', overflow: 'hidden',
+        textAlign: 'center', padding: '48px 24px 64px', overflow: 'hidden',
         background: C.bg,
       }}>
         {/* Grid overlay */}
