@@ -10,7 +10,7 @@ function getNextExamDate() {
   return EXAM_DATES.find(d => d > now) || EXAM_DATES[EXAM_DATES.length - 1];
 }
 
-export default function ExamCountdown() {
+export default function ExamCountdown({ obsidian = false }) {
   const [days, setDays] = useState(null);
   const examDate = getNextExamDate();
 
@@ -24,11 +24,13 @@ export default function ExamCountdown() {
   const shortDate = examDate.toLocaleDateString('en-PH', { month: 'short', day: 'numeric' });
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 7, padding: '5px 12px', border: '1px solid #2a2a2a', borderRadius: 999, background: '#111' }}>
-      <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#3b82f6' }} />
-      <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: '#555', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-        {shortDate} · <strong style={{ color: '#fff' }}>{days}d</strong>
-      </span>
+    <div className="ob-font-mono" style={{
+      fontSize: '10px', letterSpacing: '0.1em', color: '#8E9192',
+      border: '1px solid #27272A', padding: '5px 12px',
+      display: 'flex', alignItems: 'center', gap: '6px',
+    }}>
+      <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{days}D</span>
+      <span>· {shortDate}</span>
     </div>
   );
 }

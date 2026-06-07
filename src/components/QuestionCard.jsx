@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
-import { CheckCircle, HelpCircle, Maximize2, X } from 'lucide-react';
+import { Maximize2, X } from 'lucide-react';
 import { InlineMath, BlockMath } from 'react-katex';
 
-function QuestionCard({ 
-  question, 
-  questionNumber, 
-  totalQuestions, 
-  onAnswer, 
-  selectedAnswer,
-  isLastQuestion
-}) {
+const C = {
+  bg: '#09090B', surface: '#131315', surfaceLow: '#1C1B1D',
+  surfaceHigh: '#2A2A2C', surfaceHighest: '#353437',
+  border: '#27272A', borderHover: '#3F3F46',
+  text: '#E5E1E4', textMuted: '#C4C7C8', textDim: '#8E9192',
+  white: '#FFFFFF', success: '#22C55E', error: '#FF4444',
+};
+
+function QuestionCard({ question, questionNumber, totalQuestions, onAnswer, selectedAnswer, isLastQuestion }) {
   const [localSelected, setLocalSelected] = useState(selectedAnswer);
   const [isImageZoomed, setIsImageZoomed] = useState(false);
 
-  // Reset localSelected when the question changes
   useEffect(() => {
     setLocalSelected(selectedAnswer);
   }, [question.id, selectedAnswer]);
@@ -23,216 +23,177 @@ function QuestionCard({
     onAnswer(answerId);
   };
 
-  const getLetter = (index) => {
-    return String.fromCharCode(65 + index);
-  };
+  const getLetter = (index) => String.fromCharCode(65 + index);
 
-  // Function to render text with LaTeX support
+  const containsLatex = (text) => text && (text.includes('$') || text.includes('$$'));
+
   const renderTextWithLatex = (text) => {
     if (!text) return null;
-    
-    // Split by LaTeX delimiters
     const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
-    
     return parts.map((part, index) => {
-      // Check if part is LaTeX (starts and ends with $ or $$)
-      if (part.startsWith('$$') && part.endsWith('$$')) {
-        // Block math (display mode)
-        const latex = part.slice(2, -2);
-        return <BlockMath key={index} math={latex} />;
-      } else if (part.startsWith('$') && part.endsWith('$')) {
-        // Inline math
-        const latex = part.slice(1, -1);
-        return <InlineMath key={index} math={latex} />;
-      } else {
-        // Regular text
-        return <span key={index}>{part}</span>;
-      }
+      if (part.startsWith('$$') && part.endsWith('$$')) return <BlockMath key={index} math={part.slice(2, -2)} />;
+      if (part.startsWith('$') && part.endsWith('$')) return <InlineMath key={index} math={part.slice(1, -1)} />;
+      return <span key={index}>{part}</span>;
     });
   };
 
-  // Function to check if text contains LaTeX
-  const containsLatex = (text) => {
-    return text && (text.includes('$') || text.includes('$$'));
-  };
+  const pct = Math.round((questionNumber / totalQuestions) * 100);
 
   return (
     <>
-      <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-xl p-6 md:p-8 fade-in">
-        {/* Progress Bar */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-200">
-              Question {questionNumber} of {totalQuestions}
+      <div style={{ background: C.surface, border: `1px solid ${C.border}` }} data-question-card tabIndex={-1}>
+        {/* Progress */}
+        <div style={{ padding: '16px 24px', borderBottom: `1px solid ${C.border}` }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim }}>
+              QUESTION {questionNumber} OF {totalQuestions}
             </span>
-            <span className="text-sm font-semibold text-blue-600">
-              {Math.round((questionNumber / totalQuestions) * 100)}%
-            </span>
+            <span className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim }}>{pct}%</span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
-            <div 
-              className="bg-linear-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-500"
-              style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
-            ></div>
+          <div className="ob-progress-track">
+            <div className="ob-progress-fill" style={{ width: `${pct}%` }} />
           </div>
         </div>
 
-        {/* Question */}
-        <div className="mb-6">
-          <div className="flex flex-wrap gap-2 mb-4">
-            {question.language && (
-              <div className="inline-flex items-center px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
-                {question.language === 'filipino' ? 'Filipino' : 'English'}
-              </div>
-            )}
+        {/* Metadata tags */}
+        <div style={{ padding: '16px 24px 0', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+          {question.language && (
+            <span className="ob-font-mono" style={{
+              fontSize: '9px', letterSpacing: '0.1em', textTransform: 'uppercase',
+              padding: '3px 8px', border: `1px solid ${C.border}`, color: C.textDim,
+            }}>{question.language === 'filipino' ? 'FILIPINO' : 'ENGLISH'}</span>
+          )}
+          {question.difficulty && (
+            <span className="ob-font-mono" style={{
+              fontSize: '9px', letterSpacing: '0.1em', textTransform: 'uppercase',
+              padding: '3px 8px', border: `1px solid ${C.border}`,
+              color: question.difficulty === 'easy' ? C.success : question.difficulty === 'moderate' ? '#EAB308' : C.error,
+            }}>{question.difficulty}</span>
+          )}
+          {question.category && (
+            <span className="ob-font-mono" style={{
+              fontSize: '9px', letterSpacing: '0.1em', textTransform: 'uppercase',
+              padding: '3px 8px', border: `1px solid ${C.border}`, color: C.textDim,
+            }}>{question.category}</span>
+          )}
+        </div>
 
-            {question.difficulty && (
-              <div className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${
-                question.difficulty === 'easy' ? 'bg-green-100 text-green-700' :
-                question.difficulty === 'moderate' ? 'bg-yellow-100 text-yellow-700' :
-                'bg-red-100 text-red-700'
-              }`}>
-                {question.difficulty}
-              </div>
-            )}
-
-            {question.category && (
-              <div className="inline-flex items-center px-3 py-1 bg-gray-100 dark:bg-gray-950 rounded-full">
-                <span className="text-xs font-medium text-gray-600 dark:text-gray-200">{question.category}</span>
-              </div>
-            )}
-          </div>
-
-          {/* Display image if question has src */}
+        {/* Question text */}
+        <div style={{ padding: '20px 24px' }}>
           {question.src && (
-            <div className="mb-6">
-              <div className="relative w-full max-w-2xl mx-auto">
-                <div className="relative border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
-                  <img 
-                    src={question.src}
-                    alt={question.imageAlt || "Question image"}
-                    className="w-full h-auto max-h-96 object-contain cursor-pointer"
-                    onClick={() => setIsImageZoomed(true)}
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      console.error(`Failed to load image: ${question.src}`);
-                    }}
-                  />
-                  <button
-                    onClick={() => setIsImageZoomed(true)}
-                    className="absolute top-3 right-3 bg-gray-950/60 hover:bg-gray-950/80 text-white p-2 rounded-full backdrop-blur-sm transition-all"
-                    title="Zoom image"
-                  >
-                    <Maximize2 className="w-4 h-4" />
-                  </button>
-                </div>
-                <div className="text-xs text-gray-500 dark:text-gray-100 mt-2 text-center">
-                  Click image to enlarge
-                </div>
+            <div style={{ marginBottom: '20px' }}>
+              <div style={{ position: 'relative', border: `1px solid ${C.border}`, overflow: 'hidden', background: C.surfaceLow }}>
+                <img
+                  src={question.src}
+                  alt={question.imageAlt || 'Question image'}
+                  style={{ width: '100%', height: 'auto', maxHeight: '300px', objectFit: 'contain', cursor: 'pointer' }}
+                  onClick={() => setIsImageZoomed(true)}
+                  onError={e => { e.target.style.display = 'none'; }}
+                />
+                <button
+                  onClick={() => setIsImageZoomed(true)}
+                  style={{
+                    position: 'absolute', top: '8px', right: '8px',
+                    background: 'rgba(9,9,11,0.7)', border: `1px solid ${C.border}`,
+                    color: C.white, padding: '6px', cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  }}
+                ><Maximize2 style={{ width: 14, height: 14 }} /></button>
               </div>
+              <p className="ob-font-mono" style={{ fontSize: '9px', color: C.textDim, marginTop: '6px', textAlign: 'center' }}>Click image to enlarge</p>
             </div>
           )}
 
-          <div className="flex items-start space-x-3">
-            <div className="p-2 bg-blue-100 rounded-lg">
-              <HelpCircle className="w-6 h-6 text-blue-600" />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">Question:</h3>
-              <div className="text-gray-700 dark:text-gray-200 text-lg leading-relaxed whitespace-pre-line">
-                {containsLatex(question.text) ? (
-                  renderTextWithLatex(question.text)
-                ) : (
-                  question.text
-                )}
-              </div>
-            </div>
-          </div>
+          <p className="ob-font-body" style={{ fontSize: '16px', lineHeight: 1.7, color: C.text }}>
+            {containsLatex(question.text) ? renderTextWithLatex(question.text) : question.text}
+          </p>
         </div>
 
-        {/* Options */}
-        <div className="space-y-4 mb-8">
-          <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-200 uppercase tracking-wide mb-2">
+        {/* Answer options */}
+        <div style={{ padding: '0 24px 16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <p className="ob-font-mono" style={{ fontSize: '9px', letterSpacing: '0.15em', color: C.textDim, marginBottom: '4px', textTransform: 'uppercase' }}>
             Select your answer:
-          </h4>
+          </p>
           {question.options && question.options.map((option, index) => {
             const isSelected = localSelected === option.id;
             return (
               <button
                 key={option.id}
                 onClick={() => handleAnswerSelect(option.id)}
-                className={`w-full p-2 rounded-xl border-2 text-left transition-all duration-200 ${
-                  isSelected
-                    ? 'border-blue-500 bg-blue-50 dark:bg-gray-900 shadow-md transform scale-[1.02]'
-                    : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50 hover:dark:bg-gray-800'
-                }`}
+                style={{
+                  display: 'flex', alignItems: 'flex-start', gap: '14px',
+                  padding: '16px 18px', textAlign: 'left', cursor: 'pointer',
+                  background: isSelected ? C.surfaceHigh : C.surfaceLow,
+                  border: `1px solid ${isSelected ? C.white : C.border}`,
+                  transition: 'border-color 0.15s, background 0.15s',
+                  width: '100%',
+                }}
+                onMouseEnter={e => { if (!isSelected) { e.currentTarget.style.borderColor = C.borderHover; e.currentTarget.style.background = C.surfaceHigh; } }}
+                onMouseLeave={e => { if (!isSelected) { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.background = C.surfaceLow; } }}
               >
-                <div className="flex items-center space-x-4">
-                  <div className={`w-8 h-8 flex items-center justify-center rounded-lg ${
-                    isSelected ? 'bg-blue-50 dark:bg-gray-600 text-gray-950 dark:text-gray-50' : 'bg-gray-200 dark:bg-gray-600 text-gray-950 dark:text-gray-50'
-                  }`}>
-                    {isSelected ? (
-                      <CheckCircle className="w-5 h-5" />
-                    ) : (
-                      <span className="font-bold">{getLetter(index)}</span>
-                    )}
-                  </div>
-                  <div className="flex-1 text-gray-950 dark:text-gray-50">
-                    {containsLatex(option.text) ? (
-                      renderTextWithLatex(option.text)
-                    ) : (
-                      option.text
-                    )}
-                  </div>
+                {/* Checkbox */}
+                <div style={{
+                  width: '18px', height: '18px', flexShrink: 0,
+                  border: `2px solid ${isSelected ? C.white : C.borderHover}`,
+                  background: isSelected ? C.white : 'transparent',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px',
+                  transition: 'border-color 0.15s, background 0.15s',
+                }}>
+                  {isSelected && <span style={{ fontSize: '10px', color: C.bg, fontWeight: 700 }}>✓</span>}
                 </div>
+                {/* Letter label */}
+                <span className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, minWidth: '16px', marginTop: '2px' }}>
+                  {getLetter(index)}.
+                </span>
+                {/* Answer text */}
+                <span className="ob-font-body" style={{ fontSize: '14px', color: C.text, flex: 1 }}>
+                  {containsLatex(option.text) ? renderTextWithLatex(option.text) : option.text}
+                </span>
               </button>
             );
           })}
         </div>
 
-        {/* Navigation */}
-        <div className="flex justify-between items-center pt-3 border-t border-gray-100">
-          <div className="text-sm text-gray-500 dark:text-gray-100">
-            {isLastQuestion ? 'Last question' : `${totalQuestions - questionNumber} questions remaining`}
-          </div>
-          
-          <div className="flex space-x-3">
-            <button
-              onClick={() => handleAnswerSelect(null)}
-              className={`px-4 py-2 font-medium ${
-                !localSelected 
-                  ? 'text-gray-400 cursor-not-allowed' 
-                  : 'text-gray-600 dark:text-gray-200 hover:text-gray-800'
-              }`}
-              disabled={!localSelected}
-            >
-              Clear Selection
-            </button>
-          </div>
+        {/* Footer */}
+        <div style={{
+          padding: '12px 24px', borderTop: `1px solid ${C.border}`,
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        }}>
+          <span className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim }}>
+            {isLastQuestion ? 'LAST QUESTION' : `${totalQuestions - questionNumber} REMAINING`}
+          </span>
+          <button
+            onClick={() => handleAnswerSelect(null)}
+            disabled={!localSelected}
+            className="ob-btn-text"
+            style={{ opacity: localSelected ? 1 : 0.3, cursor: localSelected ? 'pointer' : 'not-allowed' }}
+          >
+            CLEAR
+          </button>
         </div>
       </div>
 
       {/* Image zoom modal */}
       {isImageZoomed && question.src && (
-        <div className="fixed inset-0 bg-gray-950/90 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-6xl max-h-[90vh]">
-            <img 
+        <div style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.92)',
+          zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px',
+        }}>
+          <div style={{ position: 'relative', maxWidth: '90vw', maxHeight: '90vh' }}>
+            <img
               src={question.src}
-              alt={question.imageAlt || "Question image - zoomed"}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              alt={question.imageAlt || 'Question image zoomed'}
+              style={{ maxWidth: '100%', maxHeight: '90vh', objectFit: 'contain' }}
             />
             <button
               onClick={() => setIsImageZoomed(false)}
-              className="absolute top-4 right-4 bg-gray-950/70 hover:bg-gray-950 text-white p-3 rounded-full backdrop-blur-sm transition-all"
-              title="Close zoom"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <div className="absolute bottom-4 left-0 right-0 text-center">
-              <div className="inline-block bg-gray-950/70 text-white text-sm px-4 py-2 rounded-lg backdrop-blur-sm">
-                {question.imageAlt || "Question image"}
-              </div>
-            </div>
+              style={{
+                position: 'absolute', top: '8px', right: '8px',
+                background: 'rgba(9,9,11,0.85)', border: `1px solid ${C.border}`,
+                color: C.white, padding: '8px', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}
+            ><X style={{ width: 16, height: 16 }} /></button>
           </div>
         </div>
       )}

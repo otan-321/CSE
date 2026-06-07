@@ -1,36 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+const colors = {
+  surface: "#131315", border: "#27272A",
+  textDim: "#8E9192", white: "#FFFFFF",
+};
+
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="py-2 border-t border-gray-200">
-      <div className="container mx-auto px-4">
-        <div className="text-center text-gray-600 dark:text-gray-200">
-          <p className="mb-4">
-            This is an unofficial mock exam / reviewer tool. Always refer to the official
-            Civil Service Commission website for the most accurate information.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
-            <Link
-                to="/privacy"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                Privacy Policy
-            </Link>
-            <span className="hidden sm:block text-gray-400">• </span>
-            <Link
-                to="/terms"
-                className="text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                Terms of Use
-            </Link>
-          </div>
-          <p className="text-sm text-gray-500 dark:text-gray-100">
-            © {currentYear} CSE. All Rights Reserved.
-          </p>
+    <footer style={{
+      borderTop: `1px solid ${colors.border}`,
+      padding: '28px 48px',
+      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      background: colors.surface, flexWrap: 'wrap', gap: '16px',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div style={{
+          width: '22px', height: '22px', border: `1px solid ${colors.border}`,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <div style={{ width: '8px', height: '8px', background: colors.white, clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }} />
         </div>
+        <span className="ob-font-mono" style={{ fontSize: '10px', color: colors.textDim }}>
+          © {currentYear} CSE REVIEWER · BUILT FOR FILIPINOS · FREE FOREVER
+        </span>
+      </div>
+      <div style={{ display: 'flex', gap: '24px' }}>
+        {[
+          { to: '/privacy', label: 'Privacy Policy' },
+          { to: '/terms', label: 'Terms of Use' },
+        ].map(({ to, label }) => (
+          <Link key={to} to={to} className="ob-font-mono" style={{
+            fontSize: '10px', letterSpacing: '0.08em', color: colors.textDim,
+            textDecoration: 'none', transition: 'color 0.15s',
+          }}
+            onMouseEnter={e => e.target.style.color = colors.white}
+            onMouseLeave={e => e.target.style.color = colors.textDim}
+          >
+            {label}
+          </Link>
+        ))}
       </div>
     </footer>
   );
 }
+
 export default Footer;

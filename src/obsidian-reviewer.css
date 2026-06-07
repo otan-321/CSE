@@ -1,0 +1,222 @@
+/* ============================================================
+   OBSIDIAN REVIEWER — Global Design System CSS
+   Add this to your src/index.css (replace or append)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── TOKENS ── */
+:root {
+  --bg:               #09090B;
+  --surface:          #131315;
+  --surface-low:      #1C1B1D;
+  --surface-high:     #2A2A2C;
+  --surface-highest:  #353437;
+  --border:           #27272A;
+  --border-hover:     #3F3F46;
+  --text:             #E5E1E4;
+  --text-muted:       #C4C7C8;
+  --text-dim:         #8E9192;
+  --white:            #FFFFFF;
+  --success:          #22C55E;
+  --error:            #FF4444;
+}
+
+/* ── BASE ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── FONT UTILITIES ── */
+.ob-font-display { font-family: 'Hanken Grotesk', sans-serif; }
+.ob-font-mono    { font-family: 'JetBrains Mono', monospace; }
+.ob-font-body    { font-family: 'Inter', sans-serif; }
+
+/* ── GRID OVERLAY (background pattern) ── */
+.ob-grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(39,39,42,0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39,39,42,0.25) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ── CORNER BRACKET DECORATION ── */
+.ob-corner {
+  position: relative;
+}
+.ob-corner::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  z-index: 1;
+}
+.ob-corner::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  z-index: 1;
+}
+
+/* ── BUTTONS ── */
+.ob-btn-primary {
+  background: var(--white);
+  color: var(--bg);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.ob-btn-primary:hover  { background: #E5E1E4; }
+.ob-btn-primary:active { transform: scale(0.98); }
+
+.ob-btn-ghost {
+  background: transparent;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.ob-btn-ghost:hover {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.ob-btn-text {
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+.ob-btn-text:hover { color: var(--white); }
+
+/* ── CARD ── */
+.ob-card {
+  background: var(--surface-low);
+  border: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+.ob-card:hover { border-color: var(--border-hover); }
+
+/* ── ANSWER OPTIONS ── */
+.ob-answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--surface-low);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  user-select: none;
+}
+.ob-answer:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-high);
+}
+.ob-answer.selected {
+  border-color: var(--white);
+  background: var(--surface-high);
+}
+.ob-answer.correct {
+  border-color: var(--success);
+  background: rgba(34, 197, 94, 0.06);
+}
+.ob-answer.incorrect {
+  border-color: var(--error);
+  background: rgba(255, 68, 68, 0.06);
+}
+
+/* ── CHECKBOX ── */
+.ob-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-hover);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ob-answer.selected .ob-checkbox {
+  background: var(--white);
+  border-color: var(--white);
+}
+.ob-answer.correct .ob-checkbox {
+  background: var(--success);
+  border-color: var(--success);
+}
+.ob-answer.incorrect .ob-checkbox {
+  background: var(--error);
+  border-color: var(--error);
+}
+
+/* ── PROGRESS BAR ── */
+.ob-progress-track {
+  width: 100%;
+  height: 2px;
+  background: var(--surface-highest);
+}
+.ob-progress-fill {
+  height: 100%;
+  background: var(--white);
+  transition: width 0.4s ease;
+}
+
+/* ── SCROLLBAR (subtle) ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hover); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+/* ── PULSE ANIMATION ── */
+@keyframes ob-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.ob-pulse { animation: ob-pulse 2s ease-in-out infinite; }
