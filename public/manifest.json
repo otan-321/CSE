@@ -11,13 +11,13 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/logo/cse-icon.png",
+      "src": "/logo/broccoli.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/logo/cse-icon.png",
+      "src": "/logo/broccoli.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

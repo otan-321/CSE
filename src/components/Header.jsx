@@ -21,7 +21,7 @@ function Header() {
   return (
     <>
       <nav style={{
-        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
+        position: 'sticky', top: 0, left: 0, right: 0, zIndex: 50,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '0 20px', height: '56px',
         background: 'rgba(9,9,11,0.95)', backdropFilter: 'blur(12px)',
@@ -29,17 +29,7 @@ function Header() {
       }}>
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', flexShrink: 0 }}>
-          <div style={{
-            width: '26px', height: '26px',
-            border: `1px solid ${colors.border}`,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            <div style={{
-              width: '9px', height: '9px',
-              background: colors.white,
-              clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)',
-            }} />
-          </div>
+          <img src="/logo/broccoli.png" alt="CSE Reviewer" style={{ width: '28px', height: '28px', borderRadius: '50%' }} />
           <span className="ob-font-display" style={{
             fontWeight: 700, fontSize: '14px', letterSpacing: '-0.02em', color: colors.white,
           }}>
@@ -69,6 +59,9 @@ function Header() {
         {/* Desktop right — hidden on mobile */}
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <ExamCountdown obsidian />
+          <Link to="/" className="ob-btn-primary" style={{ padding: '8px 16px', textDecoration: 'none', fontSize: '10px' }}>
+            START EXAM
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
