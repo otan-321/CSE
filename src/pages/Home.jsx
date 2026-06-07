@@ -10,7 +10,8 @@ const C = {
 };
 
 function Home() {
-  const [showExamModal, setShowExamModal] = useState(null);
+  const [showExamModal, setShowExamModal] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(() => !localStorage.getItem('disclaimerAccepted'));
   const navigate = useNavigate();
 
   // Load stats from localStorage
@@ -56,7 +57,7 @@ function Home() {
 
           {/* CTAs */}
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="ob-btn-primary" onClick={() => setShowExamModal('disclaimer')}>
+            <button className="ob-btn-primary" onClick={() => setShowExamModal(true)}>
               START EXAM
             </button>
             <a href="/review" className="ob-btn-ghost" style={{ textDecoration: 'none' }}>
@@ -189,14 +190,14 @@ function Home() {
         }}>
           Ready to Start?
         </h2>
-        <button className="ob-btn-primary" onClick={() => setShowExamModal('disclaimer')} style={{ padding: '16px 48px' }}>
+        <button className="ob-btn-primary" onClick={() => setShowExamModal(true)} style={{ padding: '16px 48px' }}>
           LAUNCH EXAM MODULE →
         </button>
       </section>
 
       {/* ── DISCLAIMER MODAL ── */}
-      {showExamModal === 'disclaimer' && (
-        <div onClick={() => setShowExamModal(null)} style={{
+      {showDisclaimer && (
+        <div onClick={() => setShowExamModal(false)} style={{
           position: 'fixed', inset: 0, zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)', padding: '24px',
@@ -222,7 +223,7 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <button onClick={() => setShowExamModal(null)} style={{
+              <button onClick={() => setShowExamModal(false)} style={{
                 background: 'transparent', border: `1px solid ${C.border}`,
                 color: C.textDim, width: '32px', height: '32px',
                 cursor: 'pointer', fontSize: '16px', display: 'flex',
@@ -272,21 +273,21 @@ function Home() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
               <a href="https://csc.gov.ph" target="_blank" rel="noopener noreferrer" style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                padding: '13px', border: `1px solid ${C.borderHover}`,
-                background: 'transparent', color: C.text,
-                fontSize: '13px', fontWeight: 600, cursor: 'pointer',
-                textDecoration: 'none', letterSpacing: '0.04em',
+                padding: '13px', border: `1px solid ${C.border}`,
+                background: 'transparent', color: C.white,
+                fontSize: '12px', fontWeight: 600, cursor: 'pointer',
+                textDecoration: 'none', letterSpacing: '0.1em',
               }}>
-                🌐 Visit Official CSC Website
+                Visit Official CSC Website
               </a>
-              <button onClick={() => setShowExamModal('exam')} style={{
+              <button onClick={() => setShowDisclaimer(false); localStorage.setItem('disclaimerAccepted', '1')} style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
                 padding: '13px', border: 'none',
-                background: 'linear-gradient(135deg, #3B82F6, #8B5CF6)',
-                color: '#fff', fontSize: '13px', fontWeight: 700,
-                cursor: 'pointer', letterSpacing: '0.04em', width: '100%',
+                background: C.white,
+                color: C.bg, fontSize: '12px', fontWeight: 700,
+                cursor: 'pointer', letterSpacing: '0.1em', width: '100%',
               }}>
-                ✅ I Understand &amp; Accept
+                I Understand &amp; Accept
               </button>
             </div>
 
@@ -298,8 +299,8 @@ function Home() {
       )}
 
       {/* ── EXAM MODAL ── */}
-      {showExamModal === 'exam' && (
-        <div onClick={() => setShowExamModal(null)} style={{
+      {showExamModal && (
+        <div onClick={() => setShowExamModal(false)} style={{
           position: 'fixed', inset: 0, zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)', padding: '24px',
@@ -319,7 +320,7 @@ function Home() {
                   Choose Your Exam Type
                 </h2>
               </div>
-              <button onClick={() => setShowExamModal(null)} style={{
+              <button onClick={() => setShowExamModal(false)} style={{
                 background: 'transparent', border: `1px solid ${C.border}`,
                 color: C.textDim, width: '36px', height: '36px',
                 cursor: 'pointer', fontSize: '18px', display: 'flex',
