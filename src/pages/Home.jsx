@@ -10,7 +10,7 @@ const C = {
 };
 
 function Home() {
-  const [showExamModal, setShowExamModal] = useState(false);
+  const [showExamModal, setShowExamModal] = useState(null);
   const navigate = useNavigate();
 
   // Load stats from localStorage
@@ -56,7 +56,7 @@ function Home() {
 
           {/* CTAs */}
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="ob-btn-primary" onClick={() => setShowExamModal(true)}>
+            <button className="ob-btn-primary" onClick={() => setShowExamModal('disclaimer')}>
               START EXAM
             </button>
             <a href="/review" className="ob-btn-ghost" style={{ textDecoration: 'none' }}>
@@ -189,14 +189,117 @@ function Home() {
         }}>
           Ready to Start?
         </h2>
-        <button className="ob-btn-primary" onClick={() => setShowExamModal(true)} style={{ padding: '16px 48px' }}>
+        <button className="ob-btn-primary" onClick={() => setShowExamModal('disclaimer')} style={{ padding: '16px 48px' }}>
           LAUNCH EXAM MODULE →
         </button>
       </section>
 
+      {/* ── DISCLAIMER MODAL ── */}
+      {showExamModal === 'disclaimer' && (
+        <div onClick={() => setShowExamModal(null)} style={{
+          position: 'fixed', inset: 0, zIndex: 100,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)', padding: '24px',
+        }}>
+          <div onClick={e => e.stopPropagation()} style={{
+            background: C.surface, border: `1px solid ${C.border}`,
+            maxWidth: '440px', width: '100%', padding: '32px',
+          }}>
+            {/* Header */}
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '24px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                <div style={{
+                  width: '44px', height: '44px', background: C.surfaceLow,
+                  border: `1px solid ${C.border}`, display: 'flex',
+                  alignItems: 'center', justifyContent: 'center', fontSize: '18px', flexShrink: 0,
+                }}>⚠</div>
+                <div>
+                  <h2 className="ob-font-display" style={{ fontSize: '20px', fontWeight: 700, color: C.white, margin: 0, letterSpacing: '-0.02em' }}>
+                    Important Disclaimer
+                  </h2>
+                  <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, letterSpacing: '0.12em', marginTop: '4px' }}>
+                    PLEASE READ BEFORE PROCEEDING
+                  </p>
+                </div>
+              </div>
+              <button onClick={() => setShowExamModal(null)} style={{
+                background: 'transparent', border: `1px solid ${C.border}`,
+                color: C.textDim, width: '32px', height: '32px',
+                cursor: 'pointer', fontSize: '16px', display: 'flex',
+                alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+              }}>×</button>
+            </div>
+
+            <div style={{ height: '1px', background: C.border, marginBottom: '24px' }} />
+
+            {/* Warning box */}
+            <div style={{
+              border: '1px solid #3D2E00', background: '#1A1400',
+              padding: '20px', marginBottom: '16px',
+            }}>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                <span style={{ fontSize: '14px', flexShrink: 0, marginTop: '2px', color: '#F59E0B' }}>⚠</span>
+                <div>
+                  <p className="ob-font-mono" style={{ fontSize: '10px', letterSpacing: '0.12em', color: '#F59E0B', marginBottom: '8px', fontWeight: 700 }}>
+                    UNOFFICIAL MOCK EXAM / REVIEWER TOOL
+                  </p>
+                  <p className="ob-font-body" style={{ fontSize: '13px', color: C.textMuted, lineHeight: 1.7, margin: 0 }}>
+                    Always refer to the{' '}
+                    <a href="https://csc.gov.ph" target="_blank" rel="noopener noreferrer"
+                      style={{ color: '#F59E0B', fontWeight: 600, textDecoration: 'underline' }}>
+                      official Civil Service Commission website
+                    </a>{' '}
+                    for the most accurate and up-to-date information.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Source note */}
+            <div style={{
+              border: `1px solid ${C.border}`, background: C.surfaceLow,
+              padding: '16px', marginBottom: '24px',
+            }}>
+              <p className="ob-font-mono" style={{ fontSize: '10px', letterSpacing: '0.1em', color: C.textDim, marginBottom: '6px' }}>
+                // QUESTION SOURCES
+              </p>
+              <p className="ob-font-body" style={{ fontSize: '12px', color: C.textMuted, lineHeight: 1.7, margin: 0 }}>
+                Questions compiled from AI-generated content, CSE review centers, social media groups, and old reviewer books. Some may have inconsistencies.
+              </p>
+            </div>
+
+            {/* Buttons */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+              <a href="https://csc.gov.ph" target="_blank" rel="noopener noreferrer" style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                padding: '13px', border: `1px solid ${C.borderHover}`,
+                background: 'transparent', color: C.text,
+                fontSize: '13px', fontWeight: 600, cursor: 'pointer',
+                textDecoration: 'none', letterSpacing: '0.04em',
+              }}>
+                🌐 Visit Official CSC Website
+              </a>
+              <button onClick={() => setShowExamModal('exam')} style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                padding: '13px', border: 'none',
+                background: 'linear-gradient(135deg, #3B82F6, #8B5CF6)',
+                color: '#fff', fontSize: '13px', fontWeight: 700,
+                cursor: 'pointer', letterSpacing: '0.04em', width: '100%',
+              }}>
+                ✅ I Understand &amp; Accept
+              </button>
+            </div>
+
+            <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, textAlign: 'center', letterSpacing: '0.06em', lineHeight: 1.6 }}>
+              By clicking "I Understand & Accept", you acknowledge that you have read and understood this disclaimer.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* ── EXAM MODAL ── */}
-      {showExamModal && (
-        <div onClick={() => setShowExamModal(false)} style={{
+      {showExamModal === 'exam' && (
+        <div onClick={() => setShowExamModal(null)} style={{
           position: 'fixed', inset: 0, zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)', padding: '24px',
@@ -216,7 +319,7 @@ function Home() {
                   Choose Your Exam Type
                 </h2>
               </div>
-              <button onClick={() => setShowExamModal(false)} style={{
+              <button onClick={() => setShowExamModal(null)} style={{
                 background: 'transparent', border: `1px solid ${C.border}`,
                 color: C.textDim, width: '36px', height: '36px',
                 cursor: 'pointer', fontSize: '18px', display: 'flex',
