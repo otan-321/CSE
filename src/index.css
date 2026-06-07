@@ -207,3 +207,36 @@ body {
 /* ── DARK CARD (legacy) ── */
 .dark-card { transition: border-color 0.2s ease; }
 .dark-card:hover { border-color: var(--border-hover) !important; }
+
+/* ── MOBILE FIXES ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Desktop nav visible, hamburger hidden */
+.desktop-nav { display: flex !important; }
+.mobile-menu-btn { display: none !important; }
+.mobile-menu { display: none !important; }
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .mobile-menu-btn { display: flex !important; }
+  .mobile-menu { display: flex !important; }
+
+  /* Prevent horizontal scroll on sections */
+  section, div { max-width: 100%; }
+
+  /* Hero text scaling */
+  h1 { font-size: clamp(28px, 8vw, 48px) !important; }
+
+  /* Stats bar stack on mobile */
+  .ob-corner { width: 100%; }
+
+  /* Buttons full width on mobile */
+  .ob-btn-primary, .ob-btn-ghost {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

@@ -36,20 +36,6 @@ function Home() {
         }} />
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '720px' }}>
-          {/* Eyebrow badge */}
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: '8px',
-            border: `1px solid ${C.border}`, padding: '6px 14px', marginBottom: '32px',
-          }}>
-            <span style={{ width: '6px', height: '6px', background: C.success, display: 'inline-block' }} />
-            <span className="ob-font-mono" style={{
-              fontSize: '10px', letterSpacing: '0.2em',
-              color: C.textMuted, textTransform: 'uppercase',
-            }}>
-              Free · No Ads · Built for Filipinos 🇵🇭
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 className="ob-font-display" style={{
             fontSize: 'clamp(40px, 6vw, 72px)',
@@ -203,9 +189,6 @@ function Home() {
         }}>
           Ready to Start?
         </h2>
-        <p className="ob-font-mono" style={{ fontSize: '11px', letterSpacing: '0.15em', color: C.textDim, marginBottom: '32px', textTransform: 'uppercase' }}>
-          NO SIGN-UP REQUIRED · FREE FOREVER
-        </p>
         <button className="ob-btn-primary" onClick={() => setShowExamModal(true)} style={{ padding: '16px 48px' }}>
           LAUNCH EXAM MODULE →
         </button>

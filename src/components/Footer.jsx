@@ -22,7 +22,7 @@ function Footer() {
           <div style={{ width: '8px', height: '8px', background: colors.white, clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }} />
         </div>
         <span className="ob-font-mono" style={{ fontSize: '10px', color: colors.textDim }}>
-          © {currentYear} CSE REVIEWER · BUILT FOR FILIPINOS · FREE FOREVER
+          © {currentYear} CSE REVIEWER
         </span>
       </div>
       <div style={{ display: 'flex', gap: '24px' }}>
