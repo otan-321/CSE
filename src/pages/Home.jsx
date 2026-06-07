@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ExamSelection from '../components/ExamSelection';
-import DisclaimerModal from '../components/DisclaimerModal';
 
 const C = {
   bg: '#09090B', surface: '#131315', surfaceLow: '#1C1B1D',
@@ -197,16 +196,6 @@ function Home() {
 
       {/* ── EXAM MODAL ── */}
       {showExamModal && (
-        <div onClick={() => setShowExamModal(false)} style={{
-          position: 'fixed', inset: 0, zIndex: 100,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)', padding: '24px',
-        }}>
-          {/* Step 1: Disclaimer — shown first */}
-          <DisclaimerModal onAccept={() => setShowExamModal('exam')} onClose={() => setShowExamModal(false)} />
-        </div>
-      )}
-      {showExamModal === 'exam' && (
         <div onClick={() => setShowExamModal(false)} style={{
           position: 'fixed', inset: 0, zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
