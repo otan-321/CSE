@@ -1,216 +1,110 @@
-import { AlertTriangle, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+const C = {
+  bg: '#09090B', surface: '#131315', surfaceLow: '#1C1B1D',
+  border: '#27272A', borderHover: '#3F3F46',
+  text: '#E5E1E4', textMuted: '#C4C7C8', textDim: '#8E9192',
+  white: '#FFFFFF',
+};
 
-function DisclaimerModal() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [dontShowAgain, setDontShowAgain] = useState(false);
-
-  useEffect(() => {
-    // Check if user has already accepted the disclaimer
-    const hasAccepted = localStorage.getItem('disclaimerAccepted');
-    if (!hasAccepted) {
-      setIsOpen(true);
-      // Prevent scrolling when modal is open
-      document.body.style.overflow = 'hidden';
-    }
-    
-    return () => {
-      // Re-enable scrolling when component unmounts
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
-  const handleAccept = () => {
-    if (dontShowAgain) {
-      localStorage.setItem('disclaimerAccepted', 'true');
-    }
-    setIsOpen(false);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-  };
-
-  const handleClose = () => {
-    setIsOpen(false);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-  };
-
-  if (!isOpen) return null;
-
+export default function DisclaimerModal({ onAccept, onClose }) {
   return (
-    <div className="fixed inset-0 z-9999 flex items-center justify-center bg-gray-950/80 p-4">
-      <div className="bg-white dark:bg-gray-950 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-        {/* Header */}
-        <div className="sticky top-0 bg-white dark:bg-gray-950 p-6 border-b border-gray-200 z-10">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-yellow-100 rounded-lg">
-                <AlertTriangle className="w-8 h-8 text-yellow-600" />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Important Disclaimer</h2>
-                <p className="text-gray-600 dark:text-gray-200 mt-1">Please read carefully before proceeding</p>
-              </div>
-            </div>
-            <button
-              onClick={handleClose}
-              className="p-2 hover:bg-gray-100 dark:bg-gray-950 rounded-lg transition-colors"
-            >
-              <X className="w-6 h-6 text-gray-500 dark:text-gray-100" />
-            </button>
+    <div onClick={e => e.stopPropagation()} style={{
+      background: C.surface, border: `1px solid ${C.border}`,
+      maxWidth: '420px', width: '100%', padding: '32px',
+    }}>
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '24px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{
+            width: '44px', height: '44px', background: C.surfaceLow,
+            border: `1px solid ${C.border}`, display: 'flex',
+            alignItems: 'center', justifyContent: 'center', fontSize: '20px', flexShrink: 0,
+          }}>⚠</div>
+          <div>
+            <h2 className="ob-font-display" style={{ fontSize: '20px', fontWeight: 700, color: C.white, margin: 0, letterSpacing: '-0.02em' }}>
+              Important Disclaimer
+            </h2>
+            <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, letterSpacing: '0.12em', marginTop: '4px' }}>
+              PLEASE READ BEFORE PROCEEDING
+            </p>
           </div>
         </div>
+        <button onClick={onClose} style={{
+          background: 'transparent', border: `1px solid ${C.border}`,
+          color: C.textDim, width: '32px', height: '32px',
+          cursor: 'pointer', fontSize: '16px', display: 'flex',
+          alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+        }}>×</button>
+      </div>
 
-        {/* Content */}
-        <div className="p-8">
-          <div className="space-y-6">
-            {/* Main Warning */}
-            <div className="p-5 bg-linear-to-r from-yellow-50 to-orange-50 rounded-xl border-2 border-yellow-300">
-              <div className="flex items-start space-x-3">
-                <AlertTriangle className="w-6 h-6 text-yellow-600 shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="text-lg font-bold text-yellow-800 mb-2">
-                    Unofficial Mock Exam / Reviewer Tool
-                  </h3>
-                  <p className="text-yellow-700">
-                    <strong>Always refer to the official Civil Service Commission website</strong> for the most accurate and up-to-date information regarding the Civil Service Examination.
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/* Divider */}
+      <div style={{ height: '1px', background: C.border, marginBottom: '24px' }} />
 
-            {/* Sources Section */}
-            <div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4">Question Sources</h3>
-              
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-blue-50 dark:bg-gray-900 rounded-xl border border-blue-200">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="p-2 bg-blue-100 rounded-lg">
-                      <span className="font-bold text-blue-700">🤖</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 dark:text-white">AI-Generated Questions</h4>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-200 text-sm">
-                    Some questions are generated via AI models including Gemini, DeepSeek, and ChatGPT. These may require additional verification.
-                  </p>
-                </div>
-
-                <div className="p-4 bg-purple-50 dark:bg-purple-950 rounded-xl border border-purple-200">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="p-2 bg-purple-100 rounded-lg">
-                      <span className="font-bold text-purple-700">👥</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 dark:text-white">Community & Social Media</h4>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-200 text-sm">
-                    Questions collected from social media groups, online forums, and user submissions from various sources.
-                  </p>
-                </div>
-
-                <div className="p-4 bg-green-50 dark:bg-gray-900 rounded-xl border border-green-200">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="p-2 bg-green-100 rounded-lg">
-                      <span className="font-bold text-green-700">📚</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 dark:text-white">Review Center Materials</h4>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-200 text-sm">
-                    Based on old review materials from various review centers and practice books.
-                  </p>
-                </div>
-
-                <div className="p-4 bg-red-50 dark:bg-red-950 rounded-xl border border-red-200">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="p-2 bg-red-100 rounded-lg">
-                      <span className="font-bold text-red-700">⚖️</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 dark:text-white">Legal References</h4>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-200 text-sm">
-                    Questions based on RA 6713, Philippine Constitution, and other relevant laws and regulations.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Important Notes */}
-            <div className="space-y-4">
-              <div className="p-4 bg-red-50 rounded-xl border border-red-300">
-                <h4 className="font-bold text-red-800 mb-3 flex items-center">
-                  <AlertTriangle className="w-5 h-5 mr-2" />
-                  Important Notice
-                </h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-red-700"><strong>This tool is for practice only</strong> - Not affiliated with the Civil Service Commission</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-red-700"><strong>Accuracy not guaranteed</strong> - Questions may contain errors or outdated information</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-red-700"><strong>Always verify</strong> - Cross-check with official CSC announcements and materials</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-blue-50 dark:bg-gray-900 rounded-xl border border-blue-300">
-                <h4 className="font-bold text-blue-800 mb-3">Report Inconsistencies</h4>
-                <p className="text-blue-700">
-                  If you notice any inconsistencies, errors, or outdated information in the questions, please submit a report. Your feedback helps improve the quality of this tool.
-                </p>
-              </div>
-            </div>
-
-            {/* Checkbox */}
-            <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-              <label className="flex items-start space-x-3 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={dontShowAgain}
-                  onChange={(e) => setDontShowAgain(e.target.checked)}
-                  className="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 mt-1"
-                />
-                <div>
-                  <span className="text-gray-800 dark:text-white font-medium">
-                    Don't show this message again
-                  </span>
-                  <p className="text-gray-600 dark:text-gray-200 text-sm mt-1">
-                    You can always view this disclaimer from the settings or footer
-                  </p>
-                </div>
-              </label>
-            </div>
+      {/* Warning box */}
+      <div style={{
+        border: `1px solid #3D2E00`,
+        background: '#1A1400',
+        padding: '20px',
+        marginBottom: '24px',
+      }}>
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+          <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>⚠</span>
+          <div>
+            <p className="ob-font-mono" style={{ fontSize: '11px', letterSpacing: '0.1em', color: '#F59E0B', marginBottom: '8px', fontWeight: 700 }}>
+              UNOFFICIAL MOCK EXAM / REVIEWER TOOL
+            </p>
+            <p className="ob-font-body" style={{ fontSize: '13px', color: C.textMuted, lineHeight: 1.7, margin: 0 }}>
+              Always refer to the{' '}
+              <a href="https://csc.gov.ph" target="_blank" rel="noopener noreferrer"
+                style={{ color: '#F59E0B', fontWeight: 600, textDecoration: 'underline' }}>
+                official Civil Service Commission website
+              </a>{' '}
+              for the most accurate and up-to-date information regarding the Civil Service Examination.
+            </p>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="sticky bottom-0 bg-white dark:bg-gray-950 p-6 border-t border-gray-200">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button
-              onClick={() => window.open('https://csc.gov.ph', '_blank', 'noopener,noreferrer')}
-              className="flex-1 py-4 bg-white dark:bg-gray-950 border-2 border-blue-600 text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-colors flex items-center justify-center space-x-2"
-            >
-              <span>🌐</span>
-              <span>Visit Official CSC Website</span>
-            </button>
-            <button
-              onClick={handleAccept}
-              className="flex-1 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg flex items-center justify-center space-x-2"
-            >
-              <span>✅</span>
-              <span>I Understand & Accept</span>
-            </button>
-          </div>
-          
-          <p className="text-center text-gray-500 dark:text-gray-100 text-sm mt-4">
-            By clicking "I Understand & Accept", you acknowledge that you have read and understood this disclaimer.
-          </p>
         </div>
       </div>
+
+      {/* Source note */}
+      <div style={{
+        border: `1px solid ${C.border}`,
+        background: C.surfaceLow,
+        padding: '16px',
+        marginBottom: '24px',
+      }}>
+        <p className="ob-font-mono" style={{ fontSize: '10px', letterSpacing: '0.1em', color: C.textDim, marginBottom: '6px' }}>
+          // QUESTION SOURCES
+        </p>
+        <p className="ob-font-body" style={{ fontSize: '12px', color: C.textMuted, lineHeight: 1.7, margin: 0 }}>
+          Questions are compiled from AI-generated content (Gemini, DeepSeek, ChatGPT), CSE review centers, social media study groups, and old reviewer books. Some may have inconsistencies.
+        </p>
+      </div>
+
+      {/* Buttons */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+        <a href="https://csc.gov.ph" target="_blank" rel="noopener noreferrer" style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+          padding: '14px', border: `1px solid ${C.borderHover}`,
+          background: 'transparent', color: C.text,
+          fontSize: '13px', fontWeight: 600, cursor: 'pointer',
+          textDecoration: 'none', letterSpacing: '0.04em',
+        }}>
+          🌐 Visit Official CSC Website
+        </a>
+        <button onClick={onAccept} style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+          padding: '14px', border: 'none',
+          background: 'linear-gradient(135deg, #3B82F6, #8B5CF6)',
+          color: '#fff', fontSize: '13px', fontWeight: 700,
+          cursor: 'pointer', letterSpacing: '0.04em',
+        }}>
+          ✅ I Understand &amp; Accept
+        </button>
+      </div>
+
+      {/* Fine print */}
+      <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, textAlign: 'center', letterSpacing: '0.06em', lineHeight: 1.6 }}>
+        By clicking "I Understand &amp; Accept", you acknowledge that you have read and understood this disclaimer.
+      </p>
     </div>
   );
 }
-
-export default DisclaimerModal;
