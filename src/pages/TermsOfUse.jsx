@@ -1,106 +1,99 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-const TermsOfUse = () => {
+const C = {
+  bg: '#09090B', surface: '#131315', surfaceLow: '#1C1B1D',
+  border: '#27272A', text: '#E5E1E4', textMuted: '#C4C7C8',
+  textDim: '#8E9192', white: '#FFFFFF',
+};
+
+const sections = [
+  {
+    tag: '01',
+    title: 'What This Is',
+    body: 'CSE Reviewer is a free, independent practice platform for the Philippine Civil Service Examination. It is not affiliated with, endorsed by, or connected to the Civil Service Commission (CSC) or any government agency. Use it to practice — not as your only source.',
+  },
+  {
+    tag: '02',
+    title: 'Where the Content Comes From',
+    body: 'Questions and study materials are compiled from Philippine CSE review books, old reviewer materials, mock exams, online study groups, social media communities, and AI-generated content (Claude, ChatGPT, Gemini, DeepSeek). Some answers may have inconsistencies. Always verify with official sources.',
+  },
+  {
+    tag: '03',
+    title: 'How It Was Built',
+    body: 'This site was imagined and directed by Otan. It was built entirely through vibe coding — using AI tools (Claude AI and ChatGPT) to generate every component, design, and feature based on instructions and ideas. No traditional development background was required.',
+  },
+  {
+    tag: '04',
+    title: 'Your Responsibility',
+    body: 'This is a supplementary study tool. Your score here does not predict your actual CSE result. Use multiple sources to prepare. All your data (scores, history) is stored locally on your browser and may be lost if you clear your browser data.',
+  },
+  {
+    tag: '05',
+    title: 'No Warranties',
+    body: 'This platform is provided as-is. The creator is not liable for any inaccuracies in questions or answers, your performance on the actual exam, or any technical issues you encounter. For official information, always refer to the Civil Service Commission website at csc.gov.ph.',
+  },
+  {
+    tag: '06',
+    title: 'Content Removal',
+    body: 'If you are a content owner and believe specific material should be removed, reach out and we will address it promptly.',
+  },
+  {
+    tag: '07',
+    title: 'Updates',
+    body: 'These terms may be updated at any time without prior notice. Continued use of the platform means you accept any changes.',
+  },
+];
+
+function TermsOfUse() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-950">
+    <div style={{ background: C.bg, minHeight: '100vh', padding: '64px 24px' }}>
+      <div style={{ maxWidth: '680px', margin: '0 auto' }}>
 
-      <main className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white dark:bg-gray-950 rounded-xl shadow-sm p-8">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">Terms of Use - CSE Reviewer</h1>
-          <p className="text-gray-500 dark:text-gray-200 mb-8"><strong>Effective Date:</strong> {new Date().toLocaleDateString()}</p>
-          
-          <div className="space-y-6 text-gray-700 dark:text-gray-200">
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">1. Nature of Service</h2>
-              <p>CSE Reviewer is a free online platform that simulates Civil Service Examination (CSE) mock tests. Our questions are sourced from various materials including social media groups, old review materials, community contributions, and AI-generated content for educational purposes only.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">2. Educational Purpose Disclaimer</h2>
-              <p>This platform is designed for practice and self-assessment only. The mock exams provided here are not affiliated with, endorsed by, or connected to the Civil Service Commission (CSC) or any government agency. Our content should not be considered as official study material for the actual Civil Service Examination.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">3. Content Accuracy & Verification</h2>
-              <p>While we strive to provide accurate and reliable content, users are strongly advised to:</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Verify answers through official CSC review materials</li>
-                <li>Cross-reference with authorized textbooks and publications</li>
-                <li>Consult official CSC announcements and updates</li>
-                <li>Understand that AI-generated content may contain inaccuracies</li>
-              </ul>
-              <p className="mt-3">The platform owners and developers are not responsible for any discrepancies between our mock tests and actual CSC examination questions.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">4. User Responsibility</h2>
-              <p>By using this platform, you acknowledge that:</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>This is a supplementary study tool and not a replacement for official review</li>
-                <li>Your performance on mock tests does not guarantee actual exam results</li>
-                <li>You should use multiple sources for comprehensive preparation</li>
-                <li>All data (test results, progress) is stored locally and may be lost if browser data is cleared</li>
-              </ul>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">5. Intellectual Property</h2>
-              <p>CSE Reviewer grants users a non-commercial, personal license to use this platform for exam preparation purposes. All test content, while compiled from various sources, is presented in a unique format. Original contributions by the platform are protected under applicable copyright laws.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">6. Limitation of Liability</h2>
-              <p>The platform is provided "as is" without warranties of any kind. The developers are not liable for:</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Any inaccuracies in test questions or answers</li>
-                <li>User performance on actual Civil Service Examinations</li>
-                <li>Technical issues affecting test availability</li>
-                <li>Data loss from browser or device issues</li>
-                <li>Decisions made by the Civil Service Commission</li>
-              </ul>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">7. Data Privacy</h2>
-              <p>CSE Reviewer does not collect personal information. All test results and progress data are stored locally on your device. We do not use cookies for tracking purposes. For backup purposes, users can export their data using the provided export features.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">8. Community Contributions</h2>
-              <p>Questions contributed by community members through social media groups are used with implied permission for educational sharing. If you are a content owner and wish to have specific material removed, please contact us.</p>
-            </section>
-            
-            <section>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">9. Updates and Changes</h2>
-              <p>We reserve the right to update these terms and modify platform content without prior notice. Continued use of the platform constitutes acceptance of updated terms.</p>
-            </section>
-          </div>
-          
-          <div className="mt-12 pt-8 border-t border-gray-200 bg-blue-50 dark:bg-gray-900 p-6 rounded-lg">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Important Note for Civil Service Exam Takers</h3>
-            <p className="text-gray-700 dark:text-gray-200">
-              This platform is created by independent developers to support Civil Service Exam preparation. 
-              For official information, exam schedules, and authorized review materials, always refer to the 
-              <a href="https://www.csc.gov.ph" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mx-1">
-                official Civil Service Commission website
-              </a>
-              and announcements.
-            </p>
-          </div>
-          
-          <div className="mt-8 pt-6 border-t border-gray-200">
-            <Link 
-              to="/"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline font-medium"
-            >
-              ← Back to CSE Reviewer
-            </Link>
-          </div>
+        {/* Back */}
+        <Link to="/" className="ob-font-mono" style={{
+          fontSize: '10px', letterSpacing: '0.15em', color: C.textDim,
+          textDecoration: 'none', textTransform: 'uppercase', display: 'inline-block', marginBottom: '48px',
+        }}>← Back</Link>
+
+        {/* Header */}
+        <p className="ob-font-mono" style={{ fontSize: '10px', letterSpacing: '0.2em', color: C.textDim, textTransform: 'uppercase', marginBottom: '8px' }}>
+          // TERMS OF USE
+        </p>
+        <h1 className="ob-font-display" style={{ fontSize: '36px', fontWeight: 800, letterSpacing: '-0.03em', color: C.white, marginBottom: '8px' }}>
+          Straight to the Point.
+        </h1>
+        <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, marginBottom: '48px' }}>
+          Effective: {new Date().toLocaleDateString('en-PH', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+
+        {/* Sections */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: C.border }}>
+          {sections.map(({ tag, title, body }) => (
+            <div key={tag} style={{ background: C.surface, padding: '28px 24px', display: 'flex', gap: '24px' }}>
+              <span className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, flexShrink: 0, paddingTop: '3px' }}>{tag}</span>
+              <div>
+                <h2 className="ob-font-display" style={{ fontSize: '15px', fontWeight: 700, color: C.white, marginBottom: '8px' }}>{title}</h2>
+                <p className="ob-font-body" style={{ fontSize: '13px', color: C.textMuted, lineHeight: 1.8, margin: 0 }}>{body}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </main>
+
+        {/* Footer note */}
+        <div style={{ marginTop: '48px', borderTop: `1px solid ${C.border}`, paddingTop: '24px' }}>
+          <p className="ob-font-mono" style={{ fontSize: '10px', color: C.textDim, lineHeight: 1.8 }}>
+            CSE Reviewer is not affiliated with the Civil Service Commission of the Philippines.
+            For official CSE information visit{' '}
+            <a href="https://www.csc.gov.ph" target="_blank" rel="noopener noreferrer"
+              style={{ color: C.white, textDecoration: 'none' }}>
+              csc.gov.ph
+            </a>
+          </p>
+        </div>
+
+      </div>
     </div>
-  )
+  );
 }
 
-export default TermsOfUse
+export default TermsOfUse;
