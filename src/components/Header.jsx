@@ -103,11 +103,7 @@ function Header() {
           })}
           <div style={{ paddingTop: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <ExamCountdown obsidian />
-            <Link to="/" className="ob-btn-primary"
-              onClick={() => setMenuOpen(false)}
-              style={{ padding: '10px 20px', textDecoration: 'none', fontSize: '10px' }}>
-              START EXAM
-            </Link>
+
           </div>
         </div>
       )}
