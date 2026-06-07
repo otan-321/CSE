@@ -240,7 +240,7 @@ function Exam() {
       </div>
 
       {/* ── MAIN CONTENT ── */}
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px 24px', display: 'grid', gridTemplateColumns: '1fr 340px', gap: '24px' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px 16px', display: 'grid', gridTemplateColumns: 'var(--exam-cols, 1fr 340px)', gap: '24px' }}>
         {/* Left — Question */}
         <div>
           <QuestionCard

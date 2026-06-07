@@ -220,6 +220,7 @@ html, body {
 .mobile-menu { display: none !important; }
 
 @media (max-width: 768px) {
+  :root { --exam-cols: 1fr; }
   .desktop-nav { display: none !important; }
   .mobile-menu-btn { display: flex !important; }
   .mobile-menu { display: flex !important; }
